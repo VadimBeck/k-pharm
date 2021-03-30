@@ -1,0 +1,34 @@
+.mobile-aside__wrap
+  .header__links
+    a.header__eye.fancybox(href='') Версия для слабовидящих
+    a.header__call.fancybox(href='') Обратный звонок
+    a.header__user(href='') Личный кабинет
+    a.header__cart(href='')
+      img(src='/website/img/header_cart.png' alt='')
+      span Корзина
+      span.number 10
+  nav#mobile-nav.mobile-nav
+    ul.mobile-nav__list
+      li.mobile-nav__item
+        a(href='' title='') Главная
+      li.mobile-nav__item
+        a.type-global-nav-link-1.has-aside-menu(href='/catalog')
+          | О компании
+          span.caret-right
+        .level-2
+          .type-global-nav-link-1.sub-menu__header
+            span.caret-left
+            | О компании
+      li.mobile-nav__item
+        a(href='/catalog' title='') Каталог товаров
+      li.mobile-nav__item
+        a(href='' title='') Оплата и доставка
+      li.mobile-nav__item
+        a(href='' title='') Контакты
+  .header__contacts
+    p
+      a(href='tel:+74712515515') 8 (4712) 515-515
+      span горячая линия (ежедневно с 8:00-20:00)
+    p
+      a(href='tel:+74712506050') 8 (4712) 50-60-50
+      span горячая линия по отпуску льготных лекарственных препаратов

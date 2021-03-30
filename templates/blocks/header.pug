@@ -1,0 +1,28 @@
+.container.header
+  a.logo(href='/')
+    img(src='/website/img/logo.png' alt='')
+  a.header__adr.fancybox(href='#rch')
+    span.current Курская обл., Черемисиновский район, п. Черемисиново, ул. Комсомольская, д. 4
+  .header__contacts
+    p
+      a(href='tel:+74712515515') 8 (4712) 515-515
+      span горячая линия (ежедневно с 8:00-20:00)
+    p
+      a(href='tel:+74712506050') 8 (4712) 50-60-50
+      span горячая линия по отпуску льготных лекарственных препаратов
+  .header__links
+    a.header__eye.fancybox(href='') Версия для слабовидящих
+    a.header__call.fancybox(href='') Обратный звонок
+    a.header__user(href='') Личный кабинет
+    a.header__cart(href='')
+      img(src='/website/img/header_cart.png' alt='')
+      span.number 10
+      span Корзина
+  .search.row
+    form.row
+      input(type='text' name='search' placeholder='Поиск')
+      button(type='submit')
+    a.header__help(href='') Помощь
+  button#nav-toggle.nav-toggle.full-height.relative.hide-desktop(type='button' data-navbar-toggle='')
+    span
+include ./nav

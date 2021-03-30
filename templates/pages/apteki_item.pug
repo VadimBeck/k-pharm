@@ -1,0 +1,52 @@
+extends ../layout
+
+block main 
+  .slide_top
+    img(src='/website/img/apteki_slide.jpg' alt='')
+  section.container.pharmacy
+    ul.breadcrumbs
+      li
+        a(href='/') Главная
+        |  /
+      li
+        span Аптеки
+    h1 Филиал-аптека №55
+    .pharmacy_item.row
+      .pharmacy_item__main
+        p.pharmacy_item__name Филиал-аптека №55
+        p.pharmacy_item__adr Курская обл., Касторенский район, п. Касторное, ул. Ленина, д.140
+        p.pharmacy_item__time
+          | понедельник – пятница 8.30-17.00
+          br
+          | выходной суббота, воскресенье
+        ul.pharmacy_item__option
+          li отпуск бесплатных лекарственных средств по льготным рецептам
+          li ветеринарная аптека
+        .pharmacy_item__tel
+          a(href='tel:701191') (8-47132) 2-17-64
+          | , 
+          a(href='tel:84713221455') 2-14-55
+      .pharmacy_item__map
+        iframe(src='https://yandex.ru/map-widget/v1/?um=constructor%3A51d5af17e177b655fc1cc0a012ed6d3cf6b2c064fe7cf1061334d229591dabb0&source=constructor' width='100%' frameborder='0')
+      .pharmacy_item__search.row
+        p.pharmacy_item__title Подбор лекарств
+        form
+          input(type='text' name='' placeholder='Введите название препарата')
+          button(type='submit')
+        .pharmacy_item__pay
+          b Оплата:
+          p.pharmacy_item__pay1 Наличными
+          p.pharmacy_item__pay1 Банковской картой
+        p.pharmacy_item__storage
+          b Срок хранения:
+          |  заказ хранится 24 часа с момента доставки в аптечный пункт
+      .pharmacy_item__steps
+        p.pharmacy_item__title Получение заказа
+        ul.order_steps
+          li Создайте учетную запись в личном кабинете, авторизуйтесь
+          li
+            | Оформите заказ
+            br
+            | на сайте
+          li По прибытии заказа в пункт самовывоза Вам придет SMS-оповещение
+          li Для получения заказа назовите номер заказа

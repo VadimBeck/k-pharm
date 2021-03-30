@@ -1,0 +1,108 @@
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto Light", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #262626;
+  background-color: #fff;
+}
+
+.page-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2 {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 35px 0;
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: normal;
+  text-align: center;
+  font-family: "Roboto Medium", "Arial", sans-serif;
+}
+@media screen and (max-width: 768px) {
+  h1,
+  h2 {
+    padding: 30px 0;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  h1,
+  h2 {
+    padding: 20px 0;
+    font-size: 25px;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  padding: 0.5em 0;
+  line-height: 1.4;
+}
+
+b {
+  font-weight: 400;
+  font-family: "Roboto Bold", "Arial", sans-serif;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+::-moz-selection {
+  background-color: #b77f53;
+  color: #fff;
+}
+
+::selection {
+  background-color: #b77f53;
+  color: #fff;
+}

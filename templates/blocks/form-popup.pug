@@ -1,0 +1,13 @@
+#form.form.form--popup
+  .wrapper
+    h4 Обратная связь
+    form.row
+      input(type='text' name='name' placeholder='Ваше имя')
+      input(type='tel' name='tel' placeholder='Телефон')
+      textarea(placeholder='Комментарий')
+      .check
+        input#checkbox.visually-hidden(type='checkbox' name='checkbox' checked='')
+        label(for='checkbox')
+          | Даю согласие на обработку персональных данных в соответствии 
+          a(href='/website/politic.pdf' target='_blank') Политикой конфиденциальности
+      button.btn(type='submit') ОТПРАВИТЬ

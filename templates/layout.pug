@@ -1,0 +1,36 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1')
+    link(type='image/x-icon' href='/favicons/favicon.ico' rel='icon')
+    link(rel="stylesheet", href="css/style.css")
+    block head 
+      title Курская фармация
+    //- link(href='/website/css/sweetalert2.min.css' media='screen' rel='stylesheet' type='text/css')
+    //- link(href='/cache-buster-1614602607/website/css/lightslider.min.css' media='screen' rel='stylesheet' type='text/css')
+    //- link(href='/cache-buster-1614604085/website/css/style.css' media='screen' rel='stylesheet' type='text/css')
+    //- script(src='/cache-buster-1614602607/website/js/jquery-3.3.1.min.js')
+    //- script(src='/website/js/sweetalert2.min.js')
+    //- script(src='/cache-buster-1614602607/website/js/lightslider.min.js')
+    //- script(src='/cache-buster-1614602607/website/js/jquery.fancybox.js')
+    //- script(src='/cache-buster-1614602607/website/js/script.js')
+  body
+
+    aside#mobile-aside.mobile-aside.mobile-only
+      include ./blocks/aside
+
+    .page-wrap
+      header
+        include ./blocks/header
+      
+      #body-overlay
+
+      block main
+
+      footer 
+        include ./blocks/footer
+
+    #rch.region_choose
+      include ./blocks/region-choose

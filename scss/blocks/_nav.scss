@@ -1,0 +1,108 @@
+.nav {
+  background-color: #488b45;
+  border-bottom: 4px solid #fff;
+}
+@media screen and (max-width: 899px) {
+  .nav {
+    display: none;
+  }
+}
+.nav__list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  list-style: none;
+}
+.nav__item {
+  font-size: 16px;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+@media screen and (max-width: 1080px) {
+  .nav__item {
+    font-size: 14px;
+  }
+}
+// @media screen and (max-width: 899px) {
+//   .nav__item {
+//     font-size: 16px;
+//   }
+// }
+.nav__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  line-height: 1.1;
+  color: #fff;
+  padding: 16px 0;
+}
+.nav__item.active .nav__link::after,
+.nav__item:hover .nav__link::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 32px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #fff;
+}
+.nav__dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 1170px;
+  max-width: 98vw;
+  height: 320px;
+  margin: 0;
+  padding: 35px 15px 40px;
+  background-color: #e7eeed;
+  list-style: none;
+  z-index: 100;
+}
+.nav__dropdown::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  background-color: #e7eeed;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+.nav__dropdown-item {
+  position: relative;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+.nav__dropdown-item > a {
+  display: block;
+  padding: 7px 0;
+  font-size: 14px;
+  font-family: "Roboto Medium", "Arial", sans-serif;
+}
+.nav__dropdown ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav__dropdown ul a {
+  display: block;
+  padding: 7px 0;
+  font-size: 12px;
+  font-family: "Montserrat Medium", "Arial", sans-serif;
+}
+.nav__dropdown-item a:hover {
+  color: #488b45;
+}
+.nav__item:hover .nav__dropdown {
+  display: flex;
+}
