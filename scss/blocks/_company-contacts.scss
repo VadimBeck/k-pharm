@@ -1,11 +1,16 @@
 .company-contacts__list {
   display: flex;
-  padding: 30px 0;
+  justify-content: space-evenly;
+  padding: 45px 0;
 }
 
 .company-contacts__item {
   text-align: center;
-  margin-left: 30px;
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .company-contacts__phones {
@@ -19,11 +24,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
 
   & span {
     display: inline-block;
+    font-size: 18px;
     margin-left: 10px;
     font-weight: bold;
+  }
+}
+
+.company-contacts__text {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }

@@ -2,43 +2,37 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 30px;
+  padding: 10px;
 }
 
 .schema__header {
   position: relative;
-  background: $green;
-  text-align: center;
-  min-width: 300px;
-  padding: 15px;
-  border-radius: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
+  min-width: 340px;
   margin-bottom: 25px;
+  padding: 15px;
 
   & span {
     display: inline-block;
     margin-left: 10px;
   }
 
-  &::before, &::after {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
-    top: 45px;
+    top: 48px;
     width: 100px;
-    height: 2px;
+    height: 1px;
     background: $green;
   }
 
   &::before {
-    left: -115px;
-    transform: rotate(-20deg);
+    left: -110px;
+    transform: rotate(-18deg);
   }
   &::after {
-    right: -115px;
-    transform: rotate(20deg);
+    right: -110px;
+    transform: rotate(18deg);
   }
 }
 
@@ -52,14 +46,14 @@
 }
 
 .schema__item-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px dashed $green;
-  margin-bottom: 15px;
-  min-width: 300px;
-  padding: 15px;
-  border-radius: 40px;
+  margin-bottom: 20px;
+  min-width: 340px;
+  padding: 12px;
+
+  & span {
+    display: inline-block;
+    margin-left: 10px;
+  }
 }
 
 .schema__item-graph {
@@ -67,19 +61,26 @@
   justify-content: space-evenly;
   position: relative;
 
-  &::before {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
+    top: 0;
     width: 30px;
-    height: 30px;
-    border-color: $green;
-    border-style: solid;
-    border-width: 2px 0 0 2px;
-    top: 10px;
-    left: 48%;
-    transform: rotate(45deg) translateX(-50%);
+    height: 1px;
+    background: $green;
+  }
+
+  &::before {
+    transform: rotate(22deg);
+    left: calc(50% - 1px);
+  }
+  &::after {
+    transform: rotate(-22deg);
+    right: calc(50% - 1px);
   }
 }
+
 .schema__block {
   background: $green;
   color: #fff;
@@ -87,6 +88,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-weight: 500;
   width: 100px;
   height: 100px;
   border-radius: 50%;

@@ -166,7 +166,7 @@ header {
   width: 150px;
   margin-right: 10px;
   font-size: 18px;
-  font-family: "Roboto Bold", "Arial", sans-serif;
+  font-weight: 700;
   color: #d93646;
   white-space: nowrap;
 }
@@ -298,7 +298,7 @@ header {
   line-height: 28px;
   color: #fff;
   font-size: 11px;
-  font-family: "Roboto Bold", "Arial", sans-serif;
+  font-weight: 700;
 }
 @media screen and (max-width: 540px) {
   .header__cart .number {
@@ -451,7 +451,7 @@ header {
   position: relative;
   margin-bottom: 15px;
   padding: 25px 0 20px;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: 500;
 }
 .dropdown_menu .container p::after {
   content: "";
@@ -884,7 +884,7 @@ header {
 .region_choose .region_choose__header {
   margin-bottom: 12px;
   padding: 13px 25px;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: 500;
   border-radius: 2px;
   background-color: white;
 }
@@ -956,7 +956,7 @@ header {
   display: block;
   padding-bottom: 25px;
   position: relative;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: 500;
   color: #488b45;
 }
 .region_choose .region_choose__list b::after {
@@ -1154,7 +1154,7 @@ header ~ .lSSlideOuter .slide3 ul li {
   padding-left: 43px;
   font-size: 22px;
   line-height: 1;
-  font-family: "Roboto Bold", "Arial", sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
   color: #fff;
   background-image: url(/website/img/slider_check.png);
@@ -1248,7 +1248,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
   display: block;
   margin-bottom: 5px;
   padding: 55px 35px 3px;
-  font-family: "Roboto Bold", "Arial", sans-serif;
+  font-weight: 700;
   font-size: 18px;
   color: #488b45;
 }
@@ -1306,7 +1306,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
   display: block;
   padding: 7px 35px;
   font-size: 14px;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: 500;
 }
 .menu_list > ul > li > ul > li.active {
   padding: 3px 0 8px;
@@ -1397,7 +1397,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
   flex-direction: column;
   padding-left: 50px;
   font-size: 30px;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: 500;
   text-transform: uppercase;
   color: #fff;
   background-color: rgba(72, 139, 69, 0.8);
@@ -1769,7 +1769,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
   display: block;
   margin-bottom: 25px;
   color: #488b45;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: 500;
 }
 @media screen and (max-width: 480px) {
   .pharmacy_list__name {
@@ -1780,7 +1780,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
 .pharmacy_list__adr,
 .pharmacy_list__time {
   padding: 0;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: 500;
 }
 
 .pharmacy_list__option {
@@ -1811,7 +1811,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
 .pharmacy_list__tel a {
   display: block;
   font-size: 26px;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: 500;
 }
 @media screen and (max-width: 480px) {
   .pharmacy_list__tel a {
@@ -1852,12 +1852,12 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
 .pharmacy_item__main .pharmacy_item__name {
   padding: 0 0 25px 35px;
   color: #488b45;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: 500;
 }
 .pharmacy_item__main .pharmacy_item__adr {
   position: relative;
   padding: 0 0 25px 35px;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: 500;
 }
 .pharmacy_item__main .pharmacy_item__adr::before {
   content: "";
@@ -1874,7 +1874,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
 .pharmacy_item__main .pharmacy_item__time {
   position: relative;
   padding: 0 0 15px 35px;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: 500;
 }
 .pharmacy_item__main .pharmacy_item__time::before {
   content: "";
@@ -1911,7 +1911,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
 .pharmacy_item__main .pharmacy_item__tel a {
   white-space: nowrap;
   font-size: 26px;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: 500;
 }
 
 .pharmacy_item__map {
@@ -2014,7 +2014,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
 .pharmacy_item__pay b {
   display: block;
   margin-bottom: 7px;
-  font-family: "Roboto Bold", "Arial", sans-serif;
+  font-weight: 700;
 }
 
 .pharmacy_item__pay p {
@@ -2099,7 +2099,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
 .pharmacy_item__storage b {
   display: block;
   margin-bottom: 7px;
-  font-family: "Roboto Bold", "Arial", sans-serif;
+  font-weight: 700;
 }
 
 .pharmacy_item__steps {
@@ -2265,7 +2265,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
   padding: 0 0 65px;
   text-align: center;
   font-size: 30px;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: 500;
   color: #fff;
   font-weight: 400;
 }
@@ -2473,7 +2473,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
   border-color: #8c8c8c;
   background-color: white;
   font-size: 12px;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: 500;
   line-height: 1.3;
 }
 .sort .nice-select:after {
@@ -2620,7 +2620,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
   padding: 0;
   line-height: 1;
   font-size: 25px;
-  font-family: "Roboto Bold", "Arial", sans-serif;
+  font-weight: 700;
 }
 .catalog_item .catalog-item_price span {
   font-weight: 700;
@@ -2740,7 +2740,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
 .item__info .item__price {
   padding: 0 0 7px;
   font-size: 26px;
-  font-family: "Roboto Bold", "Arial", sans-serif;
+  font-weight: 700;
 }
 .item__info .item__price b {
   color: #488b45;
@@ -2788,7 +2788,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
   padding: 15px 0 30px;
   font-size: 15px;
   color: #1546d1;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: 500;
   text-decoration: underline;
 }
 @media screen and (max-width: 920px) {
@@ -3043,7 +3043,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
   align-self: flex-end;
   margin-bottom: 5px;
   font-size: 18px;
-  font-family: "Roboto Bold", "Arial", sans-serif;
+  font-weight: 700;
 }
 .similar .similar_item .similar_item__price b {
   color: #488b45;
@@ -3172,7 +3172,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
 }
 .catalog_main__list > li > a {
   font-size: 16px;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: 500;
   line-height: 1;
 }
 @media screen and (max-width: 900px) {
@@ -3266,7 +3266,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
   background-color: #73a90e;
   color: #fff;
   font-size: 14px;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: 500;
   white-space: nowrap;
 }
 @media screen and (max-width: 800px) {
@@ -3337,7 +3337,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
 }
 .cart_table .cart_name {
   font-size: 14px;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: 500;
   text-align: left;
 }
 @media screen and (max-width: 519px) {
@@ -3386,7 +3386,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
   background-color: #73a90e;
   font-size: 25px;
   line-height: 36px;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: 500;
   text-align: center;
   color: #fff;
 }
@@ -3405,7 +3405,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
   background-color: white;
   font-size: 14px;
   line-height: 36px;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: 500;
   text-align: center;
 }
 @media screen and (max-width: 399px) {
@@ -3481,7 +3481,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
   font-family: "Montserrat Medium", "Arial", sans-serif;
 }
 .cart_total p b {
-  font-family: "Roboto Bold", "Arial", sans-serif;
+  font-weight: 700;
 }
 .cart_total p .rub {
   font-weight: 700;
@@ -3494,12 +3494,12 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
 .cart_total .cart_total__table td {
   padding: 13px 0;
   font-size: 14px;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: 500;
 }
 .cart_total .cart_total__table td:last-child {
   width: 75px;
   font-size: 18px;
-  font-family: "Roboto Bold", "Arial", sans-serif;
+  font-weight: 700;
 }
 .cart_total .cart_total__table td .rub {
   font-weight: 700;
@@ -3581,7 +3581,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
 .order.row .order_title {
   padding: 40px 0 15px;
   font-size: 15px;
-  font-family: "Roboto Bold", "Arial", sans-serif;
+  font-weight: 700;
 }
 @media screen and (max-width: 768px) {
   .order.row .order_title {
@@ -3609,7 +3609,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
   width: 100%;
   padding: 0 0 3px;
   font-size: 20px;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: 500;
 }
 @media screen and (max-width: 399px) {
   .cart_form.row .order_title {
@@ -3958,7 +3958,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
 
 .contacts__title {
   padding: 20px 0;
-  font-family: "Roboto Bold", "Arial", sans-serif;
+  font-weight: 700;
 }
 
 .contacts__text {
@@ -4164,7 +4164,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
   padding: 12px 0;
   padding-left: 30px;
   font-size: 16px;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: 500;
   border-bottom: 1px solid #f7b568;
 }
 .profile__menu ul a::before {
@@ -4241,7 +4241,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
   width: 180px;
 }
 .profile__text table td:nth-child(2) {
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: 500;
 }
 .profile__text .btn {
   display: block;
@@ -4279,7 +4279,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
   display: block;
   margin-bottom: 5px;
   margin-left: 15px;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: 500;
 }
 .profile__edit .input_wrapper input {
   display: block;
@@ -4347,7 +4347,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
   background-color: #73a90e;
   color: #fff;
   font-size: 14px;
-  font-family: "Roboto Bold", "Arial", sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
 }
 @media screen and (max-width: 900px) {
@@ -4423,7 +4423,7 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
 }
 .orders_history .order_content table td {
   padding: 0 10px 15px;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: 500;
 }
 @media screen and (max-width: 900px) {
   .orders_history .order_content table td {
@@ -4516,7 +4516,7 @@ h1 + .delivery__title {
 
 .delivery__sub_title {
   padding: 12px 0 0;
-  font-family: "Roboto Bold", "Arial", sans-serif;
+  font-weight: 700;
 }
 @media screen and (max-width: 400px) {
   .delivery__sub_title {
@@ -4716,7 +4716,7 @@ footer {
   max-width: 360px;
 }
 .footer.row .footer__tel span b {
-  font-family: "Roboto Light", "Arial", sans-serif;
+  font-weight: 300;
   font-size: 18px;
 }
 @media screen and (max-width: 991px) and (min-width: 801px) {
@@ -4821,7 +4821,7 @@ footer {
   height: 34px;
   margin: 0;
   line-height: 34px;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: 500;
   text-align: center;
   transition: 0.15s;
   border-style: solid;
@@ -4912,7 +4912,7 @@ footer {
   color: #193c30;
   text-transform: uppercase;
   font-size: 18px;
-  font-family: "Roboto Bold", "Arial", sans-serif;
+  font-weight: 700;
 }
 .error p {
   padding: 0 0 25px;

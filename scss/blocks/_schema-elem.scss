@@ -1,0 +1,16 @@
+.schema-elem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $green;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;  
+  border-radius: 40px;  
+  color: #fff;
+  &--dashed {
+    background: #fff;
+    border: 1px dashed $green;
+    color: $green;
+  }
+}

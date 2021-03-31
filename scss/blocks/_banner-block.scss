@@ -2,6 +2,7 @@
   position: relative;
   padding-top: 50px;
   color: #fff;
+  margin-bottom: 50px;
 }
 
 .banner-block__img {
@@ -27,7 +28,7 @@
     left: 0;
     bottom: 0;
     display: block;
-    width: 60%;
+    width: 64%;
     height: 100%;
     background: $green;
   }
@@ -35,10 +36,20 @@
 
 .banner-block__desc {
   position: relative;
-  padding: 30px;
+  padding: 35px 20px 40px 0 ;
   width: 60%;
+
+  &>p {
+    margin-bottom: 10px;
+  }
 }
 
 .banner-block__title {
   text-align: left;
+  padding: 0 0 5px 0;
+  line-height: 1.1;
+}
+
+.banner-block__paragraph {
+  padding: 20px 0;
 }

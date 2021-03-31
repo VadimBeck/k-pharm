@@ -22,10 +22,11 @@
   display: inline-flex;
   flex-direction: column;
   position: relative;
+  min-width: 43%;
   z-index: 1;
   color: #fff;
-  padding: 50px 50px 50px 0;
-  margin: 100px 0; 
+  padding: 50px 30px 30px 0;
+  margin: 140px 0 120px 0; 
 
   &::before {
     content: "";
@@ -41,14 +42,13 @@
 
 .slider__item-text {
   position: relative;
-
 }
 
 .slider__item-title {
-  font-size: 48px;
-  font-weight: bold;
-  line-height: 1;
-  margin-bottom: 20px;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 0.9;
+  margin-bottom: 25px;
 
   & span {
     display: block;
@@ -57,5 +57,6 @@
 }
 
 .slider__item-sub {
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: normal;
 }
