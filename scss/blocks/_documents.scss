@@ -1,0 +1,15 @@
+.documents__list {
+  display: flex;
+  padding: 30px 0;
+}
+
+.documents__item {
+  & a {
+    display: flex;
+    height: 100%;
+  }
+  & span {
+    text-decoration: underline;
+    padding: 0 20px;
+  }
+}

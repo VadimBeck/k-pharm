@@ -1,0 +1,29 @@
+.company-contacts__list {
+  display: flex;
+  padding: 30px 0;
+}
+
+.company-contacts__item {
+  text-align: center;
+  margin-left: 30px;
+}
+
+.company-contacts__phones {
+  color: $red;
+  &--green {
+    color: $green;
+  }
+}
+
+.company-contacts__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+
+  & span {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+}
