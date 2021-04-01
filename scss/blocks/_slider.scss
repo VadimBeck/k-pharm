@@ -28,20 +28,43 @@
   padding: 50px 30px 30px 0;
   margin: 140px 0 120px 0; 
 
-  &::before {
+  &::before, &::after {
     content: "";
     position: absolute;
-    z-index: 0;
+    background: rgba(72, 139, 69, .8);
+  }
+
+  &::before {
     width: 130%;
     height: 100%;
     top: 0;
-    left: -30%;
-    background: rgba(72, 139, 69, .8);
+    left: -30%;    
+  }
+
+  &::after {
+    width: 50px;
+    height: 50px;
+    right: -50px;
+    bottom: -50px;
   }
 }
 
 .slider__item-text {
   position: relative;
+
+  &::before, &::after {
+    content: "";
+    position: absolute;
+  }
+
+  &::before {
+    width: 40%;
+    height: 100%;
+    top: -80px;
+    left: -70px;
+    z-index: -1;
+    background: rgba(72, 139, 69, .9);
+  }
 }
 
 .slider__item-title {

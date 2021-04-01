@@ -1,5 +1,5 @@
 .section__title {
-  padding: 0 0 30px 0;
+  padding: 5px 0 30px 0;
   text-align: left;
   
   &--center {
@@ -15,4 +15,13 @@
   & p {
     margin-bottom: 15px;
   }
+}
+
+.section__row-bg {
+  background: #f4f4f4;
+  padding: 20px 0 40px 0; 
+}
+
+.section__row-block {
+  padding: 65px 0 20px 0;
 }

@@ -1,0 +1,29 @@
+.roster {
+  padding: 30px 0;
+  font-size: 16px;  
+
+  &--bold {
+    font-weight: 500;
+  }
+
+  & li {
+    position: relative;
+    line-height: 1.42;
+    margin-bottom: 25px;
+    padding-left: 50px;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 1px;
+      background: #000;
+      left: 0;
+      top: 10px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
