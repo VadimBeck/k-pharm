@@ -684,7 +684,10 @@ header nav {
 	        display:none!important
 	    }
 	}
-
+.mobile-aside__wrap {
+	overflow-y: scroll;
+    max-height: 100vh;
+}
 .mobile-nav {
     padding-top: 7px;
 }

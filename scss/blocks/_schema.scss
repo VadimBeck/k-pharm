@@ -38,11 +38,13 @@
 
 .schema__list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 900px;
 }
 
 .schema__item {
-  padding: 0 15%;
+  padding: 0 10px;
 }
 
 .schema__item-title {
