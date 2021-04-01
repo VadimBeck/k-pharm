@@ -1,0 +1,171 @@
+.reviews {
+	h1 {
+		padding: 0 0 25px;
+	}
+}
+.reviews_form {
+	display: grid;
+	justify-content: space-between;
+	align-items: flex-start;
+	grid-template-columns: 0.48fr 1fr 304px;
+	grid-row-gap: 10px;
+	grid-column-gap: 25px;
+	margin: 0 15px 40px;
+	padding: 45px 45px 30px;
+	background-color: $gray;
+	border-radius: 2px;
+
+	@media screen and (max-width: 1170px) {
+		margin: 0 0 35px;
+	}
+	@media screen and (max-width: 980px) {
+	 	padding: 30px 25px;
+	}
+	@media screen and (max-width: 900px) {
+	 	grid-column-gap: 15px;
+	}
+	@media screen and (max-width: 768px) {
+		grid-template-columns: 304px 1fr;
+	}
+	@media screen and (max-width: 620px) {
+		grid-template-columns: 1fr 1fr;
+	}
+	@media screen and (max-width: 480px) {
+		grid-template-columns: 1fr;
+	}
+	.reviews_form__control {
+		width: 100%;
+		padding: 18px 15px;
+		font-size: 14px;
+		border: none;
+		background-color: #fff;
+		border-radius: 2px;
+
+		&--big {
+			align-self: stretch;
+
+			@media screen and (min-width: 769px) {
+				grid-row: 1/3;
+				grid-column: 2/3;
+			}
+			@media screen and (max-width: 768px) {
+				grid-column: -1/1;
+				height: 100px;
+			}
+		}
+		&--btm {
+			align-self: flex-end;
+		}
+	}
+	.reviews_form__politic {
+		grid-column: 1/-1;
+		padding: 10px 0 0 20px;
+		font-size: 13px;
+
+		@media screen and (max-width: 620px) {
+			padding-left: 0;
+		}
+
+		a {
+			color: $green;
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	.recaptcha {
+
+		@media screen and (min-width: 769px) {
+			grid-column: 3/4;
+			grid-row: 1/2;
+		}
+		@media screen and (max-width: 620px) {
+			grid-column: 1/-1;
+		}
+	}
+	button {
+		align-self: flex-end;
+		padding: 17px;
+		line-height: 1.3;
+		color: #fff;
+		text-align: center;
+		border: none;
+  		background-color: $green;
+
+  		@media screen and (max-width: 480px) {
+  			padding: 15px 20px;
+			font-size: 16px;
+		}
+	}
+}
+.reviews_list {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-column-gap: 30px;
+	grid-row-gap: 40px;
+	margin: 0 15px 75px;
+
+	@media screen and (max-width: 1170px) {
+		margin: 0 0 50px;
+	}
+	@media screen and (max-width: 900px) {
+		grid-template-columns: repeat(2,1fr);
+		grid-column-gap: 20px;
+		grid-row-gap: 30px;
+	}
+	@media screen and (max-width: 580px) {
+		grid-template-columns: 1fr;
+		grid-row-gap: 20px;
+	}
+}
+
+.reviews_item {
+	padding: 35px 35px 55px;
+	background-color: #fff;
+	border-radius: 2px;
+	border-width: 1px;
+  	border-color: rgb(20, 5, 8);
+  	border-style: dashed;
+
+	@media screen and (max-width: 991px) {
+		padding: 20px 25px 30px;
+	}
+	@media screen and (max-width: 600px) {
+		padding: 20px 20px 30px;
+	}
+	.reviews_item__name {
+		padding: 0 0 7px;
+		font-size: 26px;
+		font-family: $med;
+		color: $green;
+
+		@media screen and (max-width: 480px) {
+			font-size: 23px;
+		}
+	}
+	.reviews_item__date {
+		padding: 0;
+		font-size: 13px;
+		color: $green;
+	}
+	.reviews_item__text {
+
+		p {
+			padding: 10px 0;
+		}
+	}
+	.reviews_item__more {
+		display: inline-block;
+		margin-top: 20px;
+		cursor: pointer;
+		font-size: 13px;
+		color: $green;
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}

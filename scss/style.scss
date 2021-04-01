@@ -1,6 +1,7 @@
 @import "../normalize/normalize.css";
 
 @import "./base/variables.scss";
+@import "./base/var.scss";
 @import "./base/fonts.scss";
 @import "./base/mixins.scss";
 @import "./base/setup.scss";
@@ -24,3 +25,9 @@
 @import "./blocks/roster.scss";
 @import "./blocks/chain.scss";
 @import "./blocks/delivery-rules.scss";
+@import "./blocks/management.scss";
+@import "./blocks/news.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/pagination.scss";
+@import "./blocks/vakancy.scss";
+@import "./blocks/header.scss";
