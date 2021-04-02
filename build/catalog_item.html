@@ -18,7 +18,7 @@
 	<body>
 		<aside class="mobile-aside mobile-only" id="mobile-aside">
 			<div class="mobile-aside__wrap">
-				<div class="header__links"><a class="header__eye fancybox" href="">Версия для слабовидящих</a><a class="header__call fancybox" href="">Обратный звонок</a><a class="header__user" href="">Личный кабинет</a><a class="header__cart" href=""><img src="#" alt=""><span>Корзина</span><span class="number">10</span></a></div>
+				<div class="header__links"><a class="header__eye fancybox" href="">Версия для слабовидящих</a><a class="header__call fancybox" href="#callback-overlay">Обратный звонок</a><a class="header__user" href="">Личный кабинет</a><a class="header__cart" href=""><img src="#" alt=""><span>Корзина</span><span class="number">10</span></a></div>
 				<nav class="mobile-nav" id="mobile-nav">
 					<ul class="mobile-nav__list">
 						<li class="mobile-nav__item"><a href="" title="">Главная</a></li>
@@ -45,7 +45,7 @@
 						<p><a href="tel:+74712515515">8 (4712) 515-515</a><span>горячая линия (ежедневно с 8:00-20:00)</span></p>
 						<p><a href="tel:+74712506050">8 (4712) 50-60-50</a><span>горячая линия по отпуску льготных лекарственных препаратов</span></p>
 					</div>
-					<div class="header__links"><a class="header__eye fancybox" href="">Версия для слабовидящих</a><a class="header__call fancybox" href="">Обратный звонок</a><a class="header__user" href="">Личный кабинет</a><a class="header__cart" href=""><span class="number">10</span><span>Корзина</span></a></div>
+					<div class="header__links"><a class="header__eye fancybox" href="">Версия для слабовидящих</a><a class="header__call fancybox" href="#callback-overlay">Обратный звонок</a><a class="header__user" href="">Личный кабинет</a><a class="header__cart" href=""><span class="number">10</span><span>Корзина</span></a></div>
 					<div class="search row">
 						<form class="row">
 							<input type="text" name="search" placeholder="Поиск">
@@ -224,6 +224,23 @@
 					</div>
 				</div>
 			</p>
+		</div>
+		<div id="callback-overlay" style="display: none;">
+			<div class="overlay">
+				<form class="overlay__form">
+					<div class="overlay__title">Заказать обратный звонок</div>
+					<div class="overlay__form-row"> 
+						<input type="text" placeholder="Ваше имя">
+					</div>
+					<div class="overlay__form-row">
+						<input type="tel" placeholder="Телефон">
+					</div>
+					<div class="overlay__form-text"><span>Отправляя данную форму вы соглашаетесь</span><span>с<a href="#">Политикой о защите персональных данных </a></span></div>
+					<div class="overlay__button"> 
+						<button type="submit">Отправить</button>
+					</div>
+				</form>
+			</div>
 		</div>
 	</body>
 </html>
