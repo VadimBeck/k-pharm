@@ -1,9 +1,25 @@
+.advantages {
+  padding: 60px 0;
+}
 .advantages__list {
-  padding-top: 20px;
+  padding: 20px 0;
+  display: grid;
+  grid-template-rows: repeat(10, 145px);
+  row-gap: 30px;
+
+  @include laptop {
+    grid-template-rows: repeat(10, 220px);
+  }
+
+  @include tablets {
+    grid-template-rows: repeat(10, 290px);
+  }
 }
 
 .advantages__item {
-  max-height: 145px;
-  margin-bottom: 30px;
   background: #f4f4f4;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

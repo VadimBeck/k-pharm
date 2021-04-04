@@ -8,11 +8,12 @@
 		<link href="/website/css/lightslider.min.css" rel="stylesheet">
 		<link href="/website/css/nice-select.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
-		<title>Курская фармация</title>
+		<title>Изготовление лекарств</title>
 		<script src="/website/js/jquery-3.3.1.min.js"> </script>
 		<script src="/website/js/jquery.fancybox.js"> </script>
 		<script src="/website/js/lightslider.min.js"> </script>
 		<script src="/website/js/jquery.nice-select.js"> </script>
+		<script src="/website/js/eye.js"></script>
 		<script src="/website/js/script.js"></script>
 	</head>
 	<body>
@@ -45,7 +46,7 @@
 						<p><a href="tel:+74712515515">8 (4712) 515-515</a><span>горячая линия (ежедневно с 8:00-20:00)</span></p>
 						<p><a href="tel:+74712506050">8 (4712) 50-60-50</a><span>горячая линия по отпуску льготных лекарственных препаратов</span></p>
 					</div>
-					<div class="header__links"><a class="header__eye fancybox" href="">Версия для слабовидящих</a><a class="header__call fancybox" href="#callback-overlay">Обратный звонок</a><a class="header__user" href="">Личный кабинет</a><a class="header__cart" href=""><span class="number">10</span><span>Корзина</span></a></div>
+					<div class="header__links"><a class="header__eye fancybox eye-activate-btn" href="">Версия для слабовидящих</a><a class="header__call fancybox" href="#callback-overlay"> <span class="header__call-inner">Обратный звонок</span><span class="header__call-eye">Заказать обратный звонок</span></a><a class="header__user" href="">Личный кабинет</a><a class="header__cart" href=""><span class="number">10</span><span>Корзина</span></a></div>
 					<div class="search row">
 						<form class="row">
 							<input type="text" name="search" placeholder="Поиск">
@@ -62,7 +63,8 @@
 								<li><a href="">О компании</a></li>
 								<li class="active"><a href="">Руководство</a></li>
 								<li><a href="">Вакансии</a></li>
-								<li><a href="">Изготовление лекарств</a></li>
+								<li><a href="">Вопрос-ответ</a></li>
+								<li><a href="">Льготное лекарственное обеспечение</a></li>
 								<li><a href="">Аптечная сеть</a></li>
 							</ul>
 						</li>
@@ -78,39 +80,39 @@
 				</nav>
 			</header>
 			<div id="body-overlay"></div>
-			<div class="section__top"><img src="website/img/production__slide.jpg" alt=""></div>
-			<section class="production">
+			<div class="slide_top"><img src="website/img/manufacture__slide.jpg" alt=""></div>
+			<section class="manufacture">
 				<div class="container">
 					<ul class="breadcrumbs">
 						<li><a href="/">Главная</a> /</li>
 						<li><span>Изготовление лекарств</span></li>
 					</ul>
-					<h1 class="section__title section__title--center">Изготовление лекарств</h1>
-					<div class="production__desc"> 
+					<h1 class="section__title">Изготовление лекарств</h1>
+					<div class="section__text-block manufacture__info">
 						<p>На сегодняшний день фармацевтические предприятия производят медикаменты для детей и взрослых в промышленных масштабах. В современных аптеках можно приобрести препараты, позволяющие избавиться от любых заболеваний, поддержать организм в тонусе, а также осуществить профилактику всевозможных недугов.</p>
 						<p>Несмотря на изобилие лекарственных средств, нередко возникает необходимость в препарате, изготовленном по индивидуальному рецепту. Такие медикаменты создаются с учетом возраста пациента, характера протекания его заболеваний, индивидуальной непереносимости компонентов и многих других факторов. Лечащий врач сам выписывает рецепт препарата, подбирая наиболее эффективную формулу для каждого конкретного случая.</p>
 					</div>
 				</div>
-				<div class="section__row-bg">
-					<div class="container"> 
-						<h2 class="production__title">
-							 Когда требуется изготовить лекарство<br>по индивидуальному рецепту:</h2>
-						<ul class="roster roster--bold">
-							<li>Имеется непереносимость к компонентам препаратов, изготовленных промышленным способом;</li>
-							<li>Аналоги не изготавливаются промышленным способом;</li>
-							<li>Требуется лекарственный препарат в индивидуальной дозировке, в том числе в детской дозировке.</li>
-						</ul>
-						<div class="production__text-block"> 
+				<div class="section__block-bg">
+					<div class="container manufacture__particular">
+						<h2 class="section__subtitle">Когда требуется изготовить лекарство<br>по индивидуальному рецепту:</h2>
+						<div class="manufacture__roster">
+							<ul class="section__roster section__roster--bold">
+								<li>Имеется непереносимость к компонентам препаратов, изготовленных промышленным способом;</li>
+								<li>Аналоги не изготавливаются промышленным способом;</li>
+								<li>Требуется лекарственный препарат в индивидуальной дозировке, в том числе в детской дозировке.</li>
+							</ul>
+						</div>
+						<div class="section__text-block"> 
 							<p>В аптечную сеть ОАО «Курская фармация» входят четыре производственные аптеки.</p>
 							<p>Данные филиалы располагают необходимой производственной базой, позволяющей изготавливать лекарственные средства по рецептам врачей и требованиям медицинских организаций. Эти аптеки имеют лицензии на изготовление лекарственных средств для медицинского применения, стерильных лекарственных форм и лекарственных форм, изготовленных в асептических условиях.</p>
 							<p>Внутриаптечным изготовлением лекарств в наших филиалах занимаются высококвалифицированные провизоры-технологи, химики-аналитики и фармацевты, которые несут ответственность за правильность изготовления лекарств и их качество.</p>
 						</div>
 					</div>
 				</div>
-				<div class="production__pharmacy">
+				<div class="manufacture__pharmacy">
 					<div class="container"> 
-						<h2 class="production__title">
-							 Заказать лекарства по индивидуальному рецепту <br>можно по следующим адресам:</h2>
+						<h2 class="section__subtitle manufacture__subtitle">Заказать лекарства по индивидуальному рецепту <br>можно по следующим адресам:</h2>
 						<ul class="pharmacy_list">
 							<li><a class="pharmacy_list__name" href="">Филиал-аптека №6</a>
 								<p class="pharmacy_list__adr">г. Курск, ул.Павлуновского, д.5</p>

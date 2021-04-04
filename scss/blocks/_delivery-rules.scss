@@ -1,32 +1,21 @@
 .delivery-rules__title {
-  padding: 0 0 15px 0;
   line-height: 1;
-}
-.delivery-rules-block {
-  padding: 20px 0 0 0;
+  padding: 0 0 40px 0;
 }
 
 .delivery-rules__desc {
-  padding-bottom: 45px;
+  margin-bottom: 60px;
 }
 
-.delivery-rules__subtitle{
-  font-size: 30px;
-  text-align: center;
-  margin: 0;
-  padding: 30px;
+.delivery-rules__getting {
+  padding: 10px 0;
+  margin-bottom: 10px;
 }
 
-.delivery-rules__text-block {
-  margin-bottom: 25px;
-  & p {
-    padding: 0;
-    line-height: 1.5;
-    margin-bottom: 25px;
+.delivery-rules__info {
+  padding: 50px 0 60px 0;
+}
 
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-  
+.delivery-rules__text {
+  padding: 10px 0 20px 0;
 }

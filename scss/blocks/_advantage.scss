@@ -1,5 +1,10 @@
 .advantage {
   display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .advantage__img {
@@ -19,7 +24,7 @@
     right: 10px;
     width: 25%;
     height: 100%;
-    background: rgba(255,255,255, 0.7);
+    background: rgba(255, 255, 255, 0.7);
     clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0 100%);
   }
 
@@ -29,6 +34,24 @@
     }
     &::after {
       left: 10px;
+    }
+  }
+
+  @include tablets {
+    width: 100%;
+    height: 50%;
+    order: 1;
+
+    &--right {
+      & img {
+        clip-path: none;
+      }
+    }
+    &::after {
+      left: 10px;
+    }
+    & img {
+      clip-path: none;
     }
   }
 }
@@ -51,17 +74,27 @@
 .advantage__text {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex: 1;
   padding: 30px;
+  font-size: 18px;
+
+  @include tablets {
+    max-width: 450px;
+  }
+
+  @include phones {
+    padding: 10px;
+    font-size: 16px;
+  }
 }
 
 .advantage__num {
   font-size: 26px;
   padding: 10px 20px;
-  color: $grey;
+  color: $midGray;
 }
 
 .advantage__title {
-  font-size: 18px;
   font-family: "Roboto Bold", "Arial", sans-serif;
 }

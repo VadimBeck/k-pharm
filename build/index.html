@@ -13,6 +13,7 @@
 		<script src="/website/js/jquery.fancybox.js"> </script>
 		<script src="/website/js/lightslider.min.js"> </script>
 		<script src="/website/js/jquery.nice-select.js"> </script>
+		<script src="/website/js/eye.js"></script>
 		<script src="/website/js/script.js"></script>
 	</head>
 	<body>
@@ -45,7 +46,7 @@
 						<p><a href="tel:+74712515515">8 (4712) 515-515</a><span>горячая линия (ежедневно с 8:00-20:00)</span></p>
 						<p><a href="tel:+74712506050">8 (4712) 50-60-50</a><span>горячая линия по отпуску льготных лекарственных препаратов</span></p>
 					</div>
-					<div class="header__links"><a class="header__eye fancybox" href="">Версия для слабовидящих</a><a class="header__call fancybox" href="#callback-overlay">Обратный звонок</a><a class="header__user" href="">Личный кабинет</a><a class="header__cart" href=""><span class="number">10</span><span>Корзина</span></a></div>
+					<div class="header__links"><a class="header__eye fancybox eye-activate-btn" href="">Версия для слабовидящих</a><a class="header__call fancybox" href="#callback-overlay"> <span class="header__call-inner">Обратный звонок</span><span class="header__call-eye">Заказать обратный звонок</span></a><a class="header__user" href="">Личный кабинет</a><a class="header__cart" href=""><span class="number">10</span><span>Корзина</span></a></div>
 					<div class="search row">
 						<form class="row">
 							<input type="text" name="search" placeholder="Поиск">
@@ -62,7 +63,8 @@
 								<li><a href="">О компании</a></li>
 								<li class="active"><a href="">Руководство</a></li>
 								<li><a href="">Вакансии</a></li>
-								<li><a href="">Изготовление лекарств</a></li>
+								<li><a href="">Вопрос-ответ</a></li>
+								<li><a href="">Льготное лекарственное обеспечение</a></li>
 								<li><a href="">Аптечная сеть</a></li>
 							</ul>
 						</li>
@@ -119,7 +121,7 @@
 				<div class="banner-block">
 					<div class="banner-block__img"><img src="/website/img/banner_bg01.jpg" alt=""></div>
 					<div class="banner-block__text">
-						<div class="container">
+						<div class="container banner-block__container">
 							<div class="banner-block__desc">
 								<h2 class="banner-block__title">О компании</h2>
 								<p>Ведущая аптечная сеть региона ОАО &laquo;Курская фармация&raquo;, которая фактически является наследником и продолжателем традиций Курского аптечного управления, заботится о здоровье жителей региона, предлагая большое разнообразие лекарственных препаратов и медицинских товаров аптечного ассортимента по выгодным ценам оптом и в розницу.</p>
@@ -128,60 +130,60 @@
 						</div>
 					</div>
 				</div>
-				<div class="container"> 
-					<div class="organization">
-						<h2 class="section__title section__title--center">Структура компании</h2>
-						<div class="organization__schema">
-							<div class="schema">
-								<div class="schema__header schema-elem">
-									<object type="image/svg+xml" data="/website/img/icons/cross.svg"></object><span>67 организаций</span>
-								</div>
-								<ul class="schema__list">
-									<li class="schema__item"> 
-										<div class="schema__item-title schema-elem schema-elem--dashed">
-											<object type="image/svg+xml" data="/website/img/icons/pin.svg"></object><span>24 в г.Курск</span>
-										</div>
-										<div class="schema__item-graph">
-											<div class="schema__block">
-												<div class="schema__block-count">11</div>
-												<div class="schema__block-text">Аптек</div>
-											</div>
-											<div class="schema__block">
-												<div class="schema__block-count">13</div>
-												<div class="schema__block-text">Аптечных пунктов</div>
-											</div>
-										</div>
-									</li>
-									<li class="schema__item"> 
-										<div class="schema__item-title schema-elem schema-elem--dashed">
-											<object type="image/svg+xml" data="/website/img/icons/pin.svg"></object><span>43 в сельской местности</span>
-										</div>
-										<div class="schema__item-graph">
-											<div class="schema__block">
-												<div class="schema__block-count">24</div>
-												<div class="schema__block-text">Аптеки</div>
-											</div>
-											<div class="schema__block">
-												<div class="schema__block-count">19</div>
-												<div class="schema__block-text">Аптечных пунктов</div>
-											</div>
-										</div>
-									</li>
-								</ul>
+				<div class="container">      
+					<h2 class="section__title">Структура компании</h2>
+					<div class="intro__structure">
+						<div class="schema">
+							<div class="schema__main schema__unit">
+								<object type="image/svg+xml" data="/website/img/icons/cross.svg"></object><span>67 организаций</span>
 							</div>
+							<ul class="schema__list">
+								<li class="schema__item"> 
+									<div class="schema__item-sub schema__unit schema__unit--dashed">
+										<object type="image/svg+xml" data="/website/img/icons/pin.svg"></object><span>24 в г.Курск</span>
+									</div>
+									<div class="schema__item-graph">
+										<div class="schema__block">
+											<div class="schema__block-count">11</div>
+											<div class="schema__block-text">Аптек</div>
+										</div>
+										<div class="schema__block">
+											<div class="schema__block-count">13</div>
+											<div class="schema__block-text">Аптечных пунктов</div>
+										</div>
+									</div>
+								</li>
+								<li class="schema__item"> 
+									<div class="schema__item-sub schema__unit schema__unit--dashed">
+										<object type="image/svg+xml" data="/website/img/icons/pin.svg"></object><span>43 в сельской местности</span>
+									</div>
+									<div class="schema__item-graph">
+										<div class="schema__block">
+											<div class="schema__block-count">24</div>
+											<div class="schema__block-text">Аптеки</div>
+										</div>
+										<div class="schema__block">
+											<div class="schema__block-count">19</div>
+											<div class="schema__block-text">Аптечных пунктов</div>
+										</div>
+									</div>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
-				<div class="section__promo">
+				<div class="section__block-bg">
 					<div class="container">
-						<p>Аптечные учреждения ОАО &laquo;Курская фармация&raquo; одни из немногих в Курске и области занимаются изготовлением лекарственных форм по индивидуальным рецептам и требованим лечебно-профилактических учреждений. Кроме того, компания обеспечивает лекарствами около 400 фельдшерско-акушерских путнктов по всему региону.</p>
-						<p>&laquo;Курская фармация&raquo; - фармацевтическое предприятие в области, гарантирующее качество реализуемых препаратов. Мы несем отвественность за здоровье своих клиентов и предлагаем исключительно проверенные лекарственные средства. Предлагаемые нами медикаменты проходят контроль, что подтверждается заключением о качестве Центра сертификации.</p>
+						<div class="section__text-block">
+							<p>Аптечные учреждения ОАО &laquo;Курская фармация&raquo; одни из немногих в Курске и области занимаются изготовлением лекарственных форм по индивидуальным рецептам и требованим лечебно-профилактических учреждений. Кроме того, компания обеспечивает лекарствами около 400 фельдшерско-акушерских путнктов по всему региону.</p>
+							<p>&laquo;Курская фармация&raquo; - фармацевтическое предприятие в области, гарантирующее качество реализуемых препаратов. Мы несем отвественность за здоровье своих клиентов и предлагаем исключительно проверенные лекарственные средства. Предлагаемые нами медикаменты проходят контроль, что подтверждается заключением о качестве Центра сертификации.</p>
+						</div>
 					</div>
 				</div>
 			</section>
 			<section class="advantages"> 
 				<div class="container"> 
-					<h2 class="section__title">Преимущества аптечной сети &laquo;Курская фармация&raquo;:</h2>
+					<h2 class="section__title section__title--left">Преимущества аптечной сети &laquo;Курская фармация&raquo;:</h2>
 					<ul class="advantages__list"> 
 						<li class="advantages__item advantage">
 							<div class="advantage__text">
@@ -290,23 +292,21 @@
 				<div class="banner-block">
 					<div class="banner-block__img"><img src="/website/img/banner_bg02.jpg" alt=""></div>
 					<div class="banner-block__text">
-						<div class="container"> 
+						<div class="container banner-block__container">
 							<div class="banner-block__desc">
-								<div class="banner-block__paragraph">
-									<p>Аптечная сеть ОАО &laquo;Курская фармация&raquo; - проверенное качество медикаментов, устоявшиеся традиции аптечного дела, широкий ассортимент лекарсвенных средств и медицинских изделий, высококвалифицированные специалисты. Оцените достоинства сотрудничества с ОАО &laquo;Курская фармация&raquo;.</p>
-								</div>
+								<p>Аптечная сеть ОАО &laquo;Курская фармация&raquo; - проверенное качество медикаментов, устоявшиеся традиции аптечного дела, широкий ассортимент лекарсвенных средств и медицинских изделий, высококвалифицированные специалисты. Оцените достоинства сотрудничества с ОАО &laquo;Курская фармация&raquo;.</p>
 								<h2 class="banner-block__title">Мы заботимся о вашем здоровье, предлагая только проверенные лекарства!</h2>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="documents"> 
+				<div class="certify__documents"> 
 					<div class="container">
-						<h2 class="section__title">Документы</h2>
-						<ul class="documents__list"> 
-							<li class="documents__item"><a href="#">
+						<h2 class="section__title section__title--left">Документы</h2>
+						<ul class="certify__docs-list"> 
+							<li class="certify__docs-item"><a href="#">
 									<object type="image/svg+xml" data="/website/img/icons/document.svg"></object><span>Лицензия на осуществление фармацевтической деятельности аптеки от 26.05.2017</span></a></li>
-							<li class="documents__item"><a href="#">
+							<li class="certify__docs-item"><a href="#">
 									<object type="image/svg+xml" data="/website/img/icons/document.svg"></object><span>Лицензия на осуществление фармацевтической деятельности аптеки от 19.02.2013</span></a></li>
 						</ul>
 					</div>

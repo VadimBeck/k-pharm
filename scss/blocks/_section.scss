@@ -1,27 +1,68 @@
 .section__title {
   padding: 5px 0 30px 0;
-  text-align: left;
-  
-  &--center {
-    text-align: center;
+
+  &--left {
+    text-align: left;
   }
 }
 
-.section__promo {
+.section__subtitle {
+  padding: 5px 0 20px 0;
+  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-size: 35px;
+  text-align: center;
+}
+
+.section__block-title {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 30px;
+  margin: 0;
+  padding: 10px 0 15px 0;
+  text-align: center;
+}
+
+.section__block-bg {
+  background: #f4f4f4;
   padding: 50px 0 40px 0;
-  background: #f4f4f4;
-  text-align: justify;
+}
 
+.section__text-block {
   & p {
-    margin-bottom: 15px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
-.section__row-bg {
-  background: #f4f4f4;
-  padding: 20px 0 40px 0; 
-}
+.section__roster {
+  padding: 20px 0;
+  font-size: 16px;
 
-.section__row-block {
-  padding: 65px 0 20px 0;
+  &--bold {
+    font-family: "Roboto Medium", Arial, sans-serif;
+  }
+
+  & li {
+    position: relative;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    padding-left: 50px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 1px;
+      background: #000;
+      left: 0;
+      top: 10px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }

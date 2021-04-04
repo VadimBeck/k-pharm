@@ -1,9 +1,12 @@
 extends ../layout
 
+block head 
+  title Аптечная сеть
+
 block main
-  .section__top
-    img(src="website/img/privileges__slide.jpg" alt="")
-  section.chain
+  .slide_top
+    img(src="website/img/provision__slide.jpg" alt="")
+  section.network
     .container
       ul.breadcrumbs
         li
@@ -14,9 +17,9 @@ block main
           |  /
         li
           span Аптечная сеть
-      h1.section__title.section__title--center Аптечная сеть
-      p.chain__desc Аптеки ОАО &laquo;Курская фармация&raquo; это:
-      ul.roster
+      h1.section__title Аптечная сеть
+      .network__desc Аптеки &laquo;Курская фармация&raquo; — это:
+      ul.section__roster
         li сеть государственных аптек в г. Курске;
         li высококвалифицированные специалисты, имеющие дипломы о высшем и среднем фармацевтическом образовании, и сертификаты специалистов по соответствующим фармацевтическим специальностям;
         li более 50% специалистов имеют высшую или первую квалификационную категорию;

@@ -1,23 +1,23 @@
 .docs {
-	padding-bottom: 35px;
+  padding-bottom: 35px;
 
-	.docs__title {
-		padding: 15px 0;
-		text-transform: uppercase;
-    	font-family: $med;
-	}
-	.docs__list {
-		margin-bottom: 20px;
+  .docs__title {
+    padding: 15px 0;
+    text-transform: uppercase;
+    font-family: $med;
+  }
+  .docs__list {
+    margin-bottom: 20px;
 
-		a {
-			display: block;
-			margin-bottom: 10px;
-			text-decoration: underline;
-			color: $green;
+    a {
+      display: block;
+      margin-bottom: 10px;
+      text-decoration: underline;
+      color: $green;
 
-			&:hover {
-				text-decoration: none;
-			}
-		}
-	}
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
 }

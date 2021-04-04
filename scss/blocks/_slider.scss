@@ -1,6 +1,7 @@
 .slider__item {
   position: relative;
   overflow: hidden;
+  min-height: 500px;
 
   & img {
     position: absolute;
@@ -16,7 +17,7 @@
     width: 40%;
     top: 0;
     left: 0;
-    background:linear-gradient(to right, $grey, transparent);
+    background: linear-gradient(to right, $midGray, transparent);
   }
 }
 
@@ -28,19 +29,20 @@
   z-index: 1;
   color: #fff;
   padding: 50px 30px 30px 0;
-  margin: 140px 0 120px 0; 
+  margin: 140px 0 120px 0;
 
-  &::before, &::after {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
-    background: rgba(72, 139, 69, .8);
+    background: rgba(72, 139, 69, 0.8);
   }
 
   &::before {
     width: 130%;
     height: 100%;
     top: 0;
-    left: -30%;    
+    left: -30%;
   }
 
   &::after {
@@ -54,7 +56,8 @@
 .slider__item-text {
   position: relative;
 
-  &::before, &::after {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
   }
@@ -65,12 +68,12 @@
     top: -80px;
     left: -70px;
     z-index: -1;
-    background: rgba(72, 139, 69, .9);
+    background: rgba(72, 139, 69, 0.9);
   }
   &::after {
     width: 40px;
     height: 40px;
-    background: rgba(72, 139, 69, .8);
+    background: rgba(72, 139, 69, 0.8);
     top: -120px;
     left: -110px;
   }
@@ -86,9 +89,17 @@
     display: block;
     color: #b9d7b9;
   }
+
+  @include tablets {
+    font-size: 40px;
+  }
 }
 
 .slider__item-sub {
   font-size: 30px;
   font-family: "Roboto", Arial, sans-serif;
+
+  @include tablets {
+    font-size: 20px;
+  }
 }
