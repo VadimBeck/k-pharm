@@ -96,7 +96,7 @@ block main
           {text:"Наличие единой информационной системы аптечной сети", img:"advantage_09", pic:"hospital-sign"},
           {text:"Доставка лекарств <br> на дом", img:"advantage_10", pic:"package"}
         ];
-      ul.advantages__list 
+      ul.advantages__list         
         each advantage, index in advantages
           if (index%2) == 0
             li.advantages__item.advantage
@@ -115,25 +115,31 @@ block main
                 .advantage__num #{index+1}
                 .advantage__logo 
                   object(type="image/svg+xml" data=`/website/img/icons/${advantage.pic}.svg`)
-                .advantage__title!= advantage.text
+                .advantage__title!= advantage.text 
+        li.advantages__item.advantage.advantage--eye
+          .advantage__img
+          .advantage__text
+            .advantage__logo 
+              object(type="image/svg+xml" data=`/website/img/icons/medicine.svg`)
+            .advantage__title Обширный и разнообразный ассортимент лекарсвенных препаратов        
   section.certify
-    .banner-block
-      .banner-block__img
-        img(src="/website/img/banner_bg02.jpg" alt="")
-      .banner-block__text
-        .container.banner-block__container
-          .banner-block__desc
-            p Аптечная сеть ОАО &laquo;Курская фармация&raquo; - проверенное качество медикаментов, устоявшиеся традиции аптечного дела, широкий ассортимент лекарсвенных средств и медицинских изделий, высококвалифицированные специалисты. Оцените достоинства сотрудничества с ОАО &laquo;Курская фармация&raquo;.
-            h2.banner-block__title Мы заботимся о вашем здоровье, предлагая только проверенные лекарства!
-    .certify__documents 
-      .container
-        h2.section__title.section__title--left Документы
-        ul.certify__docs-list 
-          li.certify__docs-item
-            a(href="#")
-              object(type="image/svg+xml" data="/website/img/icons/document.svg")
-              span Лицензия на осуществление фармацевтической деятельности аптеки от 26.05.2017
-          li.certify__docs-item
-            a(href="#")
-              object(type="image/svg+xml" data="/website/img/icons/document.svg")
-              span Лицензия на осуществление фармацевтической деятельности аптеки от 19.02.2013
+      .banner-block
+        .banner-block__img
+          img(src="/website/img/banner_bg02.jpg" alt="")
+        .banner-block__text
+          .container.banner-block__container
+            .banner-block__desc
+              p Аптечная сеть ОАО &laquo;Курская фармация&raquo; - проверенное качество медикаментов, устоявшиеся традиции аптечного дела, широкий ассортимент лекарсвенных средств и медицинских изделий, высококвалифицированные специалисты. Оцените достоинства сотрудничества с ОАО &laquo;Курская фармация&raquo;.
+              h2.banner-block__title Мы заботимся о вашем здоровье, предлагая только проверенные лекарства!
+      .certify__documents 
+        .container
+          h2.section__title.section__title--left Документы
+          ul.certify__docs-list 
+            li.certify__docs-item
+              a(href="#")
+                object(type="image/svg+xml" data="/website/img/icons/document.svg")
+                span Лицензия на осуществление фармацевтической деятельности аптеки от 26.05.2017
+            li.certify__docs-item
+              a(href="#")
+                object(type="image/svg+xml" data="/website/img/icons/document.svg")
+                span Лицензия на осуществление фармацевтической деятельности аптеки от 19.02.2013

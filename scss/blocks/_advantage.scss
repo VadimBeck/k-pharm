@@ -5,6 +5,10 @@
     flex-direction: column;
     align-items: flex-start;
   }
+
+  &--eye {
+    display: none;
+  }
 }
 
 .advantage__img {
