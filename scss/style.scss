@@ -5,7 +5,7 @@
 @import "./base/mixins.scss";
 @import "./base/setup.scss";
 @import "./base/legacy.scss";
-@import "./base/eye.scss";
+
 
 @import "./blocks/fancybox.scss";
 @import "./blocks/header.scss";
@@ -30,3 +30,5 @@
 @import "./blocks/reviews.scss";
 @import "./blocks/pagination.scss";
 @import "./blocks/overlay.scss";
+
+@import "./base/eye.scss";

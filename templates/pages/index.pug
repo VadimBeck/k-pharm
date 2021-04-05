@@ -4,11 +4,12 @@ block main
   .slider
     ul.slider__list 
       li.slider__item
-        img(src="/website/img/intro_slider01.jpg" alt="")        
+        img(src="/website/img/intro_slider01.jpg" alt="") 
         .container
           .slider__item-block
             .slider__item-text
-              div.slider__item-title Изготовление 
+              div.slider__item-title 
+                div Изготовление 
                 span лекарств
               div.slider__item-sub по индивидуальному рецепту
   .company-contacts.container
@@ -115,13 +116,7 @@ block main
                 .advantage__num #{index+1}
                 .advantage__logo 
                   object(type="image/svg+xml" data=`/website/img/icons/${advantage.pic}.svg`)
-                .advantage__title!= advantage.text 
-        li.advantages__item.advantage.advantage--eye
-          .advantage__img
-          .advantage__text
-            .advantage__logo 
-              object(type="image/svg+xml" data=`/website/img/icons/medicine.svg`)
-            .advantage__title Обширный и разнообразный ассортимент лекарсвенных препаратов        
+                .advantage__title!= advantage.text     
   section.certify
       .banner-block
         .banner-block__img

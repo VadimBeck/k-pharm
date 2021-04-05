@@ -40,8 +40,8 @@
   align-items: center;
   margin-bottom: 3px;
 
-  & svg {
-    width: 40px;
+  & object {
+    max-width: 40px;
   }
 
   & span {

@@ -19,6 +19,7 @@
   flex: 1;
   line-height: 1.5;
   font-family: "Roboto", "Arial" sans-serif;
+  max-width: 500px;
 
   @include tablets {
     margin-bottom: 20px;
@@ -29,9 +30,11 @@
   }
 
   & a {
-    display: flex;
-    max-width: 500px;
+    display: flex;    
     height: 100%;
+  }
+  & object {
+    max-width: 32px;
   }
   & span {
     text-decoration: underline;
