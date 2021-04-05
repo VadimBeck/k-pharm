@@ -34,18 +34,19 @@ html(lang='ru')
 
     #rch.region_choose
       include ./blocks/region-choose
-      
-    #callback-overlay(style="display: none;")
-      .overlay
-        form.overlay__form
-          .overlay__title Заказать обратный звонок
-          .overlay__form-row 
-            input(type="text" placeholder="Ваше имя")
-          .overlay__form-row
-            input(type="tel" placeholder="Телефон")
-          .overlay__form-text
-            span Отправляя данную форму вы соглашаетесь
-            span с
-              a(href="#") Политикой о защите персональных данных 
-          .overlay__button 
-            button(type="submit") Отправить
+    
+    .callback-overlay__wrapper
+      #callback-overlay(style="display: none;")
+        .overlay
+          form.overlay__form
+            .overlay__title Заказать обратный звонок
+            .overlay__form-row 
+              input(type="text" placeholder="Ваше имя")
+            .overlay__form-row
+              input(type="tel" placeholder="Телефон")
+            .overlay__form-text
+              span Отправляя данную форму вы соглашаетесь
+              span с
+                a(href="#") Политикой о защите персональных данных 
+            .overlay__button 
+              button(type="submit") Отправить

@@ -1,3 +1,7 @@
+.callback-overlay__wrapper {
+  display: none;
+}
+
 #callback-overlay {
   background: linear-gradient(to bottom, #fff 140px, $green 140px 100%);
   width: 80%;
