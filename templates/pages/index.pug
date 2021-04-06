@@ -1,140 +1,141 @@
 extends ../layout
 
-block main 
-  .slider
-    ul.slider__list 
-      li.slider__item
-        img(src="/website/img/intro_slider01.jpg" alt="") 
-        .container
-          .slider__item-block
-            .slider__item-text
-              div.slider__item-title 
-                div Изготовление 
-                span лекарств
-              div.slider__item-sub по индивидуальному рецепту
-  .company-contacts.container
-    ul.company-contacts__list 
-      li.company-contacts__item
-        .company-contacts__phones.company-contacts__phones--green
-          a.company-contacts__link(href="tel:+74712526586") 
-            object(type="image/svg+xml" data="/website/img/icons/phone_green.svg")           
-            span (4712) 52-65-86
-        div.company-contacts__text Справочная служба о наличии и стоимости лекарств
-        div.company-contacts__text пн-пт: 08.00 - 20.00
-        div.company-contacts__text сб,вс: 10.00 - 18.00
-      li.company-contacts__item
-        .company-contacts__phones
-          a.company-contacts__link(href="tel:+74712526586") 
-            object(type="image/svg+xml" data="/website/img/icons/phone_red.svg")
-            span 8 (4712) 515-515
-        div.company-contacts__text горячая линия
-        div.company-contacts__text ежедневно с 8.00-20.00
-      li.company-contacts__item
-        .company-contacts__phones
-          a.company-contacts__link(href="tel:+74712526586") 
-            object(type="image/svg+xml" data="/website/img/icons/phone_red.svg")
-            span 8 (4712) 50-60-50
-        div.company-contacts__text горячая линия по отпуску
-        div.company-contacts__text льготных лекарсвенных препаратов
-  section.intro 
-    .banner-block
-      .banner-block__img
-        img(src="/website/img/banner_bg01.jpg" alt="")
-      .banner-block__text
-        .container.banner-block__container
-          .banner-block__desc
-            h2.banner-block__title О компании
-            p Ведущая аптечная сеть региона ОАО &laquo;Курская фармация&raquo;, которая фактически является наследником и продолжателем традиций Курского аптечного управления, заботится о здоровье жителей региона, предлагая большое разнообразие лекарственных препаратов и медицинских товаров аптечного ассортимента по выгодным ценам оптом и в розницу.
-            p Предприятие объединяет 35 аптек, оптовый склад, 32 мелкорозничных аптечных пункта и является надежным поставщиком лекарственных средств по ряду федеральных целевых программ в сфере здравоохранения. При этом контрольный пакет акций находится в руках государства, а именно - комитета по управлению имуществом Курской области.
-    .container       
-      h2.section__title Структура компании
-      .intro__structure
-        .schema
-          .schema__main.schema__unit
-            object(type="image/svg+xml" data="/website/img/icons/cross.svg")
-            span 67 организаций
-          ul.schema__list
-            li.schema__item 
-              .schema__item-sub.schema__unit.schema__unit--dashed
-                object(type="image/svg+xml" data="/website/img/icons/pin.svg")
-                span 24 в г.Курск
-              .schema__item-graph
-                .schema__block
-                  .schema__block-count 11
-                  .schema__block-text Аптек
-                .schema__block
-                  .schema__block-count 13
-                  .schema__block-text Аптечных пунктов
-            li.schema__item 
-              .schema__item-sub.schema__unit.schema__unit--dashed
-                object(type="image/svg+xml" data="/website/img/icons/pin.svg")
-                span 43 в сельской местности
-              .schema__item-graph
-                .schema__block
-                  .schema__block-count 24
-                  .schema__block-text Аптеки
-                .schema__block
-                  .schema__block-count 19
-                  .schema__block-text Аптечных пунктов
-    .section__block-bg
-      .container
-        .section__text-block
-          p Аптечные учреждения ОАО &laquo;Курская фармация&raquo; одни из немногих в Курске и области занимаются изготовлением лекарственных форм по индивидуальным рецептам и требованим лечебно-профилактических учреждений. Кроме того, компания обеспечивает лекарствами около 400 фельдшерско-акушерских путнктов по всему региону.
-          p &laquo;Курская фармация&raquo; - фармацевтическое предприятие в области, гарантирующее качество реализуемых препаратов. Мы несем отвественность за здоровье своих клиентов и предлагаем исключительно проверенные лекарственные средства. Предлагаемые нами медикаменты проходят контроль, что подтверждается заключением о качестве Центра сертификации.
-  section.advantages 
-    .container 
-      h2.section__title.section__title--left Преимущества аптечной сети &laquo;Курская фармация&raquo;:
-      -
-        var advantages = [
-          {text:"Широкая география <br> присутствия", img:"advantage_01", pic:"map"},
-          {text:"Шаговая доступность <br> для потребителей", img:"advantage_02", pic:"people"},
-          {text:"Наличие <br> производственных <br> аптек", img:"advantage_03", pic:"pharmacy"},
-          {text:"Отпуск медикаментов льготным категориям граждан по бесплатным рецептам", img:"advantage_04", pic:"recipe"},
-          {text:"Подтвержденное <br> качество лекарственных <br> средств", img:"advantage_05", pic:"shield"}, 
-          {text:"Традиционно <br> высокий уровень <br> сервиса", img:"advantage_06", pic:"medal"},
-          {text:"Накопительная <br> система скидок", img:"advantage_07", pic:"credit-card"}, 
-          {text:"Акции по продаже лекарственных средств со скидками", img:"advantage_08", pic:"parcel"},
-          {text:"Наличие единой информационной системы аптечной сети", img:"advantage_09", pic:"hospital-sign"},
-          {text:"Доставка лекарств <br> на дом", img:"advantage_10", pic:"package"}
-        ];
-      ul.advantages__list         
-        each advantage, index in advantages
-          if (index%2) == 0
-            li.advantages__item.advantage
-              .advantage__text
-                .advantage__num #{index+1}
-                .advantage__logo 
-                  object(type="image/svg+xml" data=`/website/img/icons/${advantage.pic}.svg`)
-                .advantage__title!= advantage.text
-              .advantage__img.advantage__img--right
-                img(src=`/website/img/${advantage.img}.jpg`, alt="")
-          else
-            li.advantages__item.advantage
-              .advantage__img
-                img(src=`/website/img/${advantage.img}.jpg`, alt="")
-              .advantage__text
-                .advantage__num #{index+1}
-                .advantage__logo 
-                  object(type="image/svg+xml" data=`/website/img/icons/${advantage.pic}.svg`)
-                .advantage__title!= advantage.text     
-  section.certify
+block main
+  main.main
+    .slider
+      ul.slider__list 
+        li.slider__item
+          img(src="/website/img/intro_slider01.jpg" alt="") 
+          .container
+            .slider__item-block
+              .slider__item-text
+                div.slider__item-title 
+                  div Изготовление 
+                  span лекарств
+                div.slider__item-sub по индивидуальному рецепту
+    .company-contacts.container
+      ul.company-contacts__list 
+        li.company-contacts__item
+          .company-contacts__phones.company-contacts__phones--green
+            a.company-contacts__link(href="tel:+74712526586") 
+              object(type="image/svg+xml" data="/website/img/icons/phone_green.svg")           
+              span (4712) 52-65-86
+          div.company-contacts__text Справочная служба о наличии и стоимости лекарств
+          div.company-contacts__text пн-пт: 08.00 - 20.00
+          div.company-contacts__text сб,вс: 10.00 - 18.00
+        li.company-contacts__item
+          .company-contacts__phones
+            a.company-contacts__link(href="tel:+74712526586") 
+              object(type="image/svg+xml" data="/website/img/icons/phone_red.svg")
+              span 8 (4712) 515-515
+          div.company-contacts__text горячая линия
+          div.company-contacts__text ежедневно с 8.00-20.00
+        li.company-contacts__item
+          .company-contacts__phones
+            a.company-contacts__link(href="tel:+74712526586") 
+              object(type="image/svg+xml" data="/website/img/icons/phone_red.svg")
+              span 8 (4712) 50-60-50
+          div.company-contacts__text горячая линия по отпуску
+          div.company-contacts__text льготных лекарсвенных препаратов
+    section.intro 
       .banner-block
         .banner-block__img
-          img(src="/website/img/banner_bg02.jpg" alt="")
+          img(src="/website/img/banner_bg01.jpg" alt="")
         .banner-block__text
           .container.banner-block__container
             .banner-block__desc
-              p Аптечная сеть ОАО &laquo;Курская фармация&raquo; - проверенное качество медикаментов, устоявшиеся традиции аптечного дела, широкий ассортимент лекарсвенных средств и медицинских изделий, высококвалифицированные специалисты. Оцените достоинства сотрудничества с ОАО &laquo;Курская фармация&raquo;.
-              h2.banner-block__title Мы заботимся о вашем здоровье, предлагая только проверенные лекарства!
-      .certify__documents 
+              h2.banner-block__title О компании
+              p Ведущая аптечная сеть региона ОАО &laquo;Курская фармация&raquo;, которая фактически является наследником и продолжателем традиций Курского аптечного управления, заботится о здоровье жителей региона, предлагая большое разнообразие лекарственных препаратов и медицинских товаров аптечного ассортимента по выгодным ценам оптом и в розницу.
+              p Предприятие объединяет 35 аптек, оптовый склад, 32 мелкорозничных аптечных пункта и является надежным поставщиком лекарственных средств по ряду федеральных целевых программ в сфере здравоохранения. При этом контрольный пакет акций находится в руках государства, а именно - комитета по управлению имуществом Курской области.
+      .container       
+        h2.section__title Структура компании
+        .intro__structure
+          .schema
+            .schema__main.schema__unit
+              object(type="image/svg+xml" data="/website/img/icons/cross.svg")
+              span 67 организаций
+            ul.schema__list
+              li.schema__item 
+                .schema__item-sub.schema__unit.schema__unit--dashed
+                  object(type="image/svg+xml" data="/website/img/icons/pin.svg")
+                  span 24 в г.Курск
+                .schema__item-graph
+                  .schema__block
+                    .schema__block-count 11
+                    .schema__block-text Аптек
+                  .schema__block
+                    .schema__block-count 13
+                    .schema__block-text Аптечных пунктов
+              li.schema__item 
+                .schema__item-sub.schema__unit.schema__unit--dashed
+                  object(type="image/svg+xml" data="/website/img/icons/pin.svg")
+                  span 43 в сельской местности
+                .schema__item-graph
+                  .schema__block
+                    .schema__block-count 24
+                    .schema__block-text Аптеки
+                  .schema__block
+                    .schema__block-count 19
+                    .schema__block-text Аптечных пунктов
+      .section__block-bg
         .container
-          h2.section__title.section__title--left Документы
-          ul.certify__docs-list 
-            li.certify__docs-item
-              a(href="#")
-                object(type="image/svg+xml" data="/website/img/icons/document.svg")
-                span Лицензия на осуществление фармацевтической деятельности аптеки от 26.05.2017
-            li.certify__docs-item
-              a(href="#")
-                object(type="image/svg+xml" data="/website/img/icons/document.svg")
-                span Лицензия на осуществление фармацевтической деятельности аптеки от 19.02.2013
+          .section__text-block
+            p Аптечные учреждения ОАО &laquo;Курская фармация&raquo; одни из немногих в Курске и области занимаются изготовлением лекарственных форм по индивидуальным рецептам и требованим лечебно-профилактических учреждений. Кроме того, компания обеспечивает лекарствами около 400 фельдшерско-акушерских путнктов по всему региону.
+            p &laquo;Курская фармация&raquo; - фармацевтическое предприятие в области, гарантирующее качество реализуемых препаратов. Мы несем отвественность за здоровье своих клиентов и предлагаем исключительно проверенные лекарственные средства. Предлагаемые нами медикаменты проходят контроль, что подтверждается заключением о качестве Центра сертификации.
+    section.advantages 
+      .container 
+        h2.section__title.section__title--left Преимущества аптечной сети &laquo;Курская фармация&raquo;:
+        -
+          var advantages = [
+            {text:"Широкая география <br> присутствия", img:"advantage_01", pic:"map"},
+            {text:"Шаговая доступность <br> для потребителей", img:"advantage_02", pic:"people"},
+            {text:"Наличие <br> производственных <br> аптек", img:"advantage_03", pic:"pharmacy"},
+            {text:"Отпуск медикаментов льготным категориям граждан по бесплатным рецептам", img:"advantage_04", pic:"recipe"},
+            {text:"Подтвержденное <br> качество лекарственных <br> средств", img:"advantage_05", pic:"shield"}, 
+            {text:"Традиционно <br> высокий уровень <br> сервиса", img:"advantage_06", pic:"medal"},
+            {text:"Накопительная <br> система скидок", img:"advantage_07", pic:"credit-card"}, 
+            {text:"Акции по продаже лекарственных средств со скидками", img:"advantage_08", pic:"parcel"},
+            {text:"Наличие единой информационной системы аптечной сети", img:"advantage_09", pic:"hospital-sign"},
+            {text:"Доставка лекарств <br> на дом", img:"advantage_10", pic:"package"}
+          ];
+        ul.advantages__list         
+          each advantage, index in advantages
+            if (index%2) == 0
+              li.advantages__item.advantage
+                .advantage__text
+                  .advantage__num #{index+1}
+                  .advantage__logo 
+                    object(type="image/svg+xml" data=`/website/img/icons/${advantage.pic}.svg`)
+                  .advantage__title!= advantage.text
+                .advantage__img.advantage__img--right
+                  img(src=`/website/img/${advantage.img}.jpg`, alt="")
+            else
+              li.advantages__item.advantage
+                .advantage__img
+                  img(src=`/website/img/${advantage.img}.jpg`, alt="")
+                .advantage__text
+                  .advantage__num #{index+1}
+                  .advantage__logo 
+                    object(type="image/svg+xml" data=`/website/img/icons/${advantage.pic}.svg`)
+                  .advantage__title!= advantage.text     
+    section.certify
+        .banner-block
+          .banner-block__img
+            img(src="/website/img/banner_bg02.jpg" alt="")
+          .banner-block__text
+            .container.banner-block__container
+              .banner-block__desc
+                p Аптечная сеть ОАО &laquo;Курская фармация&raquo; - проверенное качество медикаментов, устоявшиеся традиции аптечного дела, широкий ассортимент лекарсвенных средств и медицинских изделий, высококвалифицированные специалисты. Оцените достоинства сотрудничества с ОАО &laquo;Курская фармация&raquo;.
+                h2.banner-block__title Мы заботимся о вашем здоровье, предлагая только проверенные лекарства!
+        .certify__documents 
+          .container
+            h2.section__title.section__title--left Документы
+            ul.certify__docs-list 
+              li.certify__docs-item
+                a(href="#")
+                  object(type="image/svg+xml" data="/website/img/icons/document.svg")
+                  span Лицензия на осуществление фармацевтической деятельности аптеки от 26.05.2017
+              li.certify__docs-item
+                a(href="#")
+                  object(type="image/svg+xml" data="/website/img/icons/document.svg")
+                  span Лицензия на осуществление фармацевтической деятельности аптеки от 19.02.2013

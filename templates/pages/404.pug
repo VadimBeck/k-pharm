@@ -1,0 +1,20 @@
+extends ../layout
+
+block head 
+  title Ошибка 404
+
+block main
+  main.main.e-404__wrap
+    .container
+      .e-404         
+        .e-404__circles 
+          svg.e-404__cirle(version="1.1" viewBox="0 0 360 360"  preserveAspectRatio="none")
+            circle(cx="180" cy="180" r="180" fill='#95b893')
+            circle(cx="180" cy="180" r="137" fill='#6aa068')
+          .e-404__null
+        .e-404__text
+          h1.e-404__title К сожалению страницы, к которой вы обратились не нашлось на сайте
+          .e-404__desc 
+            span Чтобы исправить проблему, вернитесь на 
+            a(href="/") главную страницу
+

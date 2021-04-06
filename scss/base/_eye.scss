@@ -438,7 +438,7 @@ body.eye-activate a.nav-eye-btn:before {
   position: absolute;
   top: 11px;
   left: 9px;
-  content: url(/website/eye/img/eye.png);
+  content: url("/website/eye/img/eye.png");
 }
 body.eye-activate div.imgs-block,
 body.eye-activate div.color-block {
@@ -460,14 +460,14 @@ body.eye-activate div.color-block {
   position: absolute;
   top: 0;
   left: 53px;
-  content: url(/website/eye/img/text-size.png);
+  content: url("/website/eye/img/text-size.png");
 }
 #contentSlider-two:before {
   display: block;
   position: absolute;
   top: 0;
   left: 53px;
-  content: url(/website/eye/img/tracking.png);
+  content: url("/website/eye/img/tracking.png");
 }
 #slider,
 #slider-two {
@@ -566,7 +566,7 @@ body.eye-activate #navigation-eye .imgs-block p span {
   top: 0px;
   left: 0;
   content: "";
-  background-image: url(/website/eye/img/color.png);
+  background-image: url("/website/eye/img/color.png");
 }
 
 @media screen and (max-width: 900px) {
@@ -936,13 +936,18 @@ body.eye-activate {
     }
   }
   & .fancybox-close-small {
-    width: 44px !important;
-    height: 44px !important;
+    width: 60px !important;
+    height: 60px !important;
+    right: 50px !important;
     background: none;
   }
 
   & #callback-overlay {
     background: $green;
+
+    & .fancybox-close-small {
+      top: 0 !important;
+    }
 
     & .overlay {
       &::before {
@@ -953,7 +958,8 @@ body.eye-activate {
       margin-top: 20px;
       font-size: 30px !important;
     }
-    & .overlay__form-row, .overlay__button {
+    & .overlay__form-row,
+    .overlay__button {
       margin: 0 !important;
     }
   }
@@ -975,13 +981,15 @@ body.eye-activate {
     left: 0 !important;
     top: 0 !important;
     width: 100% !important;
-    margin:  0 !important;
+    margin: 0 !important;
   }
   & .fancybox-slide,
   .fancybox-toolbar {
     position: absolute !important;
   }
   & .fancybox-slide {
+    width: 100% !important;
+    margin: 0 !important;
     padding-top: 130px !important;
     @media screen and (max-width: 900px) {
       padding-top: 350px !important;
@@ -1066,6 +1074,12 @@ body.eye-activate {
     display: flex !important;
     flex-direction: column !important;
     height: auto !important;
+  }
+
+  & .region_choose {
+    & .fancybox-close-small {
+      top: 40px !important;
+    }
   }
 
   & .region_choose__list {
