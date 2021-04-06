@@ -938,13 +938,16 @@ body.eye-activate {
   & .fancybox-close-small {
     width: 60px !important;
     height: 60px !important;
-    right: 50px !important;
-    top: 40px !important;
+    right: 50px !important;    
     background: none;
   }
 
   & #callback-overlay {
     background: $green;
+
+    & .fancybox-close-small {
+      top: 0 !important;
+    }
 
     & .overlay {
       &::before {
@@ -1068,6 +1071,12 @@ body.eye-activate {
     display: flex !important;
     flex-direction: column !important;
     height: auto !important;
+  }
+
+  & .region_choose {
+    & .fancybox-close-small {
+      top: 40px !important;
+    }
   }
 
   & .region_choose__list {
