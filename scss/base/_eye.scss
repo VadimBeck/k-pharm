@@ -2,6 +2,7 @@ body.eye-activate,
 body.eye-activate p,
 body.eye-activate span,
 body.eye-activate div,
+//body.eye-activate div:not(.lightSlider, .lslide, .clone),
 body.eye-activate aside,
 body.eye-activate h1,
 body.eye-activate h2,
@@ -648,7 +649,6 @@ body.eye-activate {
         grid-row: 2/3;
       }
 
-
       & a {
         font-size: 23px;
         font-family: $med;
@@ -660,11 +660,11 @@ body.eye-activate {
 
         &::before {
           display: none;
-        }        
+        }
       }
       & .header__cart {
         padding-right: 35px !important;
-        & span {          
+        & span {
           color: $green !important;
         }
         & .number {
@@ -929,10 +929,9 @@ body.eye-activate {
     & .mtop.footer__tel {
       grid-column: 1/3 !important;
       margin: 0 !important;
-      max-width: none !important;  
+      max-width: none !important;
       & span {
         margin: 0 0 20px 0 !important;
-        //max-width: none !important;        
       }
     }
   }
@@ -940,6 +939,141 @@ body.eye-activate {
     width: 44px !important;
     height: 44px !important;
     background: none;
+  }
+
+  & #callback-overlay {
+    background: $green;
+
+    & .overlay {
+      &::before {
+        display: none;
+      }
+    }
+    & .overlay__title {
+      margin-top: 20px;
+      font-size: 30px !important;
+    }
+    & .overlay__form-row, .overlay__button {
+      margin: 0 !important;
+    }
+  }
+
+  & .fancybox-container {
+    position: fixed !important;
+    width: 100% !important;
+    left: 0 !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+  }
+
+  & .fancybox-bg,
+  .fancybox-inner,
+  .fancybox-outer,
+  .fancybox-stage {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    margin:  0 !important;
+  }
+  & .fancybox-slide,
+  .fancybox-toolbar {
+    position: absolute !important;
+  }
+  & .fancybox-slide {
+    padding-top: 130px !important;
+    @media screen and (max-width: 900px) {
+      padding-top: 350px !important;
+    }
+  }
+
+  & .pharmacy_list {
+    grid-template-columns: 50% 50%;
+
+    @include tablets {
+      grid-template-columns: 1fr;
+    }
+  }
+  & .pharmacy_list__tel,
+  .pharmacy_item__tel {
+    padding-left: 30px !important;
+  }
+  & .pharmacy_list__more {
+    z-index: 2 !important;
+    & span {
+      padding: 30px !important;
+      color: #fff !important;
+      font-family: $med !important;
+    }
+  }
+
+  & .pharmacy_item__map {
+    margin: 0 !important;
+    max-width: none;
+    height: 300px;
+  }
+
+  & .pharmacy_item__search {
+    & .pharmacy_item__title {
+      font-size: 32px !important;
+      margin: 15px 15px 0 15px !important;
+      color: $green !important;
+      font-family: $med !important;
+    }
+
+    & button {
+      background-color: #488b45 !important;
+      background-image: url("data:image/svg+xml,%3Csvg enable-background='new 0 0 70 70' height='70px' fill='%23fff' viewBox='0 0 70 70' width='70px' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath d='M51.957,49.129l-8.713-8.713c1.75-2.337,2.799-5.229,2.799-8.373c0-7.732-6.268-14-14-14s-14,6.268-14,14s6.268,14,14,14 c3.144,0,6.036-1.049,8.373-2.799l8.713,8.713L51.957,49.129z M22.043,32.043c0-5.514,4.486-10,10-10c5.514,0,10,4.486,10,10 c0,5.514-4.486,10-10,10C26.529,42.043,22.043,37.557,22.043,32.043z'/%3E%3C/svg%3E") !important;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 12px 0 !important;
+    }
+  }
+
+  & .pharmacy_item__storage {
+    margin: 0 0 20px 10px !important;
+  }
+
+  & .item__info {
+    & .item__avail {
+      &--available {
+        color: #fff !important;
+        padding: 10px 20px 10px 45px !important;
+        border-radius: 0;
+      }
+    }
+  }
+
+  & .item__cart {
+    & span {
+      color: #fff !important;
+      font-size: 30px !important;
+      margin: 0 !important;
+    }
+  }
+  & .item__link {
+    font-size: 20px !important;
+  }
+
+  & .similar_item__cart {
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  & .lightSlider {
+    transform: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+  }
+
+  & .region_choose__list {
+    & > ul {
+      & > li {
+        font-size: 20px !important;
+      }
+    }
   }
 }
 
