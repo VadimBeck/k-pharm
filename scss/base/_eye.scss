@@ -438,7 +438,7 @@ body.eye-activate a.nav-eye-btn:before {
   position: absolute;
   top: 11px;
   left: 9px;
-  content: url(/website/eye/img/eye.png);
+  content: url('../website/eye/img/eye.png');
 }
 body.eye-activate div.imgs-block,
 body.eye-activate div.color-block {
@@ -460,14 +460,14 @@ body.eye-activate div.color-block {
   position: absolute;
   top: 0;
   left: 53px;
-  content: url(/website/eye/img/text-size.png);
+  content: url('../website/eye/img/text-size.png');
 }
 #contentSlider-two:before {
   display: block;
   position: absolute;
   top: 0;
   left: 53px;
-  content: url(/website/eye/img/tracking.png);
+  content: url('../website/eye/img/tracking.png');
 }
 #slider,
 #slider-two {
@@ -566,7 +566,7 @@ body.eye-activate #navigation-eye .imgs-block p span {
   top: 0px;
   left: 0;
   content: "";
-  background-image: url(/website/eye/img/color.png);
+  background-image: url('../website/eye/img/color.png');
 }
 
 @media screen and (max-width: 900px) {
