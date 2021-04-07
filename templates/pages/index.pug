@@ -2,11 +2,18 @@ extends ../layout
 
 block main
   main.main
-    .slider
-      ul.slider__list 
+    ul.slider
+      li.slider__item
+        img(src="/website/img/intro_slider01.jpg" alt="") 
+        .container.slider__container
+          .slider__item-block
+            .slider__item-text
+              div.slider__item-title.slider__item-promo
+                div При заказе на&nbsp;сайте
+                span СКИДКА&nbsp;3%
         li.slider__item
-          img(src="/website/img/intro_slider01.jpg" alt="") 
-          .container
+          img(src="/website/img/intro_slider02.jpg" alt="") 
+          .container.slider__container
             .slider__item-block
               .slider__item-text
                 div.slider__item-title 
@@ -93,10 +100,7 @@ block main
             {text:"Отпуск медикаментов льготным категориям граждан по бесплатным рецептам", img:"advantage_04", pic:"recipe"},
             {text:"Подтвержденное <br> качество лекарственных <br> средств", img:"advantage_05", pic:"shield"}, 
             {text:"Традиционно <br> высокий уровень <br> сервиса", img:"advantage_06", pic:"medal"},
-            {text:"Накопительная <br> система скидок", img:"advantage_07", pic:"credit-card"}, 
-            {text:"Акции по продаже лекарственных средств со скидками", img:"advantage_08", pic:"parcel"},
             {text:"Наличие единой информационной системы аптечной сети", img:"advantage_09", pic:"hospital-sign"},
-            {text:"Доставка лекарств <br> на дом", img:"advantage_10", pic:"package"}
           ];
         ul.advantages__list         
           each advantage, index in advantages

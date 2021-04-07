@@ -1,16 +1,16 @@
 .mobile-aside__wrap
   .header__links
-    a.header__eye.fancybox(href='') Версия для слабовидящих
+    a.header__eye.eye-activate-btn(href='#') Версия для слабовидящих
     a.header__call.fancybox(href='#callback-overlay') Обратный звонок
     a.header__user(href='') Личный кабинет
     a.header__cart(href='')
-      img(src='#' alt='')
+      img(src='/website/img/header_cart.png' alt='')
       span Корзина
       span.number 10
   nav#mobile-nav.mobile-nav
     ul.mobile-nav__list
       li.mobile-nav__item
-        a(href='' title='') Главная
+        a(href='/' title='') Главная
       li.mobile-nav__item
         a.type-global-nav-link-1.has-aside-menu(href='/catalog')
           | О компании
@@ -19,12 +19,34 @@
           .type-global-nav-link-1.sub-menu__header
             span.caret-left
             | О компании
+          .level-2__wrapper
+            ul.level-2__list
+              li
+                a(title='О компании' href='/pages/about') О компании
+              li
+                a(title='Руководство' href='/pages/about/management') Руководство
+              li
+                a(title='Вакансии' href='/pages/about/vacancy') Вакансии
+              li.active
+                a.active(title='Льготное лекарственное обеспечение' href='/pages/about/lgotnoe-lekarstv-obespechenie') Льготное лекарственное обеспечение
+              li
+                a(title='Аптечная сеть' href='/pages/about/aptechnaya-set') Аптечная сеть
+      li.mobile-nav__item
+        a(href='/apteki' title='') Аптеки
       li.mobile-nav__item
         a(href='/catalog' title='') Каталог товаров
       li.mobile-nav__item
-        a(href='' title='') Оплата и доставка
+        a(href='/pages/manufacture' title='') Изготовление лекарств
       li.mobile-nav__item
-        a(href='' title='') Контакты
+        a(href='/pages/delivery' title='') Бронь и оплата
+      li.mobile-nav__item
+        a(href='/pages/documents' title='') Документы
+      li.mobile-nav__item
+        a(href='/pages/news' title='') Новости
+      li.mobile-nav__item
+        a(href='/pages/reviews' title='') Отзывы
+      li.mobile-nav__item
+        a(href='/pages/contacts' title='') Контакты
   .header__contacts
     p
       a(href='tel:+74712515515') 8 (4712) 515-515

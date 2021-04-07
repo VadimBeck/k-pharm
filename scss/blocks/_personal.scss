@@ -1,0 +1,65 @@
+.personal__header {
+  background: none;
+}
+.personal__container {
+  max-width: 1090px;
+}
+.personal__list {
+  display: grid;
+  grid-template-columns:  max-content  max-content 1fr 1fr max-content;
+  grid-gap: 20px;
+  padding-bottom: 20px;
+}
+
+.personal__item {  
+  color: #c5c5c5;
+  background: $gray;
+  border-radius: 10px;
+  text-align: center;
+  transition: background .2s ease;
+
+  &:hover, &.is-active {
+    background: $green;
+    color: #fff;
+    transition: background .4s ease;
+
+    & .personal__img {
+      & svg {
+        fill: #fff;
+      }
+    }
+  }
+}
+
+.personal__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 15px 45px;  
+}
+
+.personal__img {
+  & svg {
+    width: 35px;
+    height: 35px;
+    fill: #c5c5c5;
+  }
+  &--reverse {
+    transform: rotate(180deg) translateY(5px);
+  }
+}
+
+.button {
+  background: $green;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &--red {
+    background: $red;
+  }
+}

@@ -8,7 +8,7 @@
 		<link href="/website/css/lightslider.min.css" rel="stylesheet">
 		<link href="/website/css/nice-select.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
-		<title>Аптечная сеть</title>
+		<title>Личный кабинет | Товары</title>
 		<script src="/website/js/jquery-3.3.1.min.js"> </script>
 		<script src="/website/js/jquery.fancybox.js"> </script>
 		<script src="/website/js/lightslider.min.js"> </script>
@@ -95,30 +95,103 @@
 				</nav>
 			</header>
 			<div id="body-overlay"></div>
-			<main class="main">
-				<div class="slide_top"><img src="/website/img/provision__slide.jpg" alt=""></div>
-				<section class="network">
-					<div class="container">
-						<ul class="breadcrumbs">
-							<li><a href="/">Главная</a> /</li>
-							<li><a href="#">О компании</a> /</li>
-							<li><span>Аптечная сеть</span></li>
-						</ul>
-						<h1 class="section__title">Аптечная сеть</h1>
-						<div class="network__desc">Аптеки &laquo;Курская фармация&raquo; — это:</div>
-						<ul class="section__roster">
-							<li>сеть государственных аптек в г. Курске;</li>
-							<li>высококвалифицированные специалисты, имеющие дипломы о высшем и среднем фармацевтическом образовании, и сертификаты специалистов по соответствующим фармацевтическим специальностям;</li>
-							<li>более 50% специалистов имеют высшую или первую квалификационную категорию;</li>
-							<li>расположение аптек в каждом округе г. Курск, а также в сельской местности Курской области, включая аптеки, работающие в круглосуточном режиме;</li>
-							<li>наличие аптек, имеющих рецептурно-производственные отделы;</li>
-							<li>все аптеки и аптечные пункты - участники программы обеспечения необходимыми лекарственными препаратами граждан, имеющих право на получение государственной социальной помощи;</li>
-							<li>ассортимент, включающий в себя не только готовые лекарственные препараты, но и изделия медицинского назначения, дезинфицирующие средства, предметы и средства личной гигиены, предметы и средства, предназначенные для ухода за больными, новорожденными и детьми, не достигшими возраста 3-х лет, минеральные воды, продукты лечебного, детского и диетического питания;</li>
-							<li>организация строгого входного и внутреннего контроля по качеству лекарственных препаратов;</li>
-							<li>наличие горячей линии по льготному лекарственному обеспечению и справочной службы о наличии лекарственных препаратов в аптеках сети (4712) 515-515.</li>
-						</ul>
-					</div>
-				</section>
+			<main class="main">   
+				<div class="container">
+					<ul class="breadcrumbs">
+						<li><a href="/">Главная</a> /</li>
+						<li><span>Личный кабинет</span></li>
+					</ul>
+				</div>
+				<div class="personal">
+					<header class="personal__header">
+						<div class="container personal__container">
+							<h1 class="section__title">Личный кабинет</h1>
+							<ul class="personal__list"> 
+								<li class="personal__item"><a class="personal__link" href="#">
+										<div class="personal__img"> 
+											<svg> 
+												<use xlink:href="/website/img/icons/personal-sprite.svg#user"> </use>
+											</svg>
+										</div>
+										<div class="personal__text">Профиль</div></a></li>
+								<li class="personal__item is-active"><a class="personal__link" href="#">
+										<div class="personal__img"> 
+											<svg> 
+												<use xlink:href="/website/img/icons/personal-sprite.svg#shopping-cart"> </use>
+											</svg>
+										</div>
+										<div class="personal__text">Товары</div></a></li>
+								<li class="personal__item"><a class="personal__link" href="#">
+										<div class="personal__img"> 
+											<svg> 
+												<use xlink:href="/website/img/icons/personal-sprite.svg#file"> </use>
+											</svg>
+										</div>
+										<div class="personal__text">История заказов</div></a></li>
+								<li class="personal__item"><a class="personal__link" href="#">
+										<div class="personal__img"> 
+											<svg> 
+												<use xlink:href="/website/img/icons/personal-sprite.svg#email"> </use>
+											</svg>
+										</div>
+										<div class="personal__text">Обратная связь</div></a></li>
+								<li class="personal__item"><a class="personal__link" href="#">
+										<div class="personal__img personal__img--reverse">
+											<svg> 
+												<use xlink:href="/website/img/icons/personal-sprite.svg#log-in"></use>
+											</svg>
+										</div>
+										<div class="personal__text">Выйти</div></a></li>
+							</ul>
+						</div>
+					</header>
+					<section class="goods"> 
+						<div class="container">    
+							<ul class="goods__contents">
+								<li>Наименование товара</li>
+								<li>Цена</li>
+								<li>Количество</li>
+								<li>Сумма</li>
+							</ul>
+							<ul class="goods__list"> 
+								<li class="goods-item"> 
+									<div class="goods-item__info">
+										<div class="goods-item__img"> <img src="/website/img/goods__item.jpg" alt=""></div>
+										<div class="goods-item__desc">
+											 Аквадетрим таблетки <br>раств. 90шт. </div>
+									</div>
+									<div class="goods-item__price">4830.00 ₽</div>
+									<div class="goods-item__count"><a class="minus"></a><span>10</span><a class="plus">             </a></div>
+									<div class="goods-item__sum">40 830.00 ₽</div><a class="goods-item__remove"> </a>
+								</li>
+								<li class="goods-item"> 
+									<div class="goods-item__info">
+										<div class="goods-item__img"> <img src="/website/img/goods__item.jpg" alt=""></div>
+										<div class="goods-item__desc">
+											 Аквадетрим таблетки <br>раств. 90шт. </div>
+									</div>
+									<div class="goods-item__price">4830.00 ₽</div>
+									<div class="goods-item__count"><a class="minus"></a><span>10</span><a class="plus">         </a></div>
+									<div class="goods-item__sum">40 830.00 ₽</div><a class="goods-item__remove"> </a>
+								</li>
+							</ul>
+							<div class="goods__checkout">
+								<div class="goods__point">
+									<div class="goods__point-desc">Адрес аптечного пункта для самовывоза:</div>
+									<div class="goods__point-address">Курская обл., Черемисиновский район, п.Черемисиново, ул.Комсомольская, д.4</div><a class="goods__point-link" href="#">Выбрать другую аптеку</a>
+								</div>
+								<div class="goods__checkout-controls"> 
+									<div class="goods__checkout-sum"> <span>Сумма заказа:</span>
+										<div>81 660.00 ₽</div>
+									</div>
+									<div class="goods__checkout-btn"> 
+										<button class="button button--red">Оформить заказ</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
 			</main>
 			<footer> 
 				<div class="container footer row"><a class="logo" href="/"><img src="/website/img/f_logo.png" alt=""></a>

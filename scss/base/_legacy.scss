@@ -1003,10 +1003,20 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
   margin: 0;
   padding: 0 15px 100px;
   list-style: none;
+
+  &--two {
+    grid-template-columns: repeat(2, calc(100% / 4));
+    justify-content: center;
+  }
 }
+
+
 @media screen and (max-width: 960px) {
   .pharmacy_list {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .pharmacy_list--two {
+    grid-template-columns: repeat(2, calc(100% / 3));
   }
 }
 @media screen and (max-width: 767px) {
@@ -3950,7 +3960,7 @@ h1 + .delivery__title {
 }
 
 footer {
-  background-color: #6d6d6d;
+  background-color: $darkGray;
 }
 
 .footer.row {

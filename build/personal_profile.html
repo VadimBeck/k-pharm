@@ -8,7 +8,7 @@
 		<link href="/website/css/lightslider.min.css" rel="stylesheet">
 		<link href="/website/css/nice-select.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
-		<title>Аптечная сеть</title>
+		<title>Личный кабинет | Профиль</title>
 		<script src="/website/js/jquery-3.3.1.min.js"> </script>
 		<script src="/website/js/jquery.fancybox.js"> </script>
 		<script src="/website/js/lightslider.min.js"> </script>
@@ -95,30 +95,134 @@
 				</nav>
 			</header>
 			<div id="body-overlay"></div>
-			<main class="main">
-				<div class="slide_top"><img src="/website/img/provision__slide.jpg" alt=""></div>
-				<section class="network">
-					<div class="container">
-						<ul class="breadcrumbs">
-							<li><a href="/">Главная</a> /</li>
-							<li><a href="#">О компании</a> /</li>
-							<li><span>Аптечная сеть</span></li>
-						</ul>
-						<h1 class="section__title">Аптечная сеть</h1>
-						<div class="network__desc">Аптеки &laquo;Курская фармация&raquo; — это:</div>
-						<ul class="section__roster">
-							<li>сеть государственных аптек в г. Курске;</li>
-							<li>высококвалифицированные специалисты, имеющие дипломы о высшем и среднем фармацевтическом образовании, и сертификаты специалистов по соответствующим фармацевтическим специальностям;</li>
-							<li>более 50% специалистов имеют высшую или первую квалификационную категорию;</li>
-							<li>расположение аптек в каждом округе г. Курск, а также в сельской местности Курской области, включая аптеки, работающие в круглосуточном режиме;</li>
-							<li>наличие аптек, имеющих рецептурно-производственные отделы;</li>
-							<li>все аптеки и аптечные пункты - участники программы обеспечения необходимыми лекарственными препаратами граждан, имеющих право на получение государственной социальной помощи;</li>
-							<li>ассортимент, включающий в себя не только готовые лекарственные препараты, но и изделия медицинского назначения, дезинфицирующие средства, предметы и средства личной гигиены, предметы и средства, предназначенные для ухода за больными, новорожденными и детьми, не достигшими возраста 3-х лет, минеральные воды, продукты лечебного, детского и диетического питания;</li>
-							<li>организация строгого входного и внутреннего контроля по качеству лекарственных препаратов;</li>
-							<li>наличие горячей линии по льготному лекарственному обеспечению и справочной службы о наличии лекарственных препаратов в аптеках сети (4712) 515-515.</li>
-						</ul>
-					</div>
-				</section>
+			<main class="main">   
+				<div class="container">
+					<ul class="breadcrumbs">
+						<li><a href="/">Главная</a> /</li>
+						<li><span>Личный кабинет</span></li>
+					</ul>
+				</div>
+				<div class="personal">
+					<header class="personal__header">
+						<div class="container personal__container">
+							<h1 class="section__title">Личный кабинет</h1>
+							<ul class="personal__list"> 
+								<li class="personal__item is-active"><a class="personal__link" href="#">
+										<div class="personal__img"> 
+											<svg> 
+												<use xlink:href="/website/img/icons/personal-sprite.svg#user"> </use>
+											</svg>
+										</div>
+										<div class="personal__text">Профиль</div></a></li>
+								<li class="personal__item"><a class="personal__link" href="#">
+										<div class="personal__img"> 
+											<svg> 
+												<use xlink:href="/website/img/icons/personal-sprite.svg#shopping-cart"> </use>
+											</svg>
+										</div>
+										<div class="personal__text">Товары</div></a></li>
+								<li class="personal__item"><a class="personal__link" href="#">
+										<div class="personal__img"> 
+											<svg> 
+												<use xlink:href="/website/img/icons/personal-sprite.svg#file"> </use>
+											</svg>
+										</div>
+										<div class="personal__text">История заказов</div></a></li>
+								<li class="personal__item"><a class="personal__link" href="#">
+										<div class="personal__img"> 
+											<svg> 
+												<use xlink:href="/website/img/icons/personal-sprite.svg#email"> </use>
+											</svg>
+										</div>
+										<div class="personal__text">Обратная связь</div></a></li>
+								<li class="personal__item"><a class="personal__link" href="#">
+										<div class="personal__img"> 
+											<svg> 
+												<use xlink:href="/website/img/icons/personal-sprite.svg#log-in"></use>
+											</svg>
+										</div>
+										<div class="personal__text">Выйти</div></a></li>
+							</ul>
+						</div>
+					</header>
+					<section class="profile">
+						<div class="container personal__container">
+							<ul class="profile__content">
+								<li class="profile__block">
+									<form>
+										<h2 class="profile__block-title">Личные данные</h2>
+										<div class="profile__block-row">
+											<div class="profile__block-col">
+												<label><span> ФИО</span>
+													<input type="text" name="name" required>
+												</label>
+											</div>
+											<div class="profile__block-col">
+												<label><span> Телефон</span>
+													<input type="tel" name="phone">
+												</label>
+											</div>
+											<div class="profile__block-col">
+												<label><span> Email</span>
+													<input type="email" name="email">
+												</label>
+											</div>
+										</div>
+										<div class="profile__block-row">
+											<div class="profile__block-agreement"> 
+												<input type="checkbox">
+												<div><span>Вы соглашаетесь с </span><a href="#">Политикой о защите персональных данных </a><span>при хранении Ваших данных</span></div>
+											</div>
+											<div class="profile__block-btn">
+												<button class="button" type="submit">Сохранить</button>
+											</div>
+										</div>
+									</form>
+								</li>
+								<li class="profile__block">
+									<form>
+										<h2 class="profile__block-title">Сменить пароль</h2>
+										<div class="profile__block-row">
+											<div class="profile__block-col">
+												<label><span>Ваш email(логин)*</span>
+													<input type="text" name="login" required>
+												</label>
+											</div>
+											<div class="profile__block-col">
+												<label><span> Пароль (мин 6 символов):</span>
+													<input type="password" name="password">
+												</label>
+											</div>
+											<div class="profile__block-col">
+												<label><span> Подтверждение пароля:</span>
+													<input type="password" name="password">
+												</label>
+											</div>
+										</div>
+										<div class="profile__block-row">
+											<div class="profile__block-btn">
+												<button class="button" type="submit">Сохранить</button>
+											</div>
+										</div>
+									</form>
+								</li>
+								<li class="profile__block profile__block--delete">
+									<form>
+										<h2 class="profile__block-title">Удаление личного кабинета</h2>
+										<div class="profile__block-row">
+											<div class="profile__block-desc">Как только Ваш Личный Кабинет будет удален, Вы автоматически выйдете из системы и больше не сможете войти в этот аккаунт.</div>
+										</div>
+										<div class="profile__block-row">
+											<div class="profile__block-btn">
+												<button class="button button--red" type="submit">Удалить личный кабинет</button>
+											</div>
+										</div>
+									</form>
+								</li>
+							</ul>
+						</div>
+					</section>
+				</div>
 			</main>
 			<footer> 
 				<div class="container footer row"><a class="logo" href="/"><img src="/website/img/f_logo.png" alt=""></a>

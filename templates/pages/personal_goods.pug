@@ -1,0 +1,98 @@
+extends ../layout
+
+block head 
+  title Личный кабинет | Товары
+
+block main
+  main.main    
+    .container
+      ul.breadcrumbs
+        li
+          a(href='/') Главная
+          |  /
+        li
+          span Личный кабинет
+    .personal
+      header.personal__header
+        .container.personal__container
+          h1.section__title Личный кабинет
+          ul.personal__list 
+            li.personal__item
+              a(href="#").personal__link
+                .personal__img 
+                  svg 
+                    use(xlink:href="/website/img/icons/personal-sprite.svg#user") 
+                .personal__text Профиль
+            li.personal__item.is-active
+              a(href="#").personal__link
+                .personal__img 
+                  svg 
+                    use(xlink:href="/website/img/icons/personal-sprite.svg#shopping-cart") 
+                .personal__text Товары
+            li.personal__item
+              a(href="#").personal__link
+                .personal__img 
+                  svg 
+                    use(xlink:href="/website/img/icons/personal-sprite.svg#file") 
+                .personal__text История заказов
+            li.personal__item
+              a(href="#").personal__link
+                .personal__img 
+                  svg 
+                    use(xlink:href="/website/img/icons/personal-sprite.svg#email") 
+                .personal__text Обратная связь
+            li.personal__item
+              a(href="#").personal__link
+                .personal__img.personal__img--reverse
+                  svg 
+                    use(xlink:href="/website/img/icons/personal-sprite.svg#log-in")
+                .personal__text Выйти
+      section.goods 
+        .container     
+          ul.goods__contents
+            li Наименование товара
+            li Цена
+            li Количество
+            li Сумма
+          ul.goods__list 
+            li.goods-item 
+              .goods-item__info
+                .goods-item__img 
+                  img(src="/website/img/goods__item.jpg" alt="")
+                .goods-item__desc 
+                  | Аквадетрим таблетки 
+                  br
+                  | раств. 90шт. 
+              .goods-item__price 4830.00 ₽
+              .goods-item__count
+                a.minus
+                span 10
+                a.plus              
+              .goods-item__sum 40 830.00 ₽
+              a.goods-item__remove 
+            li.goods-item 
+              .goods-item__info
+                .goods-item__img 
+                  img(src="/website/img/goods__item.jpg" alt="")
+                .goods-item__desc 
+                  | Аквадетрим таблетки 
+                  br
+                  | раств. 90шт. 
+              .goods-item__price 4830.00 ₽
+              .goods-item__count
+                a.minus
+                span 10
+                a.plus          
+              .goods-item__sum 40 830.00 ₽
+              a.goods-item__remove  
+          .goods__checkout
+            .goods__point
+              .goods__point-desc Адрес аптечного пункта для самовывоза:
+              .goods__point-address Курская обл., Черемисиновский район, п.Черемисиново, ул.Комсомольская, д.4
+              a(href="#").goods__point-link Выбрать другую аптеку
+            .goods__checkout-controls 
+              .goods__checkout-sum 
+                span Сумма заказа:
+                div 81 660.00 ₽
+              .goods__checkout-btn 
+                button.button.button--red Оформить заказ

@@ -55,7 +55,7 @@
   $('.catalog-item_info .title').on('click', function(){
     $(this).parent('.catalog-item_info').addClass('open');
   });
-  // информация о товаре в каталоге зактрытие
+  // информация о товаре в каталоге закрытие
   $('.info_close').on('click', function(){
     $(this).parent('.catalog-item_info').removeClass('open');
   });

@@ -19,18 +19,32 @@
 	<body>
 		<aside class="mobile-aside mobile-only" id="mobile-aside">
 			<div class="mobile-aside__wrap">
-				<div class="header__links"><a class="header__eye fancybox" href="">Версия для слабовидящих</a><a class="header__call fancybox" href="#callback-overlay">Обратный звонок</a><a class="header__user" href="">Личный кабинет</a><a class="header__cart" href=""><img src="#" alt=""><span>Корзина</span><span class="number">10</span></a></div>
+				<div class="header__links"><a class="header__eye eye-activate-btn" href="#">Версия для слабовидящих</a><a class="header__call fancybox" href="#callback-overlay">Обратный звонок</a><a class="header__user" href="">Личный кабинет</a><a class="header__cart" href=""><img src="/website/img/header_cart.png" alt=""><span>Корзина</span><span class="number">10</span></a></div>
 				<nav class="mobile-nav" id="mobile-nav">
 					<ul class="mobile-nav__list">
-						<li class="mobile-nav__item"><a href="" title="">Главная</a></li>
+						<li class="mobile-nav__item"><a href="/" title="">Главная</a></li>
 						<li class="mobile-nav__item"><a class="type-global-nav-link-1 has-aside-menu" href="/catalog">О компании<span class="caret-right"></span></a>
 							<div class="level-2">
 								<div class="type-global-nav-link-1 sub-menu__header"><span class="caret-left"></span>О компании</div>
+								<div class="level-2__wrapper">
+									<ul class="level-2__list">
+										<li><a title="О компании" href="/pages/about">О компании</a></li>
+										<li><a title="Руководство" href="/pages/about/management">Руководство</a></li>
+										<li><a title="Вакансии" href="/pages/about/vacancy">Вакансии</a></li>
+										<li class="active"><a class="active" title="Льготное лекарственное обеспечение" href="/pages/about/lgotnoe-lekarstv-obespechenie">Льготное лекарственное обеспечение</a></li>
+										<li><a title="Аптечная сеть" href="/pages/about/aptechnaya-set">Аптечная сеть</a></li>
+									</ul>
+								</div>
 							</div>
 						</li>
+						<li class="mobile-nav__item"><a href="/apteki" title="">Аптеки</a></li>
 						<li class="mobile-nav__item"><a href="/catalog" title="">Каталог товаров</a></li>
-						<li class="mobile-nav__item"><a href="" title="">Оплата и доставка</a></li>
-						<li class="mobile-nav__item"><a href="" title="">Контакты</a></li>
+						<li class="mobile-nav__item"><a href="/pages/manufacture" title="">Изготовление лекарств</a></li>
+						<li class="mobile-nav__item"><a href="/pages/delivery" title="">Бронь и оплата</a></li>
+						<li class="mobile-nav__item"><a href="/pages/documents" title="">Документы</a></li>
+						<li class="mobile-nav__item"><a href="/pages/news" title="">Новости</a></li>
+						<li class="mobile-nav__item"><a href="/pages/reviews" title="">Отзывы</a></li>
+						<li class="mobile-nav__item"><a href="/pages/contacts" title="">Контакты</a></li>
 					</ul>
 				</nav>
 				<div class="header__contacts">
@@ -72,7 +86,7 @@
 						<li><a href="" title="">Аптеки</a></li>
 						<li><a href="" title="">Каталог товаров</a></li>
 						<li><a href="" title="">Изготовление лекарств</a></li>
-						<li><a href="" title="">Оплата и доставка</a></li>
+						<li><a href="" title="">Бронь и оплата</a></li>
 						<li><a href="" title="">Документы</a></li>
 						<li><a href="" title="">Новости</a></li>
 						<li><a href="" title="">Отзывы</a></li>
@@ -82,10 +96,19 @@
 			</header>
 			<div id="body-overlay"></div>
 			<main class="main">
-				<div class="slider">
-					<ul class="slider__list"> 
-						<li class="slider__item"><img src="/website/img/intro_slider01.jpg" alt="">
-							<div class="container">
+				<ul class="slider">
+					<li class="slider__item"><img src="/website/img/intro_slider01.jpg" alt="">
+						<div class="container slider__container">
+							<div class="slider__item-block">
+								<div class="slider__item-text">
+									<div class="slider__item-title slider__item-promo">
+										<div>При заказе на&nbsp;сайте</div><span>СКИДКА&nbsp;3%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<li class="slider__item"><img src="/website/img/intro_slider02.jpg" alt="">
+							<div class="container slider__container">
 								<div class="slider__item-block">
 									<div class="slider__item-text">
 										<div class="slider__item-title"> 
@@ -96,8 +119,8 @@
 								</div>
 							</div>
 						</li>
-					</ul>
-				</div>
+					</li>
+				</ul>
 				<div class="company-contacts container">
 					<ul class="company-contacts__list"> 
 						<li class="company-contacts__item">
@@ -253,41 +276,11 @@
 								<div class="advantage__text">
 									<div class="advantage__num">7</div>
 									<div class="advantage__logo"> 
-										<object type="image/svg+xml" data="/website/img/icons/credit-card.svg"></object>
-									</div>
-									<div class="advantage__title">Накопительная <br> система скидок</div>
-								</div>
-								<div class="advantage__img advantage__img--right"><img src="/website/img/advantage_07.jpg" alt=""></div>
-							</li>
-							<li class="advantages__item advantage">
-								<div class="advantage__img"><img src="/website/img/advantage_08.jpg" alt=""></div>
-								<div class="advantage__text">
-									<div class="advantage__num">8</div>
-									<div class="advantage__logo"> 
-										<object type="image/svg+xml" data="/website/img/icons/parcel.svg"></object>
-									</div>
-									<div class="advantage__title">Акции по продаже лекарственных средств со скидками</div>
-								</div>
-							</li>
-							<li class="advantages__item advantage">
-								<div class="advantage__text">
-									<div class="advantage__num">9</div>
-									<div class="advantage__logo"> 
 										<object type="image/svg+xml" data="/website/img/icons/hospital-sign.svg"></object>
 									</div>
 									<div class="advantage__title">Наличие единой информационной системы аптечной сети</div>
 								</div>
 								<div class="advantage__img advantage__img--right"><img src="/website/img/advantage_09.jpg" alt=""></div>
-							</li>
-							<li class="advantages__item advantage">
-								<div class="advantage__img"><img src="/website/img/advantage_10.jpg" alt=""></div>
-								<div class="advantage__text">
-									<div class="advantage__num">10</div>
-									<div class="advantage__logo"> 
-										<object type="image/svg+xml" data="/website/img/icons/package.svg"></object>
-									</div>
-									<div class="advantage__title">Доставка лекарств <br> на дом</div>
-								</div>
 							</li>
 						</ul>
 					</div>

@@ -68,25 +68,25 @@ $(document).ready(function() {
     $(tab).show();
   });
 
-  // $('.slider').lightSlider({
-  //     item:1,
-  //     loop:true,
-  //     auto: true,
-  //     pager: true,
-  //     controls: false,
-  //     speed: 600,
-  //     pause: 7000,
-  //     enableDrag: true,
-  //     currentPagerPosition:'left',
-  //     responsive : [
-  //         {
-  //           breakpoint:768,
-  //           settings: {
-  //               controls: false
-  //             }
-  //         }
-  //     ]
-  // }); 
+  $('.slider').lightSlider({
+      item:1,
+      loop:true,
+      //auto: true,
+      pager: true,
+      controls: false,
+      speed: 600,
+      pause: 7000,
+      enableDrag: true,
+      currentPagerPosition:'left',
+      responsive : [
+          {
+            breakpoint:768,
+            settings: {
+                controls: false
+              }
+          }
+      ]
+  }); 
 
   $('#similar').lightSlider({
       item: 4,

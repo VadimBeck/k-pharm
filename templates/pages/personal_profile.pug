@@ -1,0 +1,104 @@
+extends ../layout
+
+block head 
+  title Личный кабинет | Профиль
+
+block main
+  main.main    
+    .container
+      ul.breadcrumbs
+        li
+          a(href='/') Главная
+          |  /
+        li
+          span Личный кабинет
+    .personal
+      header.personal__header
+        .container.personal__container
+          h1.section__title Личный кабинет
+          ul.personal__list 
+            li.personal__item.is-active
+              a(href="#").personal__link
+                .personal__img 
+                  svg 
+                    use(xlink:href="/website/img/icons/personal-sprite.svg#user") 
+                .personal__text Профиль
+            li.personal__item
+              a(href="#").personal__link
+                .personal__img 
+                  svg 
+                    use(xlink:href="/website/img/icons/personal-sprite.svg#shopping-cart") 
+                .personal__text Товары
+            li.personal__item
+              a(href="#").personal__link
+                .personal__img 
+                  svg 
+                    use(xlink:href="/website/img/icons/personal-sprite.svg#file") 
+                .personal__text История заказов
+            li.personal__item
+              a(href="#").personal__link
+                .personal__img 
+                  svg 
+                    use(xlink:href="/website/img/icons/personal-sprite.svg#email") 
+                .personal__text Обратная связь
+            li.personal__item
+              a(href="#").personal__link
+                .personal__img  
+                  svg 
+                    use(xlink:href="/website/img/icons/personal-sprite.svg#log-in")
+                .personal__text Выйти
+      section.profile
+        .container.personal__container
+          ul.profile__content
+            li.profile__block
+              form
+                h2.profile__block-title Личные данные
+                .profile__block-row
+                  .profile__block-col
+                    label
+                      span  ФИО
+                      input(type="text" name="name" required) 
+                  .profile__block-col
+                    label
+                      span  Телефон
+                      input(type="tel" name="phone") 
+                  .profile__block-col
+                    label
+                      span  Email
+                      input(type="email" name="email")                   
+                .profile__block-row
+                  .profile__block-agreement 
+                    input(type="checkbox")
+                    div
+                      span Вы соглашаетесь с 
+                      a(href="#") Политикой о защите персональных данных 
+                      span при хранении Ваших данных
+                  .profile__block-btn
+                    button(type="submit").button Сохранить
+            li.profile__block
+              form
+                h2.profile__block-title Сменить пароль
+                .profile__block-row
+                  .profile__block-col
+                    label
+                      span Ваш email(логин)*
+                      input(type="text" name="login" required) 
+                  .profile__block-col
+                    label
+                      span  Пароль (мин 6 символов):
+                      input(type="password" name="password") 
+                  .profile__block-col
+                     label
+                      span  Подтверждение пароля:
+                      input(type="password" name="password")                   
+                .profile__block-row
+                  .profile__block-btn
+                    button(type="submit").button Сохранить
+            li.profile__block.profile__block--delete
+              form
+                h2.profile__block-title Удаление личного кабинета
+                .profile__block-row
+                  .profile__block-desc Как только Ваш Личный Кабинет будет удален, Вы автоматически выйдете из системы и больше не сможете войти в этот аккаунт.
+                .profile__block-row
+                  .profile__block-btn
+                    button(type="submit").button.button--red Удалить личный кабинет

@@ -19,18 +19,32 @@
 	<body>
 		<aside class="mobile-aside mobile-only" id="mobile-aside">
 			<div class="mobile-aside__wrap">
-				<div class="header__links"><a class="header__eye fancybox" href="">Версия для слабовидящих</a><a class="header__call fancybox" href="#callback-overlay">Обратный звонок</a><a class="header__user" href="">Личный кабинет</a><a class="header__cart" href=""><img src="#" alt=""><span>Корзина</span><span class="number">10</span></a></div>
+				<div class="header__links"><a class="header__eye eye-activate-btn" href="#">Версия для слабовидящих</a><a class="header__call fancybox" href="#callback-overlay">Обратный звонок</a><a class="header__user" href="">Личный кабинет</a><a class="header__cart" href=""><img src="/website/img/header_cart.png" alt=""><span>Корзина</span><span class="number">10</span></a></div>
 				<nav class="mobile-nav" id="mobile-nav">
 					<ul class="mobile-nav__list">
-						<li class="mobile-nav__item"><a href="" title="">Главная</a></li>
+						<li class="mobile-nav__item"><a href="/" title="">Главная</a></li>
 						<li class="mobile-nav__item"><a class="type-global-nav-link-1 has-aside-menu" href="/catalog">О компании<span class="caret-right"></span></a>
 							<div class="level-2">
 								<div class="type-global-nav-link-1 sub-menu__header"><span class="caret-left"></span>О компании</div>
+								<div class="level-2__wrapper">
+									<ul class="level-2__list">
+										<li><a title="О компании" href="/pages/about">О компании</a></li>
+										<li><a title="Руководство" href="/pages/about/management">Руководство</a></li>
+										<li><a title="Вакансии" href="/pages/about/vacancy">Вакансии</a></li>
+										<li class="active"><a class="active" title="Льготное лекарственное обеспечение" href="/pages/about/lgotnoe-lekarstv-obespechenie">Льготное лекарственное обеспечение</a></li>
+										<li><a title="Аптечная сеть" href="/pages/about/aptechnaya-set">Аптечная сеть</a></li>
+									</ul>
+								</div>
 							</div>
 						</li>
+						<li class="mobile-nav__item"><a href="/apteki" title="">Аптеки</a></li>
 						<li class="mobile-nav__item"><a href="/catalog" title="">Каталог товаров</a></li>
-						<li class="mobile-nav__item"><a href="" title="">Оплата и доставка</a></li>
-						<li class="mobile-nav__item"><a href="" title="">Контакты</a></li>
+						<li class="mobile-nav__item"><a href="/pages/manufacture" title="">Изготовление лекарств</a></li>
+						<li class="mobile-nav__item"><a href="/pages/delivery" title="">Бронь и оплата</a></li>
+						<li class="mobile-nav__item"><a href="/pages/documents" title="">Документы</a></li>
+						<li class="mobile-nav__item"><a href="/pages/news" title="">Новости</a></li>
+						<li class="mobile-nav__item"><a href="/pages/reviews" title="">Отзывы</a></li>
+						<li class="mobile-nav__item"><a href="/pages/contacts" title="">Контакты</a></li>
 					</ul>
 				</nav>
 				<div class="header__contacts">
@@ -72,7 +86,7 @@
 						<li><a href="" title="">Аптеки</a></li>
 						<li><a href="" title="">Каталог товаров</a></li>
 						<li><a href="" title="">Изготовление лекарств</a></li>
-						<li><a href="" title="">Оплата и доставка</a></li>
+						<li><a href="" title="">Бронь и оплата</a></li>
 						<li><a href="" title="">Документы</a></li>
 						<li><a href="" title="">Новости</a></li>
 						<li><a href="" title="">Отзывы</a></li>
@@ -117,7 +131,7 @@
 					<div class="manufacture__pharmacy">
 						<div class="container"> 
 							<h2 class="section__subtitle manufacture__subtitle">Заказать лекарства по индивидуальному рецепту <br>можно по следующим адресам:</h2>
-							<ul class="pharmacy_list">
+							<ul class="pharmacy_list pharmacy_list--two">
 								<li><a class="pharmacy_list__name" href="">Филиал-аптека №6</a>
 									<p class="pharmacy_list__adr">г. Курск, ул.Павлуновского, д.5</p>
 									<div class="pharmacy_list__time-wrap">
@@ -125,26 +139,12 @@
 									</div>
 									<div class="pharmacy_list__tel"><a href="tel:701191">54-86-70</a><a href="tel:84713221455">52-83-79</a></div>
 								</li>
-								<li><a class="pharmacy_list__name" href="">Филиал-аптека №122</a>
-									<p class="pharmacy_list__adr">г. Курск, ул. К.Маркса, д. 65а</p>
-									<div class="pharmacy_list__time-wrap">
-										<p class="pharmacy_list__time">круглосуточно</p>
-									</div>
-									<div class="pharmacy_list__tel"><a href="tel:701191">53-00-25</a></div>
-								</li>
 								<li><a class="pharmacy_list__name" href="">Филиал-аптека №124</a>
 									<p class="pharmacy_list__adr">г. Курск, ул. Институтская, д. 46</p>
 									<div class="pharmacy_list__time-wrap">
 										<p class="pharmacy_list__time">понедельник-пятница<br>8.00-20.00<br>суббота, воскресенье<br> 10.00-18.00</p>
 									</div>
-									<div class="pharmacy_list__tel"><a href="tel:701191">53-23-07</a><a href="tel:84713221455">50-08-23</a></div>
-								</li>
-								<li><a class="pharmacy_list__name" href="">Филиал-аптека №145</a>
-									<p class="pharmacy_list__adr">г. Курск, 2-й Промышленный пер. д13</p>
-									<div class="pharmacy_list__time-wrap">
-										<p class="pharmacy_list__time">понедельник-пянтица<br>8.00-18.00<br>суббота 8.00-15.00<br>выходной-воскресенье</p>
-									</div>
-									<div class="pharmacy_list__tel"><a href="tel:84713221455">2-27-44</a></div>
+									<div class="pharmacy_list__tel"><a href="tel:701191">53-23-07</a><a href="tel:84713221455">50-08-23          </a></div>
 								</li>
 							</ul>
 						</div>

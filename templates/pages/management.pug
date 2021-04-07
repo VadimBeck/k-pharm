@@ -1,0 +1,83 @@
+extends ../layout
+
+block main 
+  main
+  section.container.management
+    ul.breadcrumbs
+      li
+        a(href='/') Главная
+        |  /
+      li
+        a(href='/pages/about') О компании
+        |  /
+      li
+        span Руководство
+    h1 Руководство
+    .management__row
+      p.management__title Генеральный директор
+      .management__list
+        .management_item
+          p.management_item__name Котлярова Галина Николаевна
+          p.management_item__tel
+            | Телефон приёмной: 
+            a(href='tel:+74712526586') (4712) 52-65-86
+          p.management_item__mail
+            | E-mail: 
+            a(href='mailto:kurskfarm@inbox.ru') kurskfarm@inbox.ru
+    .management__row
+      p.management__title Заместитель директора
+      .management__list
+        .management_item
+          p.management_item__name Вареца Людмила Васильевна
+          p.management_item__tel
+            | Телефон приёмной: 
+            a(href='tel:+74712526586') (4712) 52-65-86
+          p.management_item__mail
+            | E-mail: 
+            a(href='mailto:kurskfarm@inbox.ru') kurskfarm@inbox.ru 
+    .management__row
+      p.management__title Главный бухгалтер
+      .management__list
+        .management_item
+          p.management_item__name Дульская Ирина Николаевна
+          p.management_item__tel
+            | Телефон приёмной: 
+            a(href='tel:+74712526586') (4712) 52-65-86
+          p.management_item__mail
+            | E-mail: 
+            a(href='mailto:kurskfarm@inbox.ru') kurskfarm@inbox.ru 
+    .management__row
+      p.management__title Отдел организации лекарственного обеспечения
+      .management__list
+        .management_item
+          p.management_item__name Полянская Валентина Ивановна
+          p.management_item__tel
+            | Телефон приёмной: 
+            a(href='tel:+74712526586') (4712) 52-65-86
+          p.management_item__mail
+            | E-mail: 
+            a(href='mailto:kurskfarm@inbox.ru') kurskfarm@inbox.ru
+    .management__row
+      p.management__title Отдел контроля и розничной торговли
+      .management__list
+        .management_item
+          p.management_item__name Чеховская Людмила Николаевна
+          p.management_item__tel
+            | Телефон приёмной: 
+            a(href='tel:+74712526586') (4712) 52-65-86
+          p.management_item__mail
+            | E-mail: 
+            a(href='mailto:kurskfarm@inbox.ru') kurskfarm@inbox.ru    
+    .management__row
+      p.management__title Справочные службы
+      .management__list
+        .management_item
+          p.management_item__name Справочная служба по вопросам льготного лекарственного обеспечения
+          p.management_item__tel
+            | Телефон приёмной: 
+            a(href='tel:+74712526586') (4712) 50-60-50
+        .management_item
+          p.management_item__name Справочная служба по вопросам наличия лекарств для розничной продажи
+          p.management_item__tel
+            | Телефон приёмной: 
+            a(href='tel:+74712526586') (4712) 515-515
