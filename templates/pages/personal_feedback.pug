@@ -1,0 +1,68 @@
+extends ../layout
+
+block head 
+  title Личный кабинет | Обратная связь
+
+block main
+  main.main.main--flex
+    .container
+      ul.breadcrumbs
+        li
+          a(href='/') Главная
+          |  /
+        li
+          span Личный кабинет
+    .personal
+      header.personal__header
+        .container.personal__container
+          h1.section__title Личный кабинет
+          ul.personal__list 
+            li.personal__item
+              a(href="#").personal__link
+                .personal__img 
+                  svg 
+                    use(xlink:href="/website/img/icons/personal-sprite.svg#user") 
+                .personal__text Профиль
+            li.personal__item
+              a(href="#").personal__link
+                .personal__img 
+                  svg 
+                    use(xlink:href="/website/img/icons/personal-sprite.svg#shopping-cart") 
+                .personal__text Товары
+            li.personal__item
+              a(href="#").personal__link
+                .personal__img 
+                  svg 
+                    use(xlink:href="/website/img/icons/personal-sprite.svg#file") 
+                .personal__text История заказов
+            li.personal__item.is-active
+              a(href="#").personal__link
+                .personal__img 
+                  svg 
+                    use(xlink:href="/website/img/icons/personal-sprite.svg#email") 
+                .personal__text Обратная связь
+            li.personal__item
+              a(href="#").personal__link
+                .personal__img.personal__img--reverse
+                  svg 
+                    use(xlink:href="/website/img/icons/personal-sprite.svg#log-in")
+                .personal__text Выйти
+      section.feedback
+        .container
+          form  
+            .feedback__form-row 
+              .feedback__form-fields
+                input(type="text" name="name" placeholder="Ваше имя")
+                input(type="email" name="email" placeholder="Ваш email или телефон")
+              .feedback__form-textarea 
+                textarea(name="text" placeholder="Текст сообщения") 
+              .feedback__form-controls 
+                .feedback__recapcha
+                .feedback__button 
+                  button(type="submit").button Отправить
+            .personal__agreement 
+              input(type="checkbox").personal__checkbox
+              div
+                span Вы соглашаетесь с 
+                a(href="#") Политикой о защите персональных данных 
+                span при хранении Ваших данных

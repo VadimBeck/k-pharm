@@ -1,0 +1,32 @@
+.logout {
+  background: $gray;
+  padding-bottom: 80px;
+  flex: 1;
+}
+.logout__content {
+  padding-top: 30px;
+}
+.logout__graph {
+  height: 90px;
+  background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 64 64' xml:space='preserve'%3E%3Cpath d='M30 28H9a1 1 0 010-2h21a1 1 0 010 2zm6 29a1 1 0 01-.53-.15A1 1 0 0135 56V18a1 1 0 01.57-.9L52.66 9H45a1 1 0 010-2h9a3 3 0 013 3v34.76a3 3 0 01-1.66 2.69l-18.89 9.44A1 1 0 0136 57zm1-38.37v35.75l17.45-8.72a1 1 0 00.55-.9V10.11z'%3E%3C/path%3E%3Cpath d='M17 37a1 1 0 01-.71-.29l-9-9a1 1 0 010-1.42l9-9a1 1 0 011.42 1.42L9.41 27l8.3 8.29a1 1 0 010 1.42A1 1 0 0117 37zm19 10h-9a3 3 0 01-3-3v-8a1 1 0 012 0v8a1 1 0 001 1h9a1 1 0 010 2zM25 19a1 1 0 01-1-1v-8a3 3 0 013-3h22a1 1 0 010 2H27a1 1 0 00-1 1v8a1 1 0 01-1 1z'%3E%3C/path%3E%3C/svg%3E") top center / contain no-repeat;
+  margin-bottom: 10px;
+}
+
+.logout__title {
+  text-align: center;
+  font-size: 16px;
+  font-family: $med;
+  padding: 0 0 30px 0;
+}
+
+.logout__buttons {
+  display: flex;
+  justify-content: center;
+
+  & .button {
+    padding: 20px 30px;
+    width: 200px;
+    margin: 0 15px;
+  }
+}
+

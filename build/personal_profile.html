@@ -95,7 +95,7 @@
 				</nav>
 			</header>
 			<div id="body-overlay"></div>
-			<main class="main">   
+			<main class="main main--flex">
 				<div class="container">
 					<ul class="breadcrumbs">
 						<li><a href="/">Главная</a> /</li>
@@ -152,7 +152,7 @@
 									<form>
 										<h2 class="profile__block-title">Личные данные</h2>
 										<div class="profile__block-row">
-											<div class="profile__block-col">
+											<div class="profile__block-col profile__block-col--wide">
 												<label><span> ФИО</span>
 													<input type="text" name="name" required>
 												</label>
@@ -169,8 +169,8 @@
 											</div>
 										</div>
 										<div class="profile__block-row">
-											<div class="profile__block-agreement"> 
-												<input type="checkbox">
+											<div class="personal__agreement"> 
+												<input class="personal__checkbox" type="checkbox">
 												<div><span>Вы соглашаетесь с </span><a href="#">Политикой о защите персональных данных </a><span>при хранении Ваших данных</span></div>
 											</div>
 											<div class="profile__block-btn">
@@ -183,7 +183,7 @@
 									<form>
 										<h2 class="profile__block-title">Сменить пароль</h2>
 										<div class="profile__block-row">
-											<div class="profile__block-col">
+											<div class="profile__block-col profile__block-col--wide">
 												<label><span>Ваш email(логин)*</span>
 													<input type="text" name="login" required>
 												</label>
@@ -207,17 +207,15 @@
 									</form>
 								</li>
 								<li class="profile__block profile__block--delete">
-									<form>
-										<h2 class="profile__block-title">Удаление личного кабинета</h2>
-										<div class="profile__block-row">
-											<div class="profile__block-desc">Как только Ваш Личный Кабинет будет удален, Вы автоматически выйдете из системы и больше не сможете войти в этот аккаунт.</div>
+									<h2 class="profile__block-title">Удаление личного кабинета</h2>
+									<div class="profile__block-row">
+										<div class="profile__block-desc">Как только Ваш Личный Кабинет будет удален, Вы автоматически выйдете из системы и больше не сможете войти в этот аккаунт.</div>
+									</div>
+									<div class="profile__block-row">
+										<div class="profile__delete-btn">
+											<button class="button button--red" type="submit">Удалить личный кабинет</button>
 										</div>
-										<div class="profile__block-row">
-											<div class="profile__block-btn">
-												<button class="button button--red" type="submit">Удалить личный кабинет</button>
-											</div>
-										</div>
-									</form>
+									</div>
 								</li>
 							</ul>
 						</div>

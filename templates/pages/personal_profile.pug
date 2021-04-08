@@ -4,7 +4,7 @@ block head
   title Личный кабинет | Профиль
 
 block main
-  main.main    
+  main.main.main--flex
     .container
       ul.breadcrumbs
         li
@@ -54,7 +54,7 @@ block main
               form
                 h2.profile__block-title Личные данные
                 .profile__block-row
-                  .profile__block-col
+                  .profile__block-col.profile__block-col--wide
                     label
                       span  ФИО
                       input(type="text" name="name" required) 
@@ -67,8 +67,8 @@ block main
                       span  Email
                       input(type="email" name="email")                   
                 .profile__block-row
-                  .profile__block-agreement 
-                    input(type="checkbox")
+                  .personal__agreement 
+                    input(type="checkbox").personal__checkbox
                     div
                       span Вы соглашаетесь с 
                       a(href="#") Политикой о защите персональных данных 
@@ -79,7 +79,7 @@ block main
               form
                 h2.profile__block-title Сменить пароль
                 .profile__block-row
-                  .profile__block-col
+                  .profile__block-col.profile__block-col--wide
                     label
                       span Ваш email(логин)*
                       input(type="text" name="login" required) 
@@ -95,10 +95,9 @@ block main
                   .profile__block-btn
                     button(type="submit").button Сохранить
             li.profile__block.profile__block--delete
-              form
-                h2.profile__block-title Удаление личного кабинета
-                .profile__block-row
-                  .profile__block-desc Как только Ваш Личный Кабинет будет удален, Вы автоматически выйдете из системы и больше не сможете войти в этот аккаунт.
-                .profile__block-row
-                  .profile__block-btn
-                    button(type="submit").button.button--red Удалить личный кабинет
+              h2.profile__block-title Удаление личного кабинета
+              .profile__block-row
+                .profile__block-desc Как только Ваш Личный Кабинет будет удален, Вы автоматически выйдете из системы и больше не сможете войти в этот аккаунт.
+              .profile__block-row
+                .profile__delete-btn
+                  button(type="submit").button.button--red Удалить личный кабинет

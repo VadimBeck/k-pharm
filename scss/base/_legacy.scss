@@ -3628,180 +3628,180 @@ header ~ .lSSlideOuter .lSPager.lSpg > li:hover a {
   }
 }
 
-.orders_history {
-  width: 100%;
-  margin-top: -4px;
-  border-collapse: separate;
-  border-radius: 4px;
-  border-spacing: 0 4px;
-}
-@media screen and (max-width: 767px) {
-  .orders_history {
-    margin-top: 0;
-  }
-  .orders_history thead {
-    display: none;
-  }
-}
-.orders_history th:first-child,
-.orders_history td:first-child {
-  border-radius: 4px 0 0 4px;
-}
-.orders_history th:last-child,
-.orders_history td:last-child {
-  border-radius: 0 4px 4px 0;
-  padding-right: 25px;
-}
-@media screen and (max-width: 900px) {
-  .orders_history th:last-child,
-  .orders_history td:last-child {
-    padding-right: 5px;
-  }
-}
-.orders_history th {
-  padding: 12px 15px;
-  border: none;
-  font-family: "Roboto", Arial, sans-serif;
-  text-align: center;
-  background-color: #73a90e;
-  color: #fff;
-  font-size: 14px;
-  font-family: "Roboto Bold", Arial, sans-serif;
-  text-transform: uppercase;
-}
-@media screen and (max-width: 900px) {
-  .orders_history th {
-    padding: 10px 5px;
-    font-size: 12px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .orders_history th {
-    display: none;
-  }
-}
-.orders_history th.order_price {
-  width: 130px;
-}
-@media screen and (max-width: 900px) {
-  .orders_history th.order_price {
-    width: 100px;
-  }
-}
-.orders_history th.order_summ {
-  width: 140px;
-}
-@media screen and (max-width: 900px) {
-  .orders_history th.order_summ {
-    width: 100px;
-  }
-}
-.orders_history td {
-  vertical-align: top;
-  padding: 15px 15px 20px;
-  text-align: center;
-  background-color: #fff;
-  font-size: 14px;
-}
-@media screen and (max-width: 900px) {
-  .orders_history td {
-    padding: 10px 5px;
-    font-size: 13px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .orders_history td {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .orders_history > tbody > tr {
-    display: block;
-    width: 100%;
-    padding: 10px 0;
-  }
-  .orders_history > tbody > tr:first-child {
-    padding-top: 0;
-  }
-}
-@media screen and (min-width: 481px) {
-  .orders_history th:first-child,
-  .orders_history td:first-child {
-    padding-left: 0;
-  }
-}
-.orders_history .order_content .row {
-  align-items: flex-start;
-  flex-wrap: nowrap;
-}
-.orders_history .order_content table {
-  flex-grow: 1;
-}
-.orders_history .order_content table td {
-  padding: 0 10px 15px;
-  font-family: "Roboto Medium", Arial, sans-serif;
-}
-@media screen and (max-width: 900px) {
-  .orders_history .order_content table td {
-    padding: 0 5px 10px;
-    font-size: 13px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .orders_history .order_content table td {
-    display: table-cell;
-    text-align: left;
-  }
-}
-.orders_history .order_content table td .rub {
-  font-family: "Roboto Bold", Arial, sans-serif;
-}
-.orders_history .order_content table td:last-child {
-  width: 120px;
-}
-@media screen and (max-width: 900px) {
-  .orders_history .order_content table td:last-child {
-    width: 100px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .orders_history .order_content table td:last-child {
-    width: auto;
-    white-space: nowrap;
-    text-align: center;
-  }
-}
-.orders_history .order_content .order_summ {
-  width: 115px;
-  flex-shrink: 0;
-  padding-left: 15px;
-  font-family: "Montserrat ExtraBold", "Arial", sans-serif;
-  font-size: 18px;
-}
-@media screen and (max-width: 900px) {
-  .orders_history .order_content .order_summ {
-    padding-left: 5px;
-    width: 95px;
-    font-size: 16px;
-  }
-}
-.orders_history .order_content .order_summ span {
-  font-family: "Roboto Bold", Arial, sans-serif;
-}
-.orders_history .btn {
-  display: block;
-  width: 190px;
-  margin-left: auto;
-  margin-top: 10px;
-  color: #fff;
-  background-color: #73a90e;
-}
-.orders_history .btn.mint {
-  background-color: #87bbb0;
-}
+// .orders_history {
+//   width: 100%;
+//   margin-top: -4px;
+//   border-collapse: separate;
+//   border-radius: 4px;
+//   border-spacing: 0 4px;
+// }
+// @media screen and (max-width: 767px) {
+//   .orders_history {
+//     margin-top: 0;
+//   }
+//   .orders_history thead {
+//     display: none;
+//   }
+// }
+// .orders_history th:first-child,
+// .orders_history td:first-child {
+//   border-radius: 4px 0 0 4px;
+// }
+// .orders_history th:last-child,
+// .orders_history td:last-child {
+//   border-radius: 0 4px 4px 0;
+//   padding-right: 25px;
+// }
+// @media screen and (max-width: 900px) {
+//   .orders_history th:last-child,
+//   .orders_history td:last-child {
+//     padding-right: 5px;
+//   }
+// }
+// .orders_history th {
+//   padding: 12px 15px;
+//   border: none;
+//   font-family: "Roboto", Arial, sans-serif;
+//   text-align: center;
+//   background-color: #73a90e;
+//   color: #fff;
+//   font-size: 14px;
+//   font-family: "Roboto Bold", Arial, sans-serif;
+//   text-transform: uppercase;
+// }
+// @media screen and (max-width: 900px) {
+//   .orders_history th {
+//     padding: 10px 5px;
+//     font-size: 12px;
+//   }
+// }
+// @media screen and (max-width: 767px) {
+//   .orders_history th {
+//     display: none;
+//   }
+// }
+// .orders_history th.order_price {
+//   width: 130px;
+// }
+// @media screen and (max-width: 900px) {
+//   .orders_history th.order_price {
+//     width: 100px;
+//   }
+// }
+// .orders_history th.order_summ {
+//   width: 140px;
+// }
+// @media screen and (max-width: 900px) {
+//   .orders_history th.order_summ {
+//     width: 100px;
+//   }
+// }
+// .orders_history td {
+//   vertical-align: top;
+//   padding: 15px 15px 20px;
+//   text-align: center;
+//   background-color: #fff;
+//   font-size: 14px;
+// }
+// @media screen and (max-width: 900px) {
+//   .orders_history td {
+//     padding: 10px 5px;
+//     font-size: 13px;
+//   }
+// }
+// @media screen and (max-width: 767px) {
+//   .orders_history td {
+//     display: block;
+//     width: 100%;
+//     padding: 10px;
+//     font-size: 14px;
+//   }
+// }
+// @media screen and (max-width: 767px) {
+//   .orders_history > tbody > tr {
+//     display: block;
+//     width: 100%;
+//     padding: 10px 0;
+//   }
+//   .orders_history > tbody > tr:first-child {
+//     padding-top: 0;
+//   }
+// }
+// @media screen and (min-width: 481px) {
+//   .orders_history th:first-child,
+//   .orders_history td:first-child {
+//     padding-left: 0;
+//   }
+// }
+// .orders_history .order_content .row {
+//   align-items: flex-start;
+//   flex-wrap: nowrap;
+// }
+// .orders_history .order_content table {
+//   flex-grow: 1;
+// }
+// .orders_history .order_content table td {
+//   padding: 0 10px 15px;
+//   font-family: "Roboto Medium", Arial, sans-serif;
+// }
+// @media screen and (max-width: 900px) {
+//   .orders_history .order_content table td {
+//     padding: 0 5px 10px;
+//     font-size: 13px;
+//   }
+// }
+// @media screen and (max-width: 767px) {
+//   .orders_history .order_content table td {
+//     display: table-cell;
+//     text-align: left;
+//   }
+// }
+// .orders_history .order_content table td .rub {
+//   font-family: "Roboto Bold", Arial, sans-serif;
+// }
+// .orders_history .order_content table td:last-child {
+//   width: 120px;
+// }
+// @media screen and (max-width: 900px) {
+//   .orders_history .order_content table td:last-child {
+//     width: 100px;
+//   }
+// }
+// @media screen and (max-width: 767px) {
+//   .orders_history .order_content table td:last-child {
+//     width: auto;
+//     white-space: nowrap;
+//     text-align: center;
+//   }
+// }
+// .orders_history .order_content .order_summ {
+//   width: 115px;
+//   flex-shrink: 0;
+//   padding-left: 15px;
+//   font-family: "Montserrat ExtraBold", "Arial", sans-serif;
+//   font-size: 18px;
+// }
+// @media screen and (max-width: 900px) {
+//   .orders_history .order_content .order_summ {
+//     padding-left: 5px;
+//     width: 95px;
+//     font-size: 16px;
+//   }
+// }
+// .orders_history .order_content .order_summ span {
+//   font-family: "Roboto Bold", Arial, sans-serif;
+// }
+// .orders_history .btn {
+//   display: block;
+//   width: 190px;
+//   margin-left: auto;
+//   margin-top: 10px;
+//   color: #fff;
+//   background-color: #73a90e;
+// }
+// .orders_history .btn.mint {
+//   background-color: #87bbb0;
+// }
 
 .delivery {
   padding-top: 35px;

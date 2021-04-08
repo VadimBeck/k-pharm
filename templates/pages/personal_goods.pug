@@ -4,7 +4,7 @@ block head
   title Личный кабинет | Товары
 
 block main
-  main.main    
+  main.main.main--flex
     .container
       ul.breadcrumbs
         li
@@ -50,20 +50,19 @@ block main
       section.goods 
         .container     
           ul.goods__contents
-            li Наименование товара
-            li Цена
-            li Количество
-            li Сумма
+            li.goods__contents-name Наименование товара
+            li.goods__contents-price Цена
+            li.goods__contents-count Количество
+            li.goods__contents-sum Сумма
           ul.goods__list 
             li.goods-item 
               .goods-item__info
                 .goods-item__img 
-                  img(src="/website/img/goods__item.jpg" alt="")
+                  a(href="#") 
+                    img(src="/website/img/goods__item.jpg" alt="")
                 .goods-item__desc 
-                  | Аквадетрим таблетки 
-                  br
-                  | раств. 90шт. 
-              .goods-item__price 4830.00 ₽
+                  a(href="#")  Аквадетрим таблетки раств.&nbsp;500ME 90шт. 
+              .goods-item__price 4 830.00 ₽
               .goods-item__count
                 a.minus
                 span 10
@@ -73,12 +72,11 @@ block main
             li.goods-item 
               .goods-item__info
                 .goods-item__img 
-                  img(src="/website/img/goods__item.jpg" alt="")
+                  a(href="#") 
+                    img(src="/website/img/goods__item.jpg" alt="")
                 .goods-item__desc 
-                  | Аквадетрим таблетки 
-                  br
-                  | раств. 90шт. 
-              .goods-item__price 4830.00 ₽
+                  a(href="#")  Аквадетрим таблетки раств.&nbsp;500ME 90шт. 
+              .goods-item__price 4 830.00 ₽
               .goods-item__count
                 a.minus
                 span 10

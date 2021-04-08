@@ -1,0 +1,109 @@
+extends ../layout
+
+block head 
+  title Личный кабинет | Заказы
+
+block main
+  main.main.main--flex
+    .container
+      ul.breadcrumbs
+        li
+          a(href='/') Главная
+          |  /
+        li
+          span Личный кабинет
+    .personal
+      header.personal__header
+        .container.personal__container
+          h1.section__title Личный кабинет
+          ul.personal__list 
+            li.personal__item
+              a(href="#").personal__link
+                .personal__img 
+                  svg 
+                    use(xlink:href="/website/img/icons/personal-sprite.svg#user") 
+                .personal__text Профиль
+            li.personal__item
+              a(href="#").personal__link
+                .personal__img 
+                  svg 
+                    use(xlink:href="/website/img/icons/personal-sprite.svg#shopping-cart") 
+                .personal__text Товары
+            li.personal__item.is-active
+              a(href="#").personal__link
+                .personal__img 
+                  svg 
+                    use(xlink:href="/website/img/icons/personal-sprite.svg#file") 
+                .personal__text История заказов
+            li.personal__item
+              a(href="#").personal__link
+                .personal__img 
+                  svg 
+                    use(xlink:href="/website/img/icons/personal-sprite.svg#email") 
+                .personal__text Обратная связь
+            li.personal__item
+              a(href="#").personal__link
+                .personal__img.personal__img--reverse
+                  svg 
+                    use(xlink:href="/website/img/icons/personal-sprite.svg#log-in")
+                .personal__text Выйти
+      section.orders
+        .container
+          .orders__empty(style="display:none")
+            .orders__empty__img 
+                  svg 
+                    use(xlink:href="/website/img/icons/personal-sprite.svg#shopping-cart") 
+            .orders__empty-text 
+              | После оформления заказа здесь появятся товары,
+              br
+              | которые едут к Вам и были доставлены ранее.
+          .orders__content 
+            ul.orders__contents
+              li.orders__contents-num Номер заказа
+              li.orders__contents-date Дата
+              li.orders__contents-name Наименование
+              li.orders__contents-price Стоимость
+              li.orders__contents-status Статус заказа
+            ul.orders__list
+              li.orders__item
+                .orders__item-num 1
+                .orders__item-date 23.03.2021
+                .orders__item-name                  
+                  ul
+                    li 
+                      a(href="#") Аквадетрим таблетки раств. 500ME 90 шт.&nbsp;
+                        span X 1
+                    li  
+                      a(href="#") Артелар комплекс хондроитина и глюкозамина таб 500мг+500мг 60шт&nbsp;
+                        span X 2
+                .orders__item-price 40 830.00 ₽
+                .orders__item-status.orders__item-status--done 
+                  span Выполнен
+              li.orders__item
+                .orders__item-num 2
+                .orders__item-date 24.05.2021
+                .orders__item-name                  
+                  ul
+                    li 
+                      a(href="#") Аквадетрим таблетки раств. 500ME 90 шт.&nbsp;
+                        span X 1
+                    li  
+                      a(href="#") Артелар комплекс хондроитина и глюкозамина таб 500мг+500мг 60шт&nbsp;
+                        span X 2
+                .orders__item-price 40 830.00 ₽
+                .orders__item-status.orders__item-status--pending 
+                  span В обработке
+              li.orders__item
+                .orders__item-num 3
+                .orders__item-date 24.05.2021
+                .orders__item-name                  
+                  ul
+                    li 
+                      a(href="#") Аквадетрим таблетки раств. 500ME 90 шт.&nbsp;
+                        span X 1
+                    li  
+                      a(href="#") Артелар комплекс хондроитина и глюкозамина таб 500мг+500мг 60шт&nbsp;
+                        span X 2
+                .orders__item-price 40 830.00 ₽
+                .orders__item-status.orders__item-status--sent 
+                  span Отправлен

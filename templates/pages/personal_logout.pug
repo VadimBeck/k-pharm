@@ -1,0 +1,57 @@
+extends ../layout
+
+block head 
+  title Личный кабинет | Выйти
+
+block main
+  main.main.main--flex
+    .container
+      ul.breadcrumbs
+        li
+          a(href='/') Главная
+          |  /
+        li
+          span Личный кабинет
+    .personal
+      header.personal__header
+        .container.personal__container
+          h1.section__title Личный кабинет
+          ul.personal__list 
+            li.personal__item
+              a(href="#").personal__link
+                .personal__img 
+                  svg 
+                    use(xlink:href="/website/img/icons/personal-sprite.svg#user") 
+                .personal__text Профиль
+            li.personal__item
+              a(href="#").personal__link
+                .personal__img 
+                  svg 
+                    use(xlink:href="/website/img/icons/personal-sprite.svg#shopping-cart") 
+                .personal__text Товары
+            li.personal__item
+              a(href="#").personal__link
+                .personal__img 
+                  svg 
+                    use(xlink:href="/website/img/icons/personal-sprite.svg#file") 
+                .personal__text История заказов
+            li.personal__item
+              a(href="#").personal__link
+                .personal__img 
+                  svg 
+                    use(xlink:href="/website/img/icons/personal-sprite.svg#email") 
+                .personal__text Обратная связь
+            li.personal__item.is-active
+              a(href="#").personal__link
+                .personal__img.personal__img--reverse
+                  svg 
+                    use(xlink:href="/website/img/icons/personal-sprite.svg#log-in")
+                .personal__text Выйти
+      section.logout
+        .container
+          .logout__content
+            .logout__graph 
+            .logout__title Вы действительно хотите выйти?
+          .logout__buttons
+            a(href="").button.button--red Выйти
+            a(href="").button Отменить

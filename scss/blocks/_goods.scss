@@ -1,43 +1,65 @@
 .goods {
   background: $gray;
   padding-bottom: 40px;
+  flex: 1;
 }
 
 .goods__contents {
-  display: flex;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 140px 120px minmax(120px, 160px);
+  grid-gap: 20px;
+  padding: 40px 50px 20px 50px;
+  font-size: 13px;
+}
+
+.goods__contents-name {
+  padding-left: 15%;
+  text-align: left;
 }
 
 .goods-item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr minmax(min-content, 140px) 120px minmax(min-content, 160px);
+  grid-gap: 20px;
   align-items: center;
+  text-align: center;
   background: #fff;
   margin-bottom: 20px;
-  padding: 30px;
+  padding: 30px 50px;
   position: relative;
+  font-family: $med;
 }
 
 .goods-item__info {
   display: flex;
   align-items: center;
-  margin-right: auto;
-  font-family: $med;
+
+  @include laptop {
+    flex-direction: column;
+  }
 }
-.goods-item__price {
-  font-family: $bold;
+.goods-item__img {
+  width: 150px;
+  flex-shrink: 0;
+}
+.goods-item__desc {
+  margin-left: 10%;
+  text-align: left;
+  max-width: 250px;
 }
 
-.goods-item__sum {
+.goods-item__price {
   font-family: $bold;
-  color: $green;
+  font-size: 18px;
 }
 
 .goods-item__count {
-  padding: 0 20px;
   display: flex;
   align-items: center;
+  justify-content: center;
   & span {
     display: inline-block;
-    font-family: $med;
     margin: 0 10px;
   }
   & a {
@@ -46,7 +68,7 @@
     display: inline-block;
     cursor: pointer;
     border-radius: 50%;
-    background: $green;
+    background: #97ba95;
     position: relative;
 
     &::before, &::after {
@@ -68,10 +90,16 @@
   }
 }
 
+.goods-item__sum {
+  font-family: $bold;
+  color: $green;
+  font-size: 18px;
+}
+
 .goods-item__remove {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 15px;
+  right: 15px;
   width: 35px;
   height: 35px;
   cursor: pointer;
@@ -95,4 +123,42 @@
     top: 0;
     right: 0;
   }
+}
+.goods__checkout {
+  padding: 0 10px;
+}
+
+.goods__point-desc {
+  font-size: 13px;
+}
+
+.goods__point-address {
+  margin-bottom: 10px;
+  font-family: $med;
+}
+
+.goods__checkout-controls {
+  display: flex;
+  padding: 30px 0;
+}
+
+.goods__checkout-sum {
+  display: flex;
+  align-items: center;
+  font-family: $med;
+
+  & span {
+    font-size: 18px;
+  }
+
+  & div {
+    font-size: 25px;
+    color: $green;
+    margin-left: 10px;
+  }
+}
+
+.goods__checkout-btn {
+  margin-left: auto;
+  width: 250px;
 }
