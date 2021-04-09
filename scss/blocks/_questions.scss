@@ -1,0 +1,129 @@
+.questions {
+  padding-bottom: 70px;
+}
+
+.questions__list {
+  padding: 10px 0 20px 0;
+}
+.questions__item {
+  position: relative;
+  padding: 20px 50px 20px 40px;
+  border: 1px dashed #140508;
+  margin-bottom: 30px;
+
+  &.is-active {
+    .questions__item-title::before {
+      display: block;      
+    }
+    .questions__item-text {
+      display: block;
+      padding: 30px 0;
+    }
+    .questions__btn {
+      border-color:#a6a6a6;
+      background-color:#4d4d4d;
+      &::before {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+      &::after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
+  }
+
+  & li {
+    position: relative;
+    padding-left: 25px;
+  }
+
+  & li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    margin-right: 10px;
+  }
+}
+
+.questions__item-title {
+  font-size: 26px;
+  position: relative;
+  color: $green;
+  font-family: $med;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 0;
+    bottom: -8px;
+    width: 60px;
+    height: 2px;
+    background: $green;
+  }
+}
+
+.questions__item-text {
+  display: none;
+  line-height: 1.5;
+}
+
+.questions__btn {
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+  top: 15px;
+  right: 25px;
+  width: 45px;
+  height: 45px;
+  border: 10px solid #97ba95;
+  background: #488b45;
+  border-radius: 50%;
+  &::before, &::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}
+
+.questions__banner {
+  position: relative;
+  overflow: hidden;
+  padding: 65px 50px 50px 55px;
+  color: #fff;
+  margin-bottom: 20px;
+  background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 123 212' xml:space='preserve'%3E%3Cpath style='fill:%2389b187' d='M 62.328125,0.3671875 C 43.872187,0.3671875 29.012854,5.2417135 17.75,14.990234 6.5817917,24.738755 0.90218229,37.989875 0.71289062,54.742188 H 35.212891 c 0,-7.855605 2.459276,-14.054657 7.380859,-18.597657 5.016229,-4.637646 11.594833,-6.957031 19.734375,-6.957031 8.518125,0 14.954885,2.367318 19.308594,7.099609 4.448354,4.637646 6.671875,11.404073 6.671875,20.300782 0,6.719854 -1.893854,12.966838 -5.679688,18.740234 -2.460791,3.785833 -8.328224,10.174661 -17.603515,19.166016 -9.180646,8.896709 -15.331766,17.083529 -18.455079,24.560549 -3.123312,7.47702 -4.685546,17.50976 -4.685546,30.09765 h 32.226562 c 0.189292,-13.629 3.407672,-23.99336 9.654297,-31.09179 l 17.462895,-17.17774 c 14.38616,-14.954039 21.57812,-30.144992 21.57812,-45.572263 0,-17.320188 -5.34799,-30.807063 -16.04297,-40.460938 C 96.163339,5.1957344 81.351938,0.3671875 62.328125,0.3671875 Z M 58.919922,174.56445 c -5.962688,0 -10.693417,1.75006 -14.195313,5.25196 -3.501895,3.40725 -5.253906,7.90222 -5.253906,13.48632 0,5.20553 1.656146,9.56061 4.96875,13.0625 3.40725,3.5019 8.233844,5.25196 14.480469,5.25196 6.246625,0 11.075172,-1.75006 14.482422,-5.25196 3.40725,-3.50189 5.109375,-7.85697 5.109375,-13.0625 0,-5.39481 -1.750058,-9.84185 -5.251953,-13.34375 -3.501896,-3.59654 -8.282511,-5.39453 -14.339844,-5.39453 z' id='_' /%3E%3C/svg%3E") left 18% top 10px / 22% auto no-repeat, #97ba95;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -1%;
+    width: 20%;
+    height: 130%;
+    background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 123 212' xml:space='preserve'%3E%3Cpath style='fill:%23fff' d='M 62.328125,0.3671875 C 43.872187,0.3671875 29.012854,5.2417135 17.75,14.990234 6.5817917,24.738755 0.90218229,37.989875 0.71289062,54.742188 H 35.212891 c 0,-7.855605 2.459276,-14.054657 7.380859,-18.597657 5.016229,-4.637646 11.594833,-6.957031 19.734375,-6.957031 8.518125,0 14.954885,2.367318 19.308594,7.099609 4.448354,4.637646 6.671875,11.404073 6.671875,20.300782 0,6.719854 -1.893854,12.966838 -5.679688,18.740234 -2.460791,3.785833 -8.328224,10.174661 -17.603515,19.166016 -9.180646,8.896709 -15.331766,17.083529 -18.455079,24.560549 -3.123312,7.47702 -4.685546,17.50976 -4.685546,30.09765 h 32.226562 c 0.189292,-13.629 3.407672,-23.99336 9.654297,-31.09179 l 17.462895,-17.17774 c 14.38616,-14.954039 21.57812,-30.144992 21.57812,-45.572263 0,-17.320188 -5.34799,-30.807063 -16.04297,-40.460938 C 96.163339,5.1957344 81.351938,0.3671875 62.328125,0.3671875 Z M 58.919922,174.56445 c -5.962688,0 -10.693417,1.75006 -14.195313,5.25196 -3.501895,3.40725 -5.253906,7.90222 -5.253906,13.48632 0,5.20553 1.656146,9.56061 4.96875,13.0625 3.40725,3.5019 8.233844,5.25196 14.480469,5.25196 6.246625,0 11.075172,-1.75006 14.482422,-5.25196 3.40725,-3.50189 5.109375,-7.85697 5.109375,-13.0625 0,-5.39481 -1.750058,-9.84185 -5.251953,-13.34375 -3.501896,-3.59654 -8.282511,-5.39453 -14.339844,-5.39453 z' id='_' /%3E%3C/svg%3E%0A") center right / contain no-repeat;
+  }
+}
+
+.questions__banner-text {
+  position: relative;
+  width: 100%;
+  max-width: 750px;
+  font-family: $med;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.questions__form {
+  background: $gray;
+  padding: 40px 50px;
+}

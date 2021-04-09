@@ -1,0 +1,118 @@
+extends ../layout
+
+block head 
+  title Вопрос-ответ
+
+block main
+  main.main
+    section.questions
+      .container
+        ul.breadcrumbs
+          li
+            a(href='/') Главная
+            |  /
+          li
+            a(href='/') О компании
+            |  /
+          li
+            span Вопрос-ответ
+        h1.section__title.section__title--left Вопрос-ответ
+        ul.questions__list 
+          li.questions__item
+            a(href="#").questions__btn
+            .questions__item-title Как зарегистрироваться на сайте?
+            .questions__item-text
+              span На открывшейся странице заполните краткую анкету:
+              ul 
+                li Имя и фамилия;
+                li Телефон и email;
+              span Подтвердите галочкой согласие и нажмите «Зарегистрироваться».
+          li.questions__item
+            a(href="#").questions__btn
+            .questions__item-title Как войти в личный кабинет?
+            .questions__item-text
+              span Для авторизации нажмите раздел «Вход» введите свой e-mail и пароль и нажмите «Войти».
+          li.questions__item
+            a(href="#").questions__btn
+            .questions__item-title Как восстановить пароль в личный кабинет?
+            .questions__item-text
+              span 
+                | Если Вы забыли пароль, то нажмите «Восстановить пароль» и введите свой e-mail.
+                br
+                | Контрольная строка для смены пароля, а также ваши регистрационные данные будут высланы на указанный e-mail. Также сменить пароль можно в разделе «Профиль» личного кабинета.
+          li.questions__item
+            a(href="#").questions__btn
+            .questions__item-title Как сделать заказ на сайте?
+            .questions__item-text
+              ul 
+                li Собрать корзину;
+                li Оформить заказ онлайн;
+                li Забрать заказ в выбранной аптеке.
+          li.questions__item
+            a(href="#").questions__btn
+            .questions__item-title В какое время можно бронировать заказ на сайте?
+            .questions__item-text
+              span Бронирование товара на сайте осуществляется круглосуточно. Забрать заказ можно в часы работы выбранной аптеки.
+          li.questions__item.is-active
+            a(href="#").questions__btn
+            .questions__item-title В течении какого времени можно забрать заказ ?
+            .questions__item-text
+              span Бронь на заказ сохраняется в аптеке в течении 24 часов. Если Вам необходимо продлить срок хранения вашего заказа, позвоните по тел. (4712) 515-515 и сообщите об этом менеджеру.
+          li.questions__item
+            a(href="#").questions__btn
+            .questions__item-title Можно ли вносить изменения в заказ, если он уже оформлен ?
+            .questions__item-text
+              span После подтверждения заказа менеджером или в личном кабинете внести изменения в заказ нельзя.
+          li.questions__item.is-active
+            a(href="#").questions__btn
+            .questions__item-title Преимущества личного кабинета?
+            .questions__item-text
+              ul 
+                li Экономия времени. Оставьте заявку через сайт и получите собранный заказ в удобной для Вас аптеке.
+                li Отслеживание статусов и деталей заказов.
+                li Просмотр истории всех оформленных заявок.
+                li Дополнительные функции — добавление в избранное, если не готовы оформить заказ, он останется в личном кабинете и не надо будет его снова искать.
+                li Возможность получить консультационные услуги сотрудника компании через форму обратной связи.
+                li Дополнительная скидка 3% при оформлении заказа через сайт.
+          li.questions__item
+            a(href="#").questions__btn
+            .questions__item-title Можно ли заказать товар, которого нет в наличии в аптеке?
+            .questions__item-text
+              span Да, можно. Забронируйте его на сайте и заказ будет сформирован, когда товар появится на складе.
+          li.questions__item.is-active
+            a(href="#").questions__btn
+            .questions__item-title Преимущества бронирования товара на сайте?
+            .questions__item-text
+              ul 
+                li 
+                  strong Это удобно! 
+                  | Вы выбираете товар и знакомитесь с инструкцией в любое удобное для Вас время дома или с работы.
+                li 
+                  strong Это быстро! 
+                  | К Вашему приезду в аптеку заказ уже собран.
+                li 
+                  strong Это надежно! 
+                  | При бронировании на сайте, товар резервируется для Вас, и Вы можете быть уверены, что он будет в аптеке в наличии. Особенно полезна эта функция для редких товаров, которые могут быстро закончиться в аптеке.
+                li 
+                  strong Это выгодно! 
+                  | При бронировании с сайта предоставляется скидка 3% на весь ассортимент аптеки.
+        .questions__banner
+          .questions__banner-text Если Вам не удалось найти ответ на возникший вопрос, Вы можете обратитьяс к менеджеру, позвонив по телефону, указанному в верхней части экрана или заполнить форму ниже.
+        .questions__form 
+          form
+            .feedback__form
+              .feedback__form-body
+                .feedback__form-row 
+                  .feedback__entries                  
+                      input(type="text" name="name" placeholder="Ваше имя").form__entry.feedback__input
+                      input(type="email" name="email" placeholder="Ваш email или телефон").form__entry.feedback__input
+                  .feedback__text
+                    textarea(name="text" placeholder="Текст сообщения").form__entry.feedback__textarea
+                .personal__agreement
+                  div
+                    span Отправляя данную форму, Вы соглашаетесь с
+                    a(href="#") Политикой о защите персональных данных
+              .feedback__form-controls 
+                .feedback__recapcha
+                .feedback__button 
+                  button(type="submit").button.button--medium Отправить

@@ -1,0 +1,27 @@
+extends ../layout
+
+block head 
+  title Авторизация | Восстановить пароль
+
+block main
+  main.main
+    section.auth
+      .container
+        ul.breadcrumbs
+          li
+            a(href='/') Главная
+            |  /
+          li
+            span Авторизация
+        .auth__login  
+          h1.auth__title Восстановить пароль
+          .auth__block 
+            .auth__form
+              .auth__desc 
+                .auth__desc-title Если вы забыли пароль, введите Email
+                .auth__desc-text Контрольная строка для смены пароля, а также ваши регистрационные данные, будут высланы Вам по Email
+              form 
+                .auth__form-row 
+                  input(type="email" placeholder="Ваш e-mail").form__entry
+                .auth__form-row
+                  button(type="submit").button.button--medium Отправить

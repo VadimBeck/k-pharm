@@ -8,7 +8,7 @@
 		<link href="/website/css/lightslider.min.css" rel="stylesheet">
 		<link href="/website/css/nice-select.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
-		<title>Личный кабинет | Обратная связь</title>
+		<title>Авторизация | Вход</title>
 		<script src="/website/js/jquery-3.3.1.min.js"> </script>
 		<script src="/website/js/jquery.fancybox.js"> </script>
 		<script src="/website/js/lightslider.min.js"> </script>
@@ -95,86 +95,35 @@
 				</nav>
 			</header>
 			<div id="body-overlay"></div>
-			<main class="main main--flex">
-				<div class="container">
-					<ul class="breadcrumbs">
-						<li><a href="/">Главная</a> /</li>
-						<li><span>Личный кабинет</span></li>
-					</ul>
-				</div>
-				<div class="personal">
-					<header class="personal__header">
-						<div class="container personal__container">
-							<h1 class="section__title">Личный кабинет</h1>
-							<ul class="personal__list"> 
-								<li class="personal__item"><a class="personal__link" href="#">
-										<div class="personal__img"> 
-											<svg> 
-												<use xlink:href="/website/img/icons/personal-sprite.svg#user"> </use>
-											</svg>
+			<main class="main">
+				<section class="auth">
+					<div class="container">
+						<ul class="breadcrumbs">
+							<li><a href="/">Главная</a> /</li>
+							<li><span>Авторизация</span></li>
+						</ul>
+						<div class="auth__login"> 
+							<h1 class="auth__title auth__title--left">Авторизация</h1>
+							<div class="auth__block"> 
+								<div class="auth__switches"><a class="auth__switch is-active" href="#">Вход</a><a class="auth__switch" href="#">Регистрация</a></div>
+								<div class="auth__form">
+									<form> 
+										<div class="auth__form-row"> 
+											<input class="form__entry" type="email" placeholder="Ваш e-mail">
 										</div>
-										<div class="personal__text">Профиль</div></a></li>
-								<li class="personal__item"><a class="personal__link" href="#">
-										<div class="personal__img"> 
-											<svg> 
-												<use xlink:href="/website/img/icons/personal-sprite.svg#shopping-cart"> </use>
-											</svg>
+										<div class="auth__form-row"> 
+											<input class="form__entry" type="password" placeholder="Пароль">
 										</div>
-										<div class="personal__text">Товары</div></a></li>
-								<li class="personal__item"><a class="personal__link" href="#">
-										<div class="personal__img"> 
-											<svg> 
-												<use xlink:href="/website/img/icons/personal-sprite.svg#file"> </use>
-											</svg>
+										<div class="auth__form-row">
+											<button class="button button--medium" type="submit">Войти</button>
 										</div>
-										<div class="personal__text">История заказов</div></a></li>
-								<li class="personal__item is-active"><a class="personal__link" href="#">
-										<div class="personal__img"> 
-											<svg> 
-												<use xlink:href="/website/img/icons/personal-sprite.svg#email"> </use>
-											</svg>
-										</div>
-										<div class="personal__text">Обратная связь</div></a></li>
-								<li class="personal__item"><a class="personal__link" href="#">
-										<div class="personal__img personal__img--reverse">
-											<svg> 
-												<use xlink:href="/website/img/icons/personal-sprite.svg#log-in"></use>
-											</svg>
-										</div>
-										<div class="personal__text">Выйти</div></a></li>
-							</ul>
-						</div>
-					</header>
-					<section class="feedback">
-						<div class="container personal__container">
-							<form>
-								<div class="feedback__form">
-									<div class="feedback__form-body">
-										<div class="feedback__form-row"> 
-											<div class="feedback__entries">                 
-												<input class="form__entry feedback__input" type="text" name="name" placeholder="Ваше имя">
-												<input class="form__entry feedback__input" type="email" name="email" placeholder="Ваш email или телефон">
-											</div>
-											<div class="feedback__text">
-												<textarea class="form__entry feedback__textarea" name="text" placeholder="Текст сообщения"></textarea>
-											</div>
-										</div>
-										<div class="personal__agreement feedback__agreement">
-											<input class="personal__checkbox" type="checkbox">
-											<div><span>Вы соглашаетесь с </span><a href="#">Политикой о защите персональных данных </a><span>при хранении Ваших данных</span></div>
-										</div>
-									</div>
-									<div class="feedback__form-controls"> 
-										<div class="feedback__recapcha"></div>
-										<div class="feedback__button"> 
-											<button class="button button--medium" type="submit">Отправить</button>
-										</div>
-									</div>
+										<div class="auth__form-row"><a class="auth__form-remind" href="#">Забыли пароль?</a></div>
+									</form>
 								</div>
-							</form>
+							</div>
 						</div>
-					</section>
-				</div>
+					</div>
+				</section>
 			</main>
 			<footer> 
 				<div class="container footer row"><a class="logo" href="/"><img src="/website/img/f_logo.png" alt=""></a>

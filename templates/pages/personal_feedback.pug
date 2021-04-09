@@ -48,21 +48,23 @@ block main
                     use(xlink:href="/website/img/icons/personal-sprite.svg#log-in")
                 .personal__text Выйти
       section.feedback
-        .container
-          form  
-            .feedback__form-row 
-              .feedback__form-fields
-                input(type="text" name="name" placeholder="Ваше имя")
-                input(type="email" name="email" placeholder="Ваш email или телефон")
-              .feedback__form-textarea 
-                textarea(name="text" placeholder="Текст сообщения") 
+        .container.personal__container
+          form
+            .feedback__form
+              .feedback__form-body
+                .feedback__form-row 
+                  .feedback__entries                  
+                      input(type="text" name="name" placeholder="Ваше имя").form__entry.feedback__input
+                      input(type="email" name="email" placeholder="Ваш email или телефон").form__entry.feedback__input
+                  .feedback__text
+                    textarea(name="text" placeholder="Текст сообщения").form__entry.feedback__textarea
+                .personal__agreement.feedback__agreement
+                  input(type="checkbox").personal__checkbox
+                  div
+                    span Вы соглашаетесь с 
+                    a(href="#") Политикой о защите персональных данных 
+                    span при хранении Ваших данных
               .feedback__form-controls 
                 .feedback__recapcha
                 .feedback__button 
-                  button(type="submit").button Отправить
-            .personal__agreement 
-              input(type="checkbox").personal__checkbox
-              div
-                span Вы соглашаетесь с 
-                a(href="#") Политикой о защите персональных данных 
-                span при хранении Ваших данных
+                  button(type="submit").button.button--medium Отправить

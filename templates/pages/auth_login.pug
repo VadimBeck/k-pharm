@@ -1,0 +1,31 @@
+extends ../layout
+
+block head 
+  title Авторизация | Вход
+
+block main
+  main.main
+    section.auth
+      .container
+        ul.breadcrumbs
+          li
+            a(href='/') Главная
+            |  /
+          li
+            span Авторизация
+        .auth__login  
+          h1.auth__title.auth__title--left Авторизация
+          .auth__block 
+            .auth__switches
+              a.auth__switch.is-active(href="#") Вход
+              a.auth__switch(href="#") Регистрация
+            .auth__form
+              form 
+                .auth__form-row 
+                  input(type="email" placeholder="Ваш e-mail").form__entry
+                .auth__form-row 
+                  input(type="password" placeholder="Пароль").form__entry
+                .auth__form-row
+                  button(type="submit").button.button--medium Войти
+                .auth__form-row
+                  a.auth__form-remind(href="#") Забыли пароль?

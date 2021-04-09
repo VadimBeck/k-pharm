@@ -8,7 +8,7 @@
 		<link href="/website/css/lightslider.min.css" rel="stylesheet">
 		<link href="/website/css/nice-select.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
-		<title>Личный кабинет | Обратная связь</title>
+		<title>Вопрос-ответ</title>
 		<script src="/website/js/jquery-3.3.1.min.js"> </script>
 		<script src="/website/js/jquery.fancybox.js"> </script>
 		<script src="/website/js/lightslider.min.js"> </script>
@@ -95,58 +95,89 @@
 				</nav>
 			</header>
 			<div id="body-overlay"></div>
-			<main class="main main--flex">
-				<div class="container">
-					<ul class="breadcrumbs">
-						<li><a href="/">Главная</a> /</li>
-						<li><span>Личный кабинет</span></li>
-					</ul>
-				</div>
-				<div class="personal">
-					<header class="personal__header">
-						<div class="container personal__container">
-							<h1 class="section__title">Личный кабинет</h1>
-							<ul class="personal__list"> 
-								<li class="personal__item"><a class="personal__link" href="#">
-										<div class="personal__img"> 
-											<svg> 
-												<use xlink:href="/website/img/icons/personal-sprite.svg#user"> </use>
-											</svg>
-										</div>
-										<div class="personal__text">Профиль</div></a></li>
-								<li class="personal__item"><a class="personal__link" href="#">
-										<div class="personal__img"> 
-											<svg> 
-												<use xlink:href="/website/img/icons/personal-sprite.svg#shopping-cart"> </use>
-											</svg>
-										</div>
-										<div class="personal__text">Товары</div></a></li>
-								<li class="personal__item"><a class="personal__link" href="#">
-										<div class="personal__img"> 
-											<svg> 
-												<use xlink:href="/website/img/icons/personal-sprite.svg#file"> </use>
-											</svg>
-										</div>
-										<div class="personal__text">История заказов</div></a></li>
-								<li class="personal__item is-active"><a class="personal__link" href="#">
-										<div class="personal__img"> 
-											<svg> 
-												<use xlink:href="/website/img/icons/personal-sprite.svg#email"> </use>
-											</svg>
-										</div>
-										<div class="personal__text">Обратная связь</div></a></li>
-								<li class="personal__item"><a class="personal__link" href="#">
-										<div class="personal__img personal__img--reverse">
-											<svg> 
-												<use xlink:href="/website/img/icons/personal-sprite.svg#log-in"></use>
-											</svg>
-										</div>
-										<div class="personal__text">Выйти</div></a></li>
-							</ul>
+			<main class="main">
+				<section class="questions">
+					<div class="container">
+						<ul class="breadcrumbs">
+							<li><a href="/">Главная</a> /</li>
+							<li><a href="/">О компании</a> /</li>
+							<li><span>Вопрос-ответ</span></li>
+						</ul>
+						<h1 class="section__title section__title--left">Вопрос-ответ</h1>
+						<ul class="questions__list"> 
+							<li class="questions__item"><a class="questions__btn" href="#"></a>
+								<div class="questions__item-title">Как зарегистрироваться на сайте?</div>
+								<div class="questions__item-text"><span>На открывшейся странице заполните краткую анкету:</span>
+									<ul> 
+										<li>Имя и фамилия;</li>
+										<li>Телефон и email;</li>
+									</ul><span>Подтвердите галочкой согласие и нажмите «Зарегистрироваться».</span>
+								</div>
+							</li>
+							<li class="questions__item"><a class="questions__btn" href="#"></a>
+								<div class="questions__item-title">Как войти в личный кабинет?</div>
+								<div class="questions__item-text"><span>Для авторизации нажмите раздел «Вход» введите свой e-mail и пароль и нажмите «Войти».</span></div>
+							</li>
+							<li class="questions__item"><a class="questions__btn" href="#"></a>
+								<div class="questions__item-title">Как восстановить пароль в личный кабинет?</div>
+								<div class="questions__item-text"><span>
+										 Если Вы забыли пароль, то нажмите «Восстановить пароль» и введите свой e-mail.<br>Контрольная строка для смены пароля, а также ваши регистрационные данные будут высланы на указанный e-mail. Также сменить пароль можно в разделе «Профиль» личного кабинета.</span></div>
+							</li>
+							<li class="questions__item"><a class="questions__btn" href="#"></a>
+								<div class="questions__item-title">Как сделать заказ на сайте?</div>
+								<div class="questions__item-text">
+									<ul> 
+										<li>Собрать корзину;</li>
+										<li>Оформить заказ онлайн;</li>
+										<li>Забрать заказ в выбранной аптеке.</li>
+									</ul>
+								</div>
+							</li>
+							<li class="questions__item"><a class="questions__btn" href="#"></a>
+								<div class="questions__item-title">В какое время можно бронировать заказ на сайте?</div>
+								<div class="questions__item-text"><span>Бронирование товара на сайте осуществляется круглосуточно. Забрать заказ можно в часы работы выбранной аптеки.</span></div>
+							</li>
+							<li class="questions__item is-active"><a class="questions__btn" href="#"></a>
+								<div class="questions__item-title">В течении какого времени можно забрать заказ ?</div>
+								<div class="questions__item-text"><span>Бронь на заказ сохраняется в аптеке в течении 24 часов. Если Вам необходимо продлить срок хранения вашего заказа, позвоните по тел. (4712) 515-515 и сообщите об этом менеджеру.</span></div>
+							</li>
+							<li class="questions__item"><a class="questions__btn" href="#"></a>
+								<div class="questions__item-title">Можно ли вносить изменения в заказ, если он уже оформлен ?</div>
+								<div class="questions__item-text"><span>После подтверждения заказа менеджером или в личном кабинете внести изменения в заказ нельзя.</span></div>
+							</li>
+							<li class="questions__item is-active"><a class="questions__btn" href="#"></a>
+								<div class="questions__item-title">Преимущества личного кабинета?</div>
+								<div class="questions__item-text">
+									<ul> 
+										<li>Экономия времени. Оставьте заявку через сайт и получите собранный заказ в удобной для Вас аптеке.</li>
+										<li>Отслеживание статусов и деталей заказов.</li>
+										<li>Просмотр истории всех оформленных заявок.</li>
+										<li>Дополнительные функции — добавление в избранное, если не готовы оформить заказ, он останется в личном кабинете и не надо будет его снова искать.</li>
+										<li>Возможность получить консультационные услуги сотрудника компании через форму обратной связи.</li>
+										<li>Дополнительная скидка 3% при оформлении заказа через сайт.</li>
+									</ul>
+								</div>
+							</li>
+							<li class="questions__item"><a class="questions__btn" href="#"></a>
+								<div class="questions__item-title">Можно ли заказать товар, которого нет в наличии в аптеке?</div>
+								<div class="questions__item-text"><span>Да, можно. Забронируйте его на сайте и заказ будет сформирован, когда товар появится на складе.</span></div>
+							</li>
+							<li class="questions__item is-active"><a class="questions__btn" href="#"></a>
+								<div class="questions__item-title">Преимущества бронирования товара на сайте?</div>
+								<div class="questions__item-text">
+									<ul> 
+										<li> <strong>Это удобно! </strong>Вы выбираете товар и знакомитесь с инструкцией в любое удобное для Вас время дома или с работы.</li>
+										<li> <strong>Это быстро! </strong>К Вашему приезду в аптеку заказ уже собран.</li>
+										<li> <strong>Это надежно! </strong>При бронировании на сайте, товар резервируется для Вас, и Вы можете быть уверены, что он будет в аптеке в наличии. Особенно полезна эта функция для редких товаров, которые могут быстро закончиться в аптеке.</li>
+										<li> <strong>Это выгодно! </strong>При бронировании с сайта предоставляется скидка 3% на весь ассортимент аптеки.</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+						<div class="questions__banner">
+							<div class="questions__banner-text">Если Вам не удалось найти ответ на возникший вопрос, Вы можете обратитьяс к менеджеру, позвонив по телефону, указанному в верхней части экрана или заполнить форму ниже.</div>
 						</div>
-					</header>
-					<section class="feedback">
-						<div class="container personal__container">
+						<div class="questions__form"> 
 							<form>
 								<div class="feedback__form">
 									<div class="feedback__form-body">
@@ -159,9 +190,8 @@
 												<textarea class="form__entry feedback__textarea" name="text" placeholder="Текст сообщения"></textarea>
 											</div>
 										</div>
-										<div class="personal__agreement feedback__agreement">
-											<input class="personal__checkbox" type="checkbox">
-											<div><span>Вы соглашаетесь с </span><a href="#">Политикой о защите персональных данных </a><span>при хранении Ваших данных</span></div>
+										<div class="personal__agreement">
+											<div><span>Отправляя данную форму, Вы соглашаетесь с</span><a href="#">Политикой о защите персональных данных</a></div>
 										</div>
 									</div>
 									<div class="feedback__form-controls"> 
@@ -173,8 +203,8 @@
 								</div>
 							</form>
 						</div>
-					</section>
-				</div>
+					</div>
+				</section>
 			</main>
 			<footer> 
 				<div class="container footer row"><a class="logo" href="/"><img src="/website/img/f_logo.png" alt=""></a>
