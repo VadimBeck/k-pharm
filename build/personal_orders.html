@@ -95,7 +95,7 @@
 				</nav>
 			</header>
 			<div id="body-overlay"></div>
-			<main class="main main--flex">
+			<main class="main">
 				<div class="container">
 					<ul class="breadcrumbs">
 						<li><a href="/">Главная</a> /</li>
@@ -148,11 +148,7 @@
 					<section class="orders">
 						<div class="container">
 							<div class="orders__empty" style="display:none">
-								<div class="orders__empty__img"> 
-									<svg> 
-										<use xlink:href="/website/img/icons/p-sprite.svg#shopping-cart"> </use>
-									</svg>
-								</div>
+								<div class="orders__empty__img"> </div>
 								<div class="orders__empty-text">
 									 После оформления заказа здесь появятся товары,<br>которые едут к Вам и были доставлены ранее.</div>
 							</div>
@@ -175,7 +171,9 @@
 											</ul>
 										</div>
 										<div class="orders__item-price">40 830.00 ₽</div>
-										<div class="orders__item-status orders__item-status--done"> <span>Выполнен</span></div>
+										<div class="orders__item-status orders__item-status--done"> 
+											<div><span>Выполнен</span></div>
+										</div>
 									</li>
 									<li class="orders__item">
 										<div class="orders__item-num">2</div>
@@ -187,7 +185,9 @@
 											</ul>
 										</div>
 										<div class="orders__item-price">40 830.00 ₽</div>
-										<div class="orders__item-status orders__item-status--pending"> <span>В обработке</span></div>
+										<div class="orders__item-status orders__item-status--pending"> 
+											<div><span>В обработке</span></div>
+										</div>
 									</li>
 									<li class="orders__item">
 										<div class="orders__item-num">3</div>
@@ -199,7 +199,9 @@
 											</ul>
 										</div>
 										<div class="orders__item-price">40 830.00 ₽</div>
-										<div class="orders__item-status orders__item-status--sent"> <span>Отправлен</span></div>
+										<div class="orders__item-status orders__item-status--sent"> 
+											<div><span>Отправлен</span></div>
+										</div>
 									</li>
 								</ul>
 							</div>
@@ -283,7 +285,7 @@
 			<div id="callback-overlay" style="display: none;">
 				<div class="overlay">
 					<form class="overlay__form">
-						<div class="overlay__title">Заказать обратный звонок</div>
+						<h2 class="overlay__title">Заказать обратный звонок</h2>
 						<div class="overlay__form-row"> 
 							<input type="text" placeholder="Ваше имя">
 						</div>

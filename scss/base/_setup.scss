@@ -22,11 +22,8 @@ body {
 
 .main {
   flex: 1;
-  &--flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  display: flex;
+  flex-direction: column;
 }
 
 .slide_top {

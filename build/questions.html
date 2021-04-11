@@ -179,26 +179,22 @@
 						</div>
 						<div class="questions__form"> 
 							<form>
-								<div class="feedback__form">
-									<div class="feedback__form-body">
-										<div class="feedback__form-row"> 
-											<div class="feedback__entries">                 
-												<input class="form__entry feedback__input" type="text" name="name" placeholder="Ваше имя">
-												<input class="form__entry feedback__input" type="email" name="email" placeholder="Ваш email или телефон">
-											</div>
-											<div class="feedback__text">
-												<textarea class="form__entry feedback__textarea" name="text" placeholder="Текст сообщения"></textarea>
-											</div>
-										</div>
-										<div class="personal__agreement">
-											<div><span>Отправляя данную форму, Вы соглашаетесь с</span><a href="#">Политикой о защите персональных данных</a></div>
-										</div>
+								<div class="contact-form">
+									<div class="contact-form__entries">                 
+										<input class="form__entry contact-form__input" type="text" name="name" placeholder="Ваше имя">
+										<input class="form__entry contact-form__input" type="email" name="email" placeholder="Ваш email или телефон">
 									</div>
-									<div class="feedback__form-controls"> 
-										<div class="feedback__recapcha"></div>
-										<div class="feedback__button"> 
+									<div class="contact-form__text">
+										<textarea class="form__entry contact-form__textarea" name="text" placeholder="Текст сообщения"></textarea>
+									</div>
+									<div class="contact-form__controls"> 
+										<div class="contact-form__recapcha"></div>
+										<div class="contact-form__button"> 
 											<button class="button button--medium" type="submit">Отправить</button>
 										</div>
+									</div>
+									<div class="form__agreement questions__agreement">
+										<div><span>Отправляя данную форму, Вы соглашаетесь с </span><a href="#">Политикой о защите персональных данных</a></div>
 									</div>
 								</div>
 							</form>
@@ -282,7 +278,7 @@
 			<div id="callback-overlay" style="display: none;">
 				<div class="overlay">
 					<form class="overlay__form">
-						<div class="overlay__title">Заказать обратный звонок</div>
+						<h2 class="overlay__title">Заказать обратный звонок</h2>
 						<div class="overlay__form-row"> 
 							<input type="text" placeholder="Ваше имя">
 						</div>

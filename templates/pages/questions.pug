@@ -100,19 +100,17 @@ block main
           .questions__banner-text Если Вам не удалось найти ответ на возникший вопрос, Вы можете обратитьяс к менеджеру, позвонив по телефону, указанному в верхней части экрана или заполнить форму ниже.
         .questions__form 
           form
-            .feedback__form
-              .feedback__form-body
-                .feedback__form-row 
-                  .feedback__entries                  
-                      input(type="text" name="name" placeholder="Ваше имя").form__entry.feedback__input
-                      input(type="email" name="email" placeholder="Ваш email или телефон").form__entry.feedback__input
-                  .feedback__text
-                    textarea(name="text" placeholder="Текст сообщения").form__entry.feedback__textarea
-                .personal__agreement
-                  div
-                    span Отправляя данную форму, Вы соглашаетесь с
-                    a(href="#") Политикой о защите персональных данных
-              .feedback__form-controls 
-                .feedback__recapcha
-                .feedback__button 
+            .contact-form
+              .contact-form__entries                  
+                input(type="text" name="name" placeholder="Ваше имя").form__entry.contact-form__input
+                input(type="email" name="email" placeholder="Ваш email или телефон").form__entry.contact-form__input
+              .contact-form__text
+                textarea(name="text" placeholder="Текст сообщения").form__entry.contact-form__textarea
+              .contact-form__controls 
+                .contact-form__recapcha
+                .contact-form__button 
                   button(type="submit").button.button--medium Отправить
+              .form__agreement.questions__agreement
+                div
+                  span Отправляя данную форму, Вы соглашаетесь с 
+                  a(href="#") Политикой о защите персональных данных

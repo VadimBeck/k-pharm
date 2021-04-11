@@ -4,7 +4,7 @@ block head
   title Личный кабинет | Заказы
 
 block main
-  main.main.main--flex
+  main.main
     .container
       ul.breadcrumbs
         li
@@ -51,8 +51,6 @@ block main
         .container
           .orders__empty(style="display:none")
             .orders__empty__img 
-                  svg 
-                    use(xlink:href="/website/img/icons/p-sprite.svg#shopping-cart") 
             .orders__empty-text 
               | После оформления заказа здесь появятся товары,
               br
@@ -78,7 +76,8 @@ block main
                         span X 2
                 .orders__item-price 40 830.00 ₽
                 .orders__item-status.orders__item-status--done 
-                  span Выполнен
+                  div
+                    span Выполнен
               li.orders__item
                 .orders__item-num 2
                 .orders__item-date 24.05.2021
@@ -92,7 +91,8 @@ block main
                         span X 2
                 .orders__item-price 40 830.00 ₽
                 .orders__item-status.orders__item-status--pending 
-                  span В обработке
+                  div
+                    span В обработке
               li.orders__item
                 .orders__item-num 3
                 .orders__item-date 24.05.2021
@@ -106,4 +106,5 @@ block main
                         span X 2
                 .orders__item-price 40 830.00 ₽
                 .orders__item-status.orders__item-status--sent 
-                  span Отправлен
+                  div
+                    span Отправлен

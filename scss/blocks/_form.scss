@@ -1,0 +1,150 @@
+.button {
+  background: $green;
+  color: #fff;
+  padding: 18px 20px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &--red {
+    background: $red;
+  }
+  &--medium {
+    padding: 20px;
+  }
+}
+
+.form__entry {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 20px 25px;
+  background: #fff;
+  width: 100%;
+}
+
+.form__agreement {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+
+  & a {
+    color: $green;
+    text-decoration: underline;
+    display: inline-block;
+  }
+}
+
+.form__checkbox {
+  position: relative;
+  margin-right: 15px;
+  visibility: hidden;
+  flex: 0 0 25px;
+  width: 25px;
+  height: 25px;
+
+  &::before,&::after {
+    content: "";
+    visibility: visible;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  &::before {    
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border: 1px solid #c5c5c5;
+    border-radius: 3px;    
+  }
+  &::after {
+    width: 5px;
+    height: 14px;
+    border-style: solid;
+    border-color: #000;
+    border-width: 0 1px 1px 0;
+    left: 10px;
+    top: 4px;
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+  &:checked::after {
+    opacity: 1;
+  }
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 220px 1fr 300px;
+  grid-column-gap: 30px;
+  grid-row-gap: 20px;
+
+  @include laptop {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include phones {
+    grid-template-columns: 1fr;
+    grid-column-gap: normal;
+  }
+}
+
+.contact-form__entries {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-form__input {
+  margin-bottom: 30px;
+  flex: 1;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @include tablets {
+    margin-bottom: 20px;
+  }
+}
+.contact-form__text {
+  margin-right: 10px;
+  @include laptop {
+    margin-right: 0;
+  }
+  @include phones {
+    grid-row: 2/3;
+  }
+}
+
+.contact-form__textarea {
+  height: 100%;
+  min-height: 140px;
+  resize: none;
+}
+
+.contact-form__controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include laptop {
+    order: 1;
+    grid-column: 1/3;
+    flex-direction: row;
+  }
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+.contact-form__button {
+  margin-top: 10px;
+  @include laptop {
+    flex: 0.5;
+    margin: 0 0 0 30px;
+  }
+  @include phones {
+    margin: 0;
+  }
+}

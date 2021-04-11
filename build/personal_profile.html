@@ -95,7 +95,7 @@
 				</nav>
 			</header>
 			<div id="body-overlay"></div>
-			<main class="main main--flex">
+			<main class="main">
 				<div class="container">
 					<ul class="breadcrumbs">
 						<li><a href="/">Главная</a> /</li>
@@ -154,24 +154,24 @@
 										<div class="profile__block-row">
 											<div class="profile__block-col profile__block-col--wide">
 												<label><span> ФИО</span>
-													<input type="text" name="name" required>
+													<input class="form__entry" type="text" name="name" required>
 												</label>
 											</div>
 											<div class="profile__block-col">
 												<label><span> Телефон</span>
-													<input type="tel" name="phone">
+													<input class="form__entry" type="tel" name="phone">
 												</label>
 											</div>
 											<div class="profile__block-col">
 												<label><span> Email</span>
-													<input type="email" name="email">
+													<input class="form__entry" type="email" name="email">
 												</label>
 											</div>
 										</div>
 										<div class="profile__block-row">
-											<div class="personal__agreement"> 
-												<input class="personal__checkbox" type="checkbox">
-												<div><span>Вы соглашаетесь с </span><a href="#">Политикой о защите персональных данных </a><span>при хранении Ваших данных</span></div>
+											<div class="form__agreement profile__agreement">
+												<input class="form__checkbox" type="checkbox">
+												<div><span>Вы соглашаетесь с </span><a href="#">Политикой о защите персональных данных </a><span> при хранении Ваших данных</span></div>
 											</div>
 											<div class="profile__block-btn">
 												<button class="button" type="submit">Сохранить</button>
@@ -185,17 +185,17 @@
 										<div class="profile__block-row">
 											<div class="profile__block-col profile__block-col--wide">
 												<label><span>Ваш email(логин)*</span>
-													<input type="text" name="login" required>
+													<input class="form__entry" type="text" name="login" required>
 												</label>
 											</div>
 											<div class="profile__block-col">
 												<label><span> Пароль (мин 6 символов):</span>
-													<input type="password" name="password">
+													<input class="form__entry" type="password" name="password">
 												</label>
 											</div>
 											<div class="profile__block-col">
 												<label><span> Подтверждение пароля:</span>
-													<input type="password" name="password">
+													<input class="form__entry" type="password" name="password">
 												</label>
 											</div>
 										</div>
@@ -298,7 +298,7 @@
 			<div id="callback-overlay" style="display: none;">
 				<div class="overlay">
 					<form class="overlay__form">
-						<div class="overlay__title">Заказать обратный звонок</div>
+						<h2 class="overlay__title">Заказать обратный звонок</h2>
 						<div class="overlay__form-row"> 
 							<input type="text" placeholder="Ваше имя">
 						</div>

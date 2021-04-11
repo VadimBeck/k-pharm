@@ -126,4 +126,13 @@
 .questions__form {
   background: $gray;
   padding: 40px 50px;
+
+  @include tablets {
+    padding: 30px;
+  }
+}
+
+.questions__agreement {
+  padding-left: 20px;
+  grid-column: 1/3;
 }
