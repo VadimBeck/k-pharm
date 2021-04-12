@@ -1,0 +1,59 @@
+extends ../layout
+
+block head 
+  title Корзина
+
+block main
+  main.main
+    section.goods
+      .container
+        ul.breadcrumbs
+          li
+            a(href='/') Главная
+            |  /
+          li
+            span Корзина
+        h1.section__title Корзина
+        ul.goods__contents
+          li.goods__contents-name Наименование товара
+          li.goods__contents-price Цена
+          li.goods__contents-count Количество
+          li.goods__contents-sum Сумма
+        ul.goods__list 
+          li.goods-item               
+            .goods-item__img 
+              a(href="#") 
+                img(src="/website/img/goods_item.jpg" alt="")
+            .goods-item__desc 
+              a(href="#")  Аквадетрим таблетки раств.&nbsp;500ME 90шт. 
+            .goods-item__price 4 830.00 ₽
+            .goods-item__count
+              a.minus
+              span 10
+              a.plus              
+            .goods-item__sum 40 830.00 ₽
+            a.goods-item__remove 
+          li.goods-item 
+            .goods-item__img 
+              a(href="#") 
+                img(src="/website/img/goods_item.jpg" alt="")
+            .goods-item__desc 
+              a(href="#")  Аквадетрим таблетки раств.&nbsp;500ME 90шт. 
+            .goods-item__price 4 830.00 ₽
+            .goods-item__count
+              a.minus
+              span 10
+              a.plus          
+            .goods-item__sum 40 830.00 ₽
+            a.goods-item__remove  
+        .goods__checkout
+          .goods__point
+            .goods__point-desc Адрес аптечного пункта для самовывоза:
+            .goods__point-address Курская обл., Черемисиновский район, п.Черемисиново, ул.Комсомольская, д.4
+            a(href="#").goods__point-link Выбрать другую аптеку
+          .goods__checkout-controls 
+            .goods__checkout-sum 
+              span Сумма заказа:
+              div 81 660.00 ₽
+            .goods__checkout-btn 
+              button.button.button--red Оформить заказ

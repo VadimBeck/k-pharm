@@ -2,7 +2,6 @@ body.eye-activate,
 body.eye-activate p,
 body.eye-activate span,
 body.eye-activate div,
-//body.eye-activate div:not(.lightSlider, .lslide, .clone),
 body.eye-activate aside,
 body.eye-activate h1,
 body.eye-activate h2,
@@ -783,8 +782,10 @@ body.eye-activate {
 
     & .company-contacts__link {
       text-align: left !important;
+      padding-left: 20px;
       & span {
         margin: 0 0 0 20px;
+        padding-left: 10px !important;
       }
     }
 
@@ -838,12 +839,21 @@ body.eye-activate {
       padding: 20px 0 !important;
       & div {
         margin: 0 0 0 20px !important;
+        @include phones {
+          margin-left: 5px !important;
+        }
       }
-      & .advantage__title {
-        width: auto !important;
+    }
+    & .advantage__title {
+      width: auto !important;
+      @include phones {
+        font-size: 20px !important;
       }
-      & .advantage__num {
-        width: auto !important;
+    }
+    & .advantage__num {
+      width: auto !important;
+      @include phones {
+        display: none;
       }
     }
     & .advantage__logo {
@@ -855,7 +865,9 @@ body.eye-activate {
   & .certify__docs-list {
     display: block;
     & .certify__docs-item {
-      max-width: none;
+      & a {
+        max-width: none;
+      }
       & span {
         padding-left: 20px !important;
       }
@@ -1087,6 +1099,88 @@ body.eye-activate {
       & > li {
         font-size: 20px !important;
       }
+    }
+  }
+  & .lSSlideOuter {
+    max-height: 400px;
+    overflow: hidden;
+  }
+  & .button,
+  .reviews_form__btn {
+    width: 100% !important;
+    background: $green !important;
+  }
+  & .contacts__btn {
+    & span {
+      color: #fff !important;
+    }
+    & span::before {
+      display: none;
+    }
+  }
+  & .news-item__back {
+    & span {
+      color: #fff !important;
+      margin-bottom: 0 !important;
+    }
+  }
+  & .news-item {
+    padding-top: 0 !important;
+  }
+  & .personal__item.is-active,
+  .personal__item:hover {
+    & div {
+      color: #fff !important;
+    }
+  }
+  & .profile__block-row {
+    align-items: flex-end;
+    & .profile__block-btn {
+      margin: 0 !important;
+    }
+    & button {
+      color: #fff !important;
+    }
+  }
+  & .goods-item__count {
+    & span {
+      width: auto !important;
+      margin: 0 5px !important;
+    }
+  }
+  & .goods-item__sum {
+    white-space: nowrap;
+  }
+  & .button {
+    color: #fff !important;
+  }
+  & .orders__item {
+    & div {
+      width: auto !important;
+    }
+    & div::before {
+      display: none;
+    }
+    & .orders__item-date {
+      padding: 0 10px !important;
+    }
+    & .orders__item-price {
+      padding: 0 10px !important;
+      color: $green !important;
+      max-width: 200px;
+    }
+  }
+  & .form__checkbox {
+    margin: 0 10px 0 0 !important;
+  }
+  & .e-404__circles {
+    display: none;
+  }
+  & .order-done__inner {
+    width: 320px !important;
+    padding-top: 180px !important;
+    &::before {
+      display: none;
     }
   }
 }

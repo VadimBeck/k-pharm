@@ -32,7 +32,6 @@
     left: 0;
     background: linear-gradient(to right, $midGray, transparent);
   }
-  
 }
 
 .slider__item-block {
@@ -50,7 +49,7 @@
   }
 
   @include phones {
-    width: calc(100% - 35px)
+    width: calc(100% - 35px);
   }
 
   &::before,
@@ -151,14 +150,14 @@
         background: #fff;
         width: 13px;
         height: 13px;
-        transition: background .1s ease;
+        transition: background 0.1s ease;
       }
       &.active > a {
         background: $red;
       }
       &:hover > a {
         background: $red;
-        transition: background .4s ease;
+        transition: background 0.4s ease;
       }
     }
   }
