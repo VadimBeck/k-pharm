@@ -134,5 +134,13 @@ $(document).ready(function() {
       $(this).toggleClass('slidedown');
   });
 
+  // Отображене элементов вопрос-ответ
+  $('.questions__list').on('click', function(e){
+    let button = $(e.target);
+    if(button.hasClass('questions__btn')) {
+      e.preventDefault();
+      button.closest('.questions__item').toggleClass('is-active');
+    }
+  })
 });
 

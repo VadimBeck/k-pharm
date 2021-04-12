@@ -7,27 +7,25 @@
 }
 .questions__item {
   position: relative;
-  padding: 20px 50px 20px 40px;
+  padding: 20px 60px 20px 40px;
   border: 1px dashed #140508;
   margin-bottom: 30px;
 
   &.is-active {
     .questions__item-title::before {
-      display: block;
+      opacity: 1;
+      transition: opacity 0.3s;
     }
     .questions__item-text {
-      display: block;
+      visibility: visible;
+      max-height: none;
+      transition: all 0.3s;
       padding: 30px 0;
     }
     .questions__btn {
       border-color: #a6a6a6;
       background-color: #4d4d4d;
-      &::before {
-        transform: translate(-50%, -50%) rotate(45deg);
-      }
-      &::after {
-        transform: translate(-50%, -50%) rotate(-45deg);
-      }
+      transform: rotate(45deg);
     }
   }
 
@@ -53,12 +51,12 @@
   &::before {
     content: "";
     position: absolute;
-    display: none;
     left: 0;
     bottom: -8px;
     width: 60px;
     height: 2px;
     background: $green;
+    opacity: 0;
   }
 
   @include tablets {
@@ -67,7 +65,8 @@
 }
 
 .questions__item-text {
-  display: none;
+  visibility: hidden;
+  max-height: 0;
   line-height: 1.5;
 }
 
@@ -82,20 +81,13 @@
   border: 10px solid #97ba95;
   background: #488b45;
   border-radius: 50%;
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 1px;
-    background: #fff;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-  &::after {
-    transform: translate(-50%, -50%) rotate(90deg);
-  }
+  color: #fff;
+  font-size: 20px;
+  line-height: 25px;
+  vertical-align: middle;
+  text-align: center;
+  transition: transform 0.2s, background 0.3s;
+
   @include tablets {
     top: 10px;
     right: 10px;

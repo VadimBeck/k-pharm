@@ -1,0 +1,449 @@
+.pharmacy .breadcrumbs + h1 {
+  padding-top: 5px;
+}
+
+.pharmacy_list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin: 0;
+  padding: 0 15px 100px;
+  list-style: none;
+
+  &--two {
+    grid-template-columns: repeat(2, calc(100% / 4));
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .pharmacy_list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .pharmacy_list--two {
+    grid-template-columns: repeat(2, calc(100% / 3));
+  }
+}
+@media screen and (max-width: 767px) {
+  .pharmacy_list {
+    grid-gap: 20px;
+    padding: 0 0 50px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .pharmacy_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 479px) {
+  .pharmacy_list {
+    grid-template-columns: 1fr;
+  }
+}
+.pharmacy_list > li {
+  position: relative;
+  padding: 27px;
+  border-width: 1px;
+  border-color: #140508;
+  border-style: dashed;
+  border-radius: 2px;
+}
+.pharmacy_list > li:hover .pharmacy_list__more {
+  opacity: 1;
+}
+
+.pharmacy_list__more {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(244, 244, 244, 0.85);
+  opacity: 0;
+  z-index: 1;
+  transition: 0.2s;
+}
+@media screen and (max-width: 600px) {
+  .pharmacy_list__more {
+    background: none;
+    opacity: 1;
+  }
+}
+.pharmacy_list__more span {
+  padding: 13px 25px;
+  background-color: #488b45;
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+}
+@media screen and (max-width: 600px) {
+  .pharmacy_list__more span {
+    display: none;
+  }
+}
+
+.pharmacy_list__name {
+  display: block;
+  margin-bottom: 25px;
+  color: #488b45;
+  font-family: "Roboto Medium", Arial, sans-serif;
+}
+@media screen and (max-width: 480px) {
+  .pharmacy_list__name {
+    margin-bottom: 15px;
+  }
+}
+
+.pharmacy_list__time-wrap {
+  padding: 30px 0 50px 0;
+}
+
+.pharmacy_list__adr,
+.pharmacy_list__time {
+  padding: 0;
+  font-family: "Roboto Medium", Arial, sans-serif;
+}
+
+.pharmacy_list__option {
+  margin: 10px -10px 5px;
+  padding: 12px 10px;
+  background-color: #f4f4f4;
+  list-style: none;
+}
+.pharmacy_list__option li::before {
+  content: "- ";
+}
+
+.pharmacy_list__tel {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 1.1;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 21px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 473.806 473.806' style='enable-background:new 0 0 473.806 473.806;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath d='M374.456,293.506c-9.7-10.1-21.4-15.5-33.8-15.5c-12.3,0-24.1,5.3-34.2,15.4l-31.6,31.5c-2.6-1.4-5.2-2.7-7.7-4 c-3.6-1.8-7-3.5-9.9-5.3c-29.6-18.8-56.5-43.3-82.3-75c-12.5-15.8-20.9-29.1-27-42.6c8.2-7.5,15.8-15.3,23.2-22.8 c2.8-2.8,5.6-5.7,8.4-8.5c21-21,21-48.2,0-69.2l-27.3-27.3c-3.1-3.1-6.3-6.3-9.3-9.5c-6-6.2-12.3-12.6-18.8-18.6 c-9.7-9.6-21.3-14.7-33.5-14.7s-24,5.1-34,14.7c-0.1,0.1-0.1,0.1-0.2,0.2l-34,34.3c-12.8,12.8-20.1,28.4-21.7,46.5 c-2.4,29.2,6.2,56.4,12.8,74.2c16.2,43.7,40.4,84.2,76.5,127.6c43.8,52.3,96.5,93.6,156.7,122.7c23,10.9,53.7,23.8,88,26 c2.1,0.1,4.3,0.2,6.3,0.2c23.1,0,42.5-8.3,57.7-24.8c0.1-0.2,0.3-0.3,0.4-0.5c5.2-6.3,11.2-12,17.5-18.1c4.3-4.1,8.7-8.4,13-12.9 c9.9-10.3,15.1-22.3,15.1-34.6c0-12.4-5.3-24.3-15.4-34.3L374.456,293.506z M410.256,398.806 C410.156,398.806,410.156,398.906,410.256,398.806c-3.9,4.2-7.9,8-12.2,12.2c-6.5,6.2-13.1,12.7-19.3,20 c-10.1,10.8-22,15.9-37.6,15.9c-1.5,0-3.1,0-4.6-0.1c-29.7-1.9-57.3-13.5-78-23.4c-56.6-27.4-106.3-66.3-147.6-115.6 c-34.1-41.1-56.9-79.1-72-119.9c-9.3-24.9-12.7-44.3-11.2-62.6c1-11.7,5.5-21.4,13.8-29.7l34.1-34.1c4.9-4.6,10.1-7.1,15.2-7.1 c6.3,0,11.4,3.8,14.6,7c0.1,0.1,0.2,0.2,0.3,0.3c6.1,5.7,11.9,11.6,18,17.9c3.1,3.2,6.3,6.4,9.5,9.7l27.3,27.3 c10.6,10.6,10.6,20.4,0,31c-2.9,2.9-5.7,5.8-8.6,8.6c-8.4,8.6-16.4,16.6-25.1,24.4c-0.2,0.2-0.4,0.3-0.5,0.5 c-8.6,8.6-7,17-5.2,22.7c0.1,0.3,0.2,0.6,0.3,0.9c7.1,17.2,17.1,33.4,32.3,52.7l0.1,0.1c27.6,34,56.7,60.5,88.8,80.8 c4.1,2.6,8.3,4.7,12.3,6.7c3.6,1.8,7,3.5,9.9,5.3c0.4,0.2,0.8,0.5,1.2,0.7c3.4,1.7,6.6,2.5,9.9,2.5c8.3,0,13.5-5.2,15.2-6.9 l34.2-34.2c3.4-3.4,8.8-7.5,15.1-7.5c6.2,0,11.3,3.9,14.4,7.3c0.1,0.1,0.1,0.1,0.2,0.2l55.1,55.1 C420.456,377.706,420.456,388.206,410.256,398.806z'/%3E%3Cpath d='M256.056,112.706c26.2,4.4,50,16.8,69,35.8s31.3,42.8,35.8,69c1.1,6.6,6.8,11.2,13.3,11.2c0.8,0,1.5-0.1,2.3-0.2 c7.4-1.2,12.3-8.2,11.1-15.6c-5.4-31.7-20.4-60.6-43.3-83.5s-51.8-37.9-83.5-43.3c-7.4-1.2-14.3,3.7-15.6,11 S248.656,111.506,256.056,112.706z'/%3E%3Cpath d='M473.256,209.006c-8.9-52.2-33.5-99.7-71.3-137.5s-85.3-62.4-137.5-71.3c-7.3-1.3-14.2,3.7-15.5,11 c-1.2,7.4,3.7,14.3,11.1,15.6c46.6,7.9,89.1,30,122.9,63.7c33.8,33.8,55.8,76.3,63.7,122.9c1.1,6.6,6.8,11.2,13.3,11.2 c0.8,0,1.5-0.1,2.3-0.2C469.556,223.306,474.556,216.306,473.256,209.006z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}
+@media screen and (max-width: 1080px) {
+  .pharmacy_list__tel {
+    padding-right: 0;
+  }
+}
+.pharmacy_list__tel a {
+  display: block;
+  font-size: 26px;
+  font-family: "Roboto Medium", Arial, sans-serif;
+}
+@media screen and (max-width: 480px) {
+  .pharmacy_list__tel a {
+    font-size: 22px;
+  }
+}
+
+.pharmacy_item {
+  align-items: flex-start;
+}
+
+.pharmacy_item__main {
+  width: 500px;
+  margin-bottom: 35px;
+  padding: 40px 48px 48px;
+  border-width: 1px;
+  border-color: #140508;
+  border-style: dashed;
+  border-radius: 2px;
+}
+@media screen and (max-width: 900px) {
+  .pharmacy_item__main {
+    width: 400px;
+    padding: 30px 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .pharmacy_item__main {
+    width: 340px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .pharmacy_item__main {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.pharmacy_item__main .pharmacy_item__name {
+  padding: 0 0 25px 35px;
+  color: #488b45;
+  font-family: "Roboto Medium", Arial, sans-serif;
+}
+.pharmacy_item__main .pharmacy_item__adr {
+  position: relative;
+  padding: 0 0 25px 35px;
+  font-family: "Roboto Medium", Arial, sans-serif;
+}
+.pharmacy_item__main .pharmacy_item__adr::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 20px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' %3F%3E%3Csvg data-name='Livello 1' id='Livello_1' viewBox='0 0 128 128' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle/%3E%3Cpath d='M64,128a6.9,6.9,0,0,1-4.89-2L26.23,93.12A55.05,55.05,0,0,1,10,53.69,53.29,53.29,0,0,1,25.87,15.58a54.56,54.56,0,0,1,76.26,0h0A53.29,53.29,0,0,1,118,53.69a55.05,55.05,0,0,1-16.23,39.43L68.89,125.94A6.9,6.9,0,0,1,64,128ZM64,6A48.19,48.19,0,0,0,30.08,19.85,47.34,47.34,0,0,0,16,53.7,49.1,49.1,0,0,0,30.47,88.87l32.87,32.82a.91.91,0,0,0,1.31,0L97.53,88.87A49.1,49.1,0,0,0,112,53.7,47.34,47.34,0,0,0,97.92,19.85h0A48.19,48.19,0,0,0,64,6Z'/%3E%3Cpath d='M64,81.41a27.25,27.25,0,1,1,19.3-8A27.23,27.23,0,0,1,64,81.41Zm0-48.49a21.26,21.26,0,1,0,15.06,6.22h0A21.25,21.25,0,0,0,64,32.92Z'/%3E%3C/svg%3E");
+}
+.pharmacy_item__main .pharmacy_item__time {
+  position: relative;
+  padding: 0 0 15px 35px;
+  font-family: "Roboto Medium", Arial, sans-serif;
+}
+.pharmacy_item__main .pharmacy_item__time::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath d='M256,0C114.84,0,0,114.84,0,256s114.84,256,256,256s256-114.84,256-256S397.16,0,256,0z M256,474.074 c-120.244,0-218.074-97.83-218.074-218.074S135.756,37.926,256,37.926S474.074,135.756,474.074,256S376.244,474.074,256,474.074z' /%3E%3C/g%3E%3C/g%3E%3Cg%3E%3Cg%3E%3Cpath d='M355.24,244.622h-82.805v-90.39c0-10.474-8.489-18.963-18.963-18.963c-10.474,0-18.963,8.489-18.963,18.963v109.353 c0,10.474,8.489,18.963,18.963,18.963H355.24c10.474,0,18.963-8.489,18.963-18.963S365.713,244.622,355.24,244.622z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.pharmacy_item__main .pharmacy_item__option {
+  max-width: 390px;
+  margin: 0 0 0 10px;
+  padding: 12px 25px;
+  background-color: #f4f4f4;
+  list-style: none;
+}
+.pharmacy_item__main .pharmacy_item__option li::before {
+  content: "- ";
+}
+.pharmacy_item__main .pharmacy_item__tel {
+  position: relative;
+  margin-top: 25px;
+  padding-left: 35px;
+  line-height: 1.1;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 21px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 473.806 473.806' style='enable-background:new 0 0 473.806 473.806;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath d='M374.456,293.506c-9.7-10.1-21.4-15.5-33.8-15.5c-12.3,0-24.1,5.3-34.2,15.4l-31.6,31.5c-2.6-1.4-5.2-2.7-7.7-4 c-3.6-1.8-7-3.5-9.9-5.3c-29.6-18.8-56.5-43.3-82.3-75c-12.5-15.8-20.9-29.1-27-42.6c8.2-7.5,15.8-15.3,23.2-22.8 c2.8-2.8,5.6-5.7,8.4-8.5c21-21,21-48.2,0-69.2l-27.3-27.3c-3.1-3.1-6.3-6.3-9.3-9.5c-6-6.2-12.3-12.6-18.8-18.6 c-9.7-9.6-21.3-14.7-33.5-14.7s-24,5.1-34,14.7c-0.1,0.1-0.1,0.1-0.2,0.2l-34,34.3c-12.8,12.8-20.1,28.4-21.7,46.5 c-2.4,29.2,6.2,56.4,12.8,74.2c16.2,43.7,40.4,84.2,76.5,127.6c43.8,52.3,96.5,93.6,156.7,122.7c23,10.9,53.7,23.8,88,26 c2.1,0.1,4.3,0.2,6.3,0.2c23.1,0,42.5-8.3,57.7-24.8c0.1-0.2,0.3-0.3,0.4-0.5c5.2-6.3,11.2-12,17.5-18.1c4.3-4.1,8.7-8.4,13-12.9 c9.9-10.3,15.1-22.3,15.1-34.6c0-12.4-5.3-24.3-15.4-34.3L374.456,293.506z M410.256,398.806 C410.156,398.806,410.156,398.906,410.256,398.806c-3.9,4.2-7.9,8-12.2,12.2c-6.5,6.2-13.1,12.7-19.3,20 c-10.1,10.8-22,15.9-37.6,15.9c-1.5,0-3.1,0-4.6-0.1c-29.7-1.9-57.3-13.5-78-23.4c-56.6-27.4-106.3-66.3-147.6-115.6 c-34.1-41.1-56.9-79.1-72-119.9c-9.3-24.9-12.7-44.3-11.2-62.6c1-11.7,5.5-21.4,13.8-29.7l34.1-34.1c4.9-4.6,10.1-7.1,15.2-7.1 c6.3,0,11.4,3.8,14.6,7c0.1,0.1,0.2,0.2,0.3,0.3c6.1,5.7,11.9,11.6,18,17.9c3.1,3.2,6.3,6.4,9.5,9.7l27.3,27.3 c10.6,10.6,10.6,20.4,0,31c-2.9,2.9-5.7,5.8-8.6,8.6c-8.4,8.6-16.4,16.6-25.1,24.4c-0.2,0.2-0.4,0.3-0.5,0.5 c-8.6,8.6-7,17-5.2,22.7c0.1,0.3,0.2,0.6,0.3,0.9c7.1,17.2,17.1,33.4,32.3,52.7l0.1,0.1c27.6,34,56.7,60.5,88.8,80.8 c4.1,2.6,8.3,4.7,12.3,6.7c3.6,1.8,7,3.5,9.9,5.3c0.4,0.2,0.8,0.5,1.2,0.7c3.4,1.7,6.6,2.5,9.9,2.5c8.3,0,13.5-5.2,15.2-6.9 l34.2-34.2c3.4-3.4,8.8-7.5,15.1-7.5c6.2,0,11.3,3.9,14.4,7.3c0.1,0.1,0.1,0.1,0.2,0.2l55.1,55.1 C420.456,377.706,420.456,388.206,410.256,398.806z'/%3E%3Cpath d='M256.056,112.706c26.2,4.4,50,16.8,69,35.8s31.3,42.8,35.8,69c1.1,6.6,6.8,11.2,13.3,11.2c0.8,0,1.5-0.1,2.3-0.2 c7.4-1.2,12.3-8.2,11.1-15.6c-5.4-31.7-20.4-60.6-43.3-83.5s-51.8-37.9-83.5-43.3c-7.4-1.2-14.3,3.7-15.6,11 S248.656,111.506,256.056,112.706z'/%3E%3Cpath d='M473.256,209.006c-8.9-52.2-33.5-99.7-71.3-137.5s-85.3-62.4-137.5-71.3c-7.3-1.3-14.2,3.7-15.5,11 c-1.2,7.4,3.7,14.3,11.1,15.6c46.6,7.9,89.1,30,122.9,63.7c33.8,33.8,55.8,76.3,63.7,122.9c1.1,6.6,6.8,11.2,13.3,11.2 c0.8,0,1.5-0.1,2.3-0.2C469.556,223.306,474.556,216.306,473.256,209.006z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.pharmacy_item__main .pharmacy_item__tel a {
+  white-space: nowrap;
+  font-size: 26px;
+  font-family: "Roboto Medium", Arial, sans-serif;
+}
+
+.pharmacy_item__map {
+  align-self: stretch;
+  width: calc(100% - 550px);
+  max-width: 600px;
+  margin-bottom: 35px;
+}
+@media screen and (max-width: 900px) {
+  .pharmacy_item__map {
+    width: calc(100% - 430px);
+  }
+}
+@media screen and (max-width: 700px) {
+  .pharmacy_item__map {
+    width: calc(100% - 365px);
+  }
+}
+@media screen and (max-width: 599px) {
+  .pharmacy_item__map {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 30px;
+  }
+}
+.pharmacy_item__map iframe {
+  height: 100%;
+}
+
+.pharmacy_item__title {
+  width: 100%;
+  padding: 15px 0 5px;
+  font-size: 22px;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+.pharmacy_item__search {
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 50px;
+  padding: 0 82px;
+  background-image: linear-gradient(to bottom, #f4f4f4 70px, #fff 70px);
+}
+@media screen and (max-width: 1080px) {
+  .pharmacy_item__search {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 399px) {
+  .pharmacy_item__search {
+    padding: 0 15px;
+  }
+}
+.pharmacy_item__search form {
+  width: 100%;
+  display: flex;
+  margin-bottom: 35px;
+}
+@media screen and (max-width: 680px) {
+  .pharmacy_item__search form {
+    margin-bottom: 25px;
+  }
+}
+.pharmacy_item__search form input {
+  flex-grow: 1;
+  padding: 12px 30px;
+  background-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #140508;
+  border-right: none;
+  font-size: 15px;
+}
+@media screen and (max-width: 480px) {
+  .pharmacy_item__search form input {
+    padding: 12px;
+  }
+}
+.pharmacy_item__search form button {
+  width: 115px;
+  padding: 0;
+  border: none;
+  background-color: #488b45;
+  background-image: url("data:image/svg+xml,%3Csvg enable-background='new 0 0 70 70' height='70px' fill='%23fff' viewBox='0 0 70 70' width='70px' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath d='M51.957,49.129l-8.713-8.713c1.75-2.337,2.799-5.229,2.799-8.373c0-7.732-6.268-14-14-14s-14,6.268-14,14s6.268,14,14,14 c3.144,0,6.036-1.049,8.373-2.799l8.713,8.713L51.957,49.129z M22.043,32.043c0-5.514,4.486-10,10-10c5.514,0,10,4.486,10,10 c0,5.514-4.486,10-10,10C26.529,42.043,22.043,37.557,22.043,32.043z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px;
+}
+@media screen and (max-width: 480px) {
+  .pharmacy_item__search form button {
+    width: 65px;
+  }
+}
+@media screen and (max-width: 399px) {
+  .pharmacy_item__search form button {
+    width: 40px;
+  }
+}
+
+.pharmacy_item__pay b {
+  display: block;
+  margin-bottom: 7px;
+  font-family: "Roboto Bold", Arial, sans-serif;
+}
+
+.pharmacy_item__pay p {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 42px;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+@media screen and (max-width: 420px) {
+  .pharmacy_item__pay p {
+    display: block;
+  }
+  .pharmacy_item__pay p + p {
+    margin-top: 5px;
+  }
+}
+@media screen and (min-width: 421px) {
+  .pharmacy_item__pay p + p {
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 421px) and (max-width: 767px) {
+  .pharmacy_item__pay p + p {
+    margin-left: 20px;
+  }
+}
+.pharmacy_item__pay p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 24px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+.pharmacy_item__pay p:first-of-type::before {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg' fill='%23488b45'%3E%3Ctitle/%3E%3Cg data-name='16-Money Bill' id='_16-Money_Bill'%3E%3Cpath d='M30,4H6A2,2,0,0,0,4,6V8H2a2,2,0,0,0-2,2V26a2,2,0,0,0,2,2H26a2,2,0,0,0,2-2V24h2a2,2,0,0,0,2-2V6A2,2,0,0,0,30,4ZM26,26H2V10H26Zm4-4H28V10a2,2,0,0,0-2-2H6V6H30Z'/%3E%3Cpath d='M14,24a6,6,0,1,0-6-6A6,6,0,0,0,14,24Zm0-10a4,4,0,1,1-4,4A4,4,0,0,1,14,14Z'/%3E%3Crect height='2' width='2' x='22' y='17'/%3E%3Crect height='2' width='2' x='4' y='17'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 32px;
+}
+.pharmacy_item__pay p:nth-of-type(2)::before {
+  background-image: url("data:image/svg+xml,%3Csvg fill='%23488b45' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle/%3E%3Cpath d='M48.08,52H15.92A8.93,8.93,0,0,1,7,43.08V21.92A8.93,8.93,0,0,1,15.92,13H48.08A8.93,8.93,0,0,1,57,21.92V43.08A8.93,8.93,0,0,1,48.08,52ZM15.92,17A4.92,4.92,0,0,0,11,21.92V43.08A4.92,4.92,0,0,0,15.92,48H48.08A4.92,4.92,0,0,0,53,43.08V21.92A4.92,4.92,0,0,0,48.08,17Z'/%3E%3Cpath d='M55,29H9a2,2,0,0,1,0-4H55a2,2,0,0,1,0,4Z'/%3E%3Cpath d='M24,37H17a2,2,0,0,1,0-4h7a2,2,0,0,1,0,4Z'/%3E%3C/svg%3E");
+  background-size: 29px;
+}
+
+.pharmacy_item__storage {
+  position: relative;
+  max-width: calc(100% - 380px);
+  padding: 0 0 0 60px;
+  color: #d93646;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+@media screen and (max-width: 680px) {
+  .pharmacy_item__storage {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .pharmacy_item__storage {
+    padding-left: 42px;
+  }
+}
+.pharmacy_item__storage::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 47px;
+  height: 45px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg fill='%23d93646' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='461.497px' height='461.497px' viewBox='0 0 461.497 461.497' style='enable-background:new 0 0 461.497 461.497;' xml:space='preserve'%3E%3Cg%3E%3Cg id='Layer_2_17_'%3E%3Cg%3E%3Cpath d='M268.616,409.893c-3.622,0.977-7.318,1.848-10.986,2.602c-9.596,1.955-15.789,11.32-13.829,20.917 c0.11,0.548,0.247,1.069,0.404,1.593c2.618,8.674,11.466,14.086,20.518,12.239c4.378-0.896,8.79-1.939,13.115-3.103 c9.46-2.544,15.062-12.277,12.517-21.737C287.807,412.932,278.076,407.346,268.616,409.893z'/%3E%3Cpath d='M144.994,400.018c-3.425-1.524-6.842-3.174-10.157-4.908c-8.687-4.529-19.396-1.163-23.926,7.523 c-2.236,4.272-2.55,9.039-1.258,13.317c1.334,4.412,4.369,8.307,8.772,10.605c3.957,2.061,8.024,4.032,12.104,5.851 c8.941,3.992,19.43-0.016,23.425-8.956C157.949,414.502,153.936,404.02,144.994,400.018z'/%3E%3Cpath d='M205.979,415.609c-3.73-0.3-7.514-0.723-11.228-1.245c-9.699-1.382-18.673,5.367-20.051,15.065 c-0.374,2.636-0.145,5.213,0.575,7.602c1.933,6.405,7.433,11.441,14.496,12.449c4.419,0.624,8.917,1.125,13.362,1.479 c9.766,0.791,18.317-6.487,19.103-16.247C223.021,424.946,215.747,416.395,205.979,415.609z'/%3E%3Cpath d='M325.738,383.44c-3.081,2.12-6.277,4.178-9.494,6.12c-7.089,4.271-10.115,12.719-7.833,20.294 c0.42,1.388,1.02,2.748,1.802,4.051c5.052,8.389,15.953,11.083,24.343,6.033c3.825-2.307,7.625-4.761,11.288-7.28 c8.066-5.553,10.11-16.596,4.556-24.661C344.849,379.924,333.803,377.888,325.738,383.44z'/%3E%3Cpath d='M395.453,335.48c-7.944-5.728-19.028-3.931-24.757,4.008c-2.188,3.037-4.504,6.05-6.875,8.941 c-3.89,4.75-4.9,10.908-3.255,16.375c0.985,3.254,2.911,6.269,5.736,8.585c7.577,6.205,18.75,5.091,24.955-2.487 c2.831-3.45,5.595-7.043,8.202-10.664C405.189,352.294,403.396,341.213,395.453,335.48z'/%3E%3Cpath d='M420.276,270.883c-9.4-2.746-19.247,2.654-21.989,12.056c-1.054,3.601-2.228,7.217-3.485,10.745 c-1.334,3.713-1.354,7.585-0.292,11.092c1.568,5.203,5.495,9.614,10.994,11.584c9.222,3.307,19.371-1.483,22.683-10.7 c1.504-4.204,2.901-8.508,4.146-12.792C435.074,283.471,429.676,273.62,420.276,270.883z'/%3E%3Cpath d='M453.552,155.337l-23.307,7.242c-17.688-54.204-54.93-98.746-105.337-125.798c-5.074-2.725-10.221-5.229-15.431-7.53 c-0.038-0.018-0.068-0.033-0.103-0.056c-0.218-0.092-0.447-0.178-0.659-0.272C262.758,8.814,211.901,5.002,163.15,18.204 c-0.383,0.075-0.766,0.147-1.144,0.254c-1.628,0.444-3.271,0.925-4.892,1.409c-2.661,0.804-5.338,1.67-7.964,2.571 c-0.311,0.107-0.604,0.24-0.906,0.36c-43.518,15.075-80.577,42.869-107.015,80.005c-0.094,0.128-0.2,0.238-0.289,0.365 c-2.584,3.629-5.087,7.392-7.451,11.188c-0.148,0.243-0.271,0.496-0.412,0.747c-2.358,3.824-4.624,7.736-6.77,11.726 C4.395,167.665-3.964,213.292,1.739,258.362c0.013,0.103,0.025,0.199,0.034,0.301c0.009,0.072,0.025,0.147,0.042,0.222 c1.55,12.04,4.096,24.041,7.671,35.895c9.388,31.125,25.053,59.112,46.557,83.188c6.523,7.302,17.735,7.932,25.041,1.409 c7.302-6.525,7.939-17.74,1.411-25.04c-10.735-12.013-19.719-25.208-26.91-39.424c-0.077-0.175-0.145-0.354-0.229-0.522 c-1.691-3.354-3.298-6.792-4.786-10.233c-0.008-0.027-0.017-0.043-0.029-0.065c-2.708-6.334-5.069-12.854-7.093-19.553 c-23.243-77.066,6.399-157.708,67.912-202.796c0.91-0.662,1.819-1.33,2.738-1.972c15.792-11.138,33.604-19.97,53.098-25.848 c19.618-5.914,39.457-8.398,58.887-7.816c0.314,0.014,0.619,0.023,0.93,0.032c1.186,0.036,2.368,0.099,3.548,0.165 c0.477,0.025,0.952,0.051,1.428,0.081c60.587,3.79,116.456,37.44,147.82,90.305c0.017,0.03,0.029,0.064,0.05,0.094 c0.465,0.785,0.919,1.569,1.375,2.363c0.054,0.089,0.113,0.168,0.165,0.259c6.001,10.523,11.05,21.784,14.977,33.701 l-23.306,7.246c-6.473,2.011-7.11,6.668-1.429,10.35l50.719,32.852c5.686,3.685,12.468,1.575,15.061-4.676l23.171-55.82 C463.182,156.804,460.02,153.327,453.552,155.337z'/%3E%3Cpath d='M155.288,231.23c-17.092,12.662-28.75,23.646-34.964,32.95c-6.208,9.303-9.932,19.235-11.155,29.796h106.935v-29.053 h-55.657c3.268-3.213,6.111-5.805,8.533-7.785c2.423-1.991,7.217-5.457,14.395-10.418c12.074-8.517,20.404-16.335,24.985-23.455 c4.577-7.114,6.868-14.582,6.868-22.4c0-7.349-1.997-13.987-5.993-19.912c-3.999-5.919-9.486-10.311-16.456-13.17 c-6.969-2.855-16.728-4.288-29.273-4.288c-12.014,0-21.419,1.505-28.219,4.514c-6.792,3.004-12.061,7.319-15.792,12.944 c-3.735,5.636-6.299,13.467-7.702,23.497l35.704,2.887c0.991-7.229,2.933-12.278,5.818-15.135 c2.891-2.859,6.604-4.29,11.161-4.29c4.373,0,8.006,1.388,10.892,4.16c2.886,2.766,4.332,6.109,4.332,10.02 c0,3.619-1.458,7.438-4.377,11.466C172.406,217.582,165.726,223.476,155.288,231.23z'/%3E%3Cpath d='M323.651,293.977v-23.979h16.099V242.34h-16.099v-78.844h-31.066l-64.93,77.187v29.315h64.93v23.979H323.651 L323.651,293.977z M258.28,242.34l34.305-40.366v40.366H258.28z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}
+@media screen and (max-width: 420px) {
+  .pharmacy_item__storage::before {
+    width: 32px;
+    height: 32px;
+  }
+}
+.pharmacy_item__storage b {
+  display: block;
+  margin-bottom: 7px;
+  font-family: "Roboto Bold", Arial, sans-serif;
+}
+
+.pharmacy_item__steps {
+  width: 100%;
+  margin-bottom: 100px;
+  padding: 0 40px 0 82px;
+  background-image: linear-gradient(to bottom, #f4f4f4 70px, #fff 70px);
+}
+@media screen and (max-width: 1080px) {
+  .pharmacy_item__steps {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pharmacy_item__steps {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 399px) {
+  .pharmacy_item__steps {
+    padding: 0 15px;
+  }
+}
