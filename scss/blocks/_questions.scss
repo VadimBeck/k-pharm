@@ -11,6 +11,10 @@
   border: 1px dashed #140508;
   margin-bottom: 30px;
 
+  &:nth-child(2n) {
+    background: #f9f9f9;
+  }
+
   &.is-active {
     .questions__item-title::before {
       opacity: 1;
@@ -27,19 +31,7 @@
       background-color: #4d4d4d;
       transform: rotate(45deg);
     }
-  }
-
-  & li {
-    position: relative;
-    padding-left: 25px;
-  }
-
-  & li::before {
-    content: "—";
-    position: absolute;
-    left: 0;
-    margin-right: 10px;
-  }
+  }  
 }
 
 .questions__item-title {
@@ -68,6 +60,18 @@
   visibility: hidden;
   max-height: 0;
   line-height: 1.5;
+
+  & li {
+    position: relative;
+    padding-left: 25px;
+  }
+
+  & li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    margin-right: 10px;
+  }
 }
 
 .questions__btn {

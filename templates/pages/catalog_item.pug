@@ -22,9 +22,10 @@ block main
             b
               | 351.00 
               span.rub a
-          span.item__avail.item__avail--available В наличии
+          .item__price-billets
+            span.item__avail.item__avail--available В наличии
+            span.item__recipe По рецепту
           // <span class="item__avail item__avail--noavailable">Нет в наличии</span>
-          button.item__compare
           p.item__adr Курская обл., Черемисиновский район, п. Черемисиново, ул. Комсомольская, д. 4
         a.item__link(href='') Цены и наличие в других аптеках
         p.char
@@ -74,6 +75,75 @@ block main
       #info.item__tab_content
         p
           | Местно, путем распыления на слизистую оболочку полости рта и горла. Применяется по сле еды.
+    section.container.similar.comparsion
+      h2.comparsion__title Аналоги
+      #comparsion.similar_list
+        div
+          .similar_item
+            .pharmacy__label
+            a.similar_item__img
+              img(src='/website/img/item_02.jpg' alt='')
+            a.similar_item__name 8.1.8 beauty formula гиалуроновый увлажняющий крем для чувствительной 
+            .grid
+              span.similar_item__price
+                | Цена: 
+                b
+                  | 516.40 
+                  span.rub a
+              a.similar_item__link(href='') Цены и наличие в других аптеках
+              a.similar_item__cart(href='добавить в корзину' title='в корзину')
+        div
+          .similar_item
+            a.similar_item__img
+              img(src='/website/img/item_04.jpg' alt='')
+            a.similar_item__name 8.1.8
+            .grid
+              span.similar_item__price
+                | Цена: 
+                b
+                  | 516.40 
+                  span.rub a
+              a.similar_item__link(href='') Цены и наличие в других аптеках
+              a.similar_item__cart(href='добавить в корзину' title='в корзину')
+        div
+          .similar_item
+            a.similar_item__img
+              img(src='/website/img/item_03.jpg' alt='')
+            a.similar_item__name 8.1.8 beauty formula гиалуроновый увлажняющий крем для чувствительной 
+            .grid
+              span.similar_item__price
+                | Цена: 
+                b
+                  | 516.40 
+                  span.rub a
+              a.similar_item__link(href='') Цены и наличие в других аптеках
+              a.similar_item__cart(href='добавить в корзину' title='в корзину')
+        div
+          .similar_item
+            a.similar_item__img
+              img(src='/website/img/item_04.jpg' alt='')
+            a.similar_item__name 8.1.8 beauty formula гиалуроновый увлажняющий крем для чувствительной 
+            .grid
+              span.similar_item__price
+                | Цена: 
+                b
+                  | 516.40 
+                  span.rub a
+              a.similar_item__link(href='') Цены и наличие в других аптеках
+              a.similar_item__cart(href='добавить в корзину' title='в корзину')
+        div
+          .similar_item
+            a.similar_item__img
+              img(src='/website/img/item.jpg' alt='')
+            a.similar_item__name 8.1.8 beauty formula гиалуроновый увлажняющий крем для чувствительной 
+            .grid
+              span.similar_item__price
+                | Цена: 
+                b
+                  | 516.40 
+                  span.rub a
+              a.similar_item__link(href='') Цены и наличие в других аптеках
+              a.similar_item__cart(href='добавить в корзину' title='в корзину')
     section.container.similar
       h2 Вы ранее смотрели
       // вывод 5 товаров

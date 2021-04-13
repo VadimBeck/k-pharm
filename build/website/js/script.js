@@ -88,7 +88,8 @@ $(document).ready(function() {
       ]
   }); 
 
-  $('#similar').lightSlider({
+  function lightSliderInit(elem) {
+    elem.lightSlider({
       item: 4,
       loop:true,
       auto: false,
@@ -124,6 +125,10 @@ $(document).ready(function() {
           }
       ]
   }); 
+  }
+
+  lightSliderInit($('#comparsion'));
+  lightSliderInit($('#similar'));
 
   // Добавление стрелочек для разворачивания в боковое меню каталога
   $('.menu_list ul ul li').has('ul').addClass('sub_menu');
@@ -141,6 +146,11 @@ $(document).ready(function() {
       e.preventDefault();
       button.closest('.questions__item').toggleClass('is-active');
     }
+  })
+
+  // Демонстрация выпадающего меню в каталоге
+  $('.catalog__filter-button').on('click', function(e){
+    $(e.target).closest('.catalog__filter-price').toggleClass('is-active');
   })
 });
 

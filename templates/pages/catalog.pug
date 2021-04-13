@@ -1,0 +1,156 @@
+extends ../layout
+
+block head 
+  title Каталог
+
+block main
+  main.main
+    section.container.catalog
+      ul.breadcrumbs
+        li
+          a(href='/') Главная
+          |  /
+        li
+          span Каталог товаров
+      h1.section__title.section__title--left Каталог
+      .catalog__controls 
+        .catalog__price 
+          .catalog__entries
+            .catalog__entries-sub Цена:
+            .catalog__entry
+              span от
+              input(type="text" value="0")
+            .catalog__entry
+              span до
+              input(type="text" value="426 224")
+          .catalog__buttons
+            button(type="submit").catalog__btn.catalog__btn--accept Применить
+            button(type="reset").catalog__btn.catalog__btn--clear Сбросить
+        .catalog__filter
+          .catalog__filter-price
+            label
+              input(type="radio" name="filter" value="price").catalog__checkbox
+              span.catalog__filter-desc По цене
+            a.catalog__filter-button
+            ul.catalog__filter-dropdown
+              li.catalog__drop-item.catalog__drop-item--up Сначала дешевые
+              li.catalog__drop-item.catalog__drop-item--down Сначала дорогие
+          .catalog__filter-aval
+            label
+              input(type="radio" name="filter" value="avaliable" checked).catalog__checkbox
+              span.catalog__filter-desc По наличию
+      ul.catalog__list 
+        li.similar_item
+          .pharmacy__label
+          a.similar_item__img
+            img(src='/website/img/item_02.jpg' alt='')
+          a.similar_item__name 8.1.8 beauty formula гиалуроновый увлажняющий крем для чувствительной 
+          .grid
+            span.similar_item__price
+              | Цена: 
+              b
+                | 516.40 
+                span.rub a
+            a.similar_item__link(href='') Цены и наличие в других аптеках
+            a.similar_item__cart(href='добавить в корзину' title='в корзину')
+        li.similar_item
+          a.similar_item__img
+            img(src='/website/img/item_04.jpg' alt='')
+          a.similar_item__name  Аквадетрим таблетки раств. 500ME 90шт. 
+          .grid
+            span.similar_item__price
+              | Цена: 
+              b
+                | 516.40 
+                span.rub a
+            a.similar_item__link(href='') Цены и наличие в других аптеках
+            a.similar_item__cart(href='добавить в корзину' title='в корзину')
+        li.similar_item
+          a.similar_item__img
+            img(src='/website/img/item_03.jpg' alt='')
+          a.similar_item__name  8.1.8 beauty formula гиалуроновый увлажняющий крем для чувствительной 
+          .grid
+            span.similar_item__price
+              | Цена: 
+              b
+                | 516.40 
+                span.rub a
+            a.similar_item__link(href='') Цены и наличие в других аптеках
+            a.similar_item__cart(href='добавить в корзину' title='в корзину')
+        li.similar_item
+          a.similar_item__img
+            img(src='/website/img/item_04.jpg' alt='')
+          a.similar_item__name  Аквадетрим таблетки раств. 500ME 90шт. 
+          .grid
+            span.similar_item__price
+              | Цена: 
+              b
+                | 516.40 
+                span.rub a
+            a.similar_item__link(href='') Цены и наличие в других аптеках
+            a.similar_item__cart(href='добавить в корзину' title='в корзину')
+        li.similar_item
+          a.similar_item__img
+            img(src='/website/img/item_02.jpg' alt='')
+          a.similar_item__name 8.1.8 beauty formula гиалуроновый увлажняющий крем для чувствительной 
+          .grid
+            span.similar_item__price
+              | Цена: 
+              b
+                | 516.40 
+                span.rub a
+            a.similar_item__link(href='') Цены и наличие в других аптеках
+            a.similar_item__cart(href='добавить в корзину' title='в корзину')
+        li.similar_item
+          a.similar_item__img
+            img(src='/website/img/item_04.jpg' alt='')
+          a.similar_item__name  Аквадетрим таблетки раств. 500ME 90шт. 
+          .grid
+            span.similar_item__price
+              | Цена: 
+              b
+                | 516.40 
+                span.rub a
+            a.similar_item__link(href='') Цены и наличие в других аптеках
+            a.similar_item__cart(href='добавить в корзину' title='в корзину')
+        li.similar_item
+          a.similar_item__img
+            img(src='/website/img/item_03.jpg' alt='')
+          a.similar_item__name  8.1.8 beauty formula гиалуроновый увлажняющий крем для чувствительной 
+          .grid
+            span.similar_item__price
+              | Цена: 
+              b
+                | 516.40 
+                span.rub a
+            a.similar_item__link(href='') Цены и наличие в других аптеках
+            a.similar_item__cart(href='добавить в корзину' title='в корзину')
+        li.similar_item
+          a.similar_item__img
+            img(src='/website/img/item_04.jpg' alt='')
+          a.similar_item__name  Аквадетрим таблетки раств. 500ME 90шт. 
+          .grid
+            span.similar_item__price
+              | Цена: 
+              b
+                | 516.40 
+                span.rub a
+            a.similar_item__link(href='') Цены и наличие в других аптеках
+            a.similar_item__cart(href='добавить в корзину' title='в корзину')
+      ul.pagination
+        li.pagination__arrow.pagination__arrow--prev
+          a(title="Предыдущая страница")
+          li.pagination__number.active
+            a 1
+          li.pagination__number
+            a 2
+          li.pagination__number
+            a 3
+          li.pagination__number
+            a 4
+          li.pagination__number
+            a 5
+        li.pagination__arrow.pagination__arrow--next
+          a(title="Следующая страница")
+
+

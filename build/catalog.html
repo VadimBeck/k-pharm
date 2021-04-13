@@ -8,7 +8,7 @@
 		<link href="/website/css/lightslider.min.css" rel="stylesheet">
 		<link href="/website/css/nice-select.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
-		<title>Личный кабинет | Товары</title>
+		<title>Каталог</title>
 		<script src="/website/js/jquery-3.3.1.min.js"> </script>
 		<script src="/website/js/jquery.fancybox.js"> </script>
 		<script src="/website/js/lightslider.min.js"> </script>
@@ -96,99 +96,83 @@
 			</header>
 			<div id="body-overlay"></div>
 			<main class="main">
-				<div class="container">
+				<section class="container catalog">
 					<ul class="breadcrumbs">
 						<li><a href="/">Главная</a> /</li>
-						<li><span>Личный кабинет</span></li>
+						<li><span>Каталог товаров</span></li>
 					</ul>
-				</div>
-				<div class="personal">
-					<header class="personal__header">
-						<div class="container personal__container">
-							<h1 class="section__title">Личный кабинет</h1>
-							<ul class="personal__list"> 
-								<li class="personal__item"><a class="personal__link" href="#">
-										<div class="personal__img"> 
-											<svg> 
-												<use xlink:href="/website/img/icons/p-sprite.svg#user"> </use>
-											</svg>
-										</div>
-										<div class="personal__text">Профиль</div></a></li>
-								<li class="personal__item is-active"><a class="personal__link" href="#">
-										<div class="personal__img"> 
-											<svg> 
-												<use xlink:href="/website/img/icons/p-sprite.svg#shopping-cart"> </use>
-											</svg>
-										</div>
-										<div class="personal__text">Товары</div></a></li>
-								<li class="personal__item"><a class="personal__link" href="#">
-										<div class="personal__img"> 
-											<svg> 
-												<use xlink:href="/website/img/icons/p-sprite.svg#file"> </use>
-											</svg>
-										</div>
-										<div class="personal__text">История заказов</div></a></li>
-								<li class="personal__item"><a class="personal__link" href="#">
-										<div class="personal__img"> 
-											<svg> 
-												<use xlink:href="/website/img/icons/p-sprite.svg#email"> </use>
-											</svg>
-										</div>
-										<div class="personal__text">Обратная связь</div></a></li>
-								<li class="personal__item"><a class="personal__link" href="#">
-										<div class="personal__img">
-											<svg> 
-												<use xlink:href="/website/img/icons/p-sprite.svg#log-out"></use>
-											</svg>
-										</div>
-										<div class="personal__text">Выйти</div></a></li>
-							</ul>
-						</div>
-					</header>
-					<section class="goods"> 
-						<div class="container"> 
-							<div class="pharmacy__notice">Обратите внимание, в заказе есть товары, отпускаемые по рецепту врача. Вы должны иметь рецепт при выкупе заказа в аптеке.<span> </span></div>
-							<ul class="goods__contents">
-								<li class="goods__contents-name">Наименование товара</li>
-								<li class="goods__contents-price">Цена</li>
-								<li class="goods__contents-count">Количество</li>
-								<li class="goods__contents-sum">Сумма</li>
-							</ul>
-							<ul class="goods__list"> 
-								<li class="goods-item"> 
-									<div class="goods-item__img"> 
-										<div class="pharmacy__label"> </div><a href="#"> <img src="/website/img/goods_item.jpg" alt=""></a>
-									</div>
-									<div class="goods-item__desc"> <a href="#"> Аквадетрим таблетки раств.&nbsp;500ME 90шт. </a></div>
-									<div class="goods-item__price">4 830.00 ₽</div>
-									<div class="goods-item__count"><a class="minus"></a><span>10</span><a class="plus">             </a></div>
-									<div class="goods-item__sum">40 830.00 ₽</div><a class="goods-item__remove"> </a>
-								</li>
-								<li class="goods-item"> 
-									<div class="goods-item__img"> <a href="#"> <img src="/website/img/goods_item.jpg" alt=""></a></div>
-									<div class="goods-item__desc"> <a href="#"> Аквадетрим таблетки раств.&nbsp;500ME 90шт. </a></div>
-									<div class="goods-item__price">4 830.00 ₽</div>
-									<div class="goods-item__count"><a class="minus"></a><span>10</span><a class="plus">         </a></div>
-									<div class="goods-item__sum">40 830.00 ₽</div><a class="goods-item__remove"> </a>
-								</li>
-							</ul>
-							<div class="goods__checkout">
-								<div class="goods__point">
-									<div class="goods__point-desc">Адрес аптечного пункта для самовывоза:</div>
-									<div class="goods__point-address">Курская обл., Черемисиновский район, п.Черемисиново, ул.Комсомольская, д.4</div><a class="goods__point-link" href="#">Выбрать другую аптеку</a>
+					<h1 class="section__title section__title--left">Каталог</h1>
+					<div class="catalog__controls"> 
+						<div class="catalog__price"> 
+							<div class="catalog__entries">
+								<div class="catalog__entries-sub">Цена:</div>
+								<div class="catalog__entry"><span>от</span>
+									<input type="text" value="0">
 								</div>
-								<div class="goods__checkout-controls"> 
-									<div class="goods__checkout-sum"> <span>Сумма заказа:</span>
-										<div>81 660.00 ₽</div>
-									</div>
-									<div class="goods__checkout-btn"> 
-										<button class="button button--red">Оформить заказ</button>
-									</div>
+								<div class="catalog__entry"><span>до</span>
+									<input type="text" value="426 224">
 								</div>
 							</div>
+							<div class="catalog__buttons">
+								<button class="catalog__btn catalog__btn--accept" type="submit">Применить</button>
+								<button class="catalog__btn catalog__btn--clear" type="reset">Сбросить</button>
+							</div>
 						</div>
-					</section>
-				</div>
+						<div class="catalog__filter">
+							<div class="catalog__filter-price">
+								<label>
+									<input class="catalog__checkbox" type="radio" name="filter" value="price"><span class="catalog__filter-desc">По цене</span>
+								</label><a class="catalog__filter-button"></a>
+								<ul class="catalog__filter-dropdown">
+									<li class="catalog__drop-item catalog__drop-item--up">Сначала дешевые</li>
+									<li class="catalog__drop-item catalog__drop-item--down">Сначала дорогие</li>
+								</ul>
+							</div>
+							<div class="catalog__filter-aval">
+								<label>
+									<input class="catalog__checkbox" type="radio" name="filter" value="avaliable" checked><span class="catalog__filter-desc">По наличию</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<ul class="catalog__list"> 
+						<li class="similar_item">
+							<div class="pharmacy__label"></div><a class="similar_item__img"><img src="/website/img/item_02.jpg" alt=""></a><a class="similar_item__name">8.1.8 beauty formula гиалуроновый увлажняющий крем для чувствительной </a>
+							<div class="grid"><span class="similar_item__price">Цена: <b>516.40 <span class="rub">a</span></b></span><a class="similar_item__link" href="">Цены и наличие в других аптеках</a><a class="similar_item__cart" href="добавить в корзину" title="в корзину"></a></div>
+						</li>
+						<li class="similar_item"><a class="similar_item__img"><img src="/website/img/item_04.jpg" alt=""></a><a class="similar_item__name"> Аквадетрим таблетки раств. 500ME 90шт. </a>
+							<div class="grid"><span class="similar_item__price">Цена: <b>516.40 <span class="rub">a</span></b></span><a class="similar_item__link" href="">Цены и наличие в других аптеках</a><a class="similar_item__cart" href="добавить в корзину" title="в корзину"></a></div>
+						</li>
+						<li class="similar_item"><a class="similar_item__img"><img src="/website/img/item_03.jpg" alt=""></a><a class="similar_item__name"> 8.1.8 beauty formula гиалуроновый увлажняющий крем для чувствительной </a>
+							<div class="grid"><span class="similar_item__price">Цена: <b>516.40 <span class="rub">a</span></b></span><a class="similar_item__link" href="">Цены и наличие в других аптеках</a><a class="similar_item__cart" href="добавить в корзину" title="в корзину"></a></div>
+						</li>
+						<li class="similar_item"><a class="similar_item__img"><img src="/website/img/item_04.jpg" alt=""></a><a class="similar_item__name"> Аквадетрим таблетки раств. 500ME 90шт. </a>
+							<div class="grid"><span class="similar_item__price">Цена: <b>516.40 <span class="rub">a</span></b></span><a class="similar_item__link" href="">Цены и наличие в других аптеках</a><a class="similar_item__cart" href="добавить в корзину" title="в корзину"></a></div>
+						</li>
+						<li class="similar_item"><a class="similar_item__img"><img src="/website/img/item_02.jpg" alt=""></a><a class="similar_item__name">8.1.8 beauty formula гиалуроновый увлажняющий крем для чувствительной </a>
+							<div class="grid"><span class="similar_item__price">Цена: <b>516.40 <span class="rub">a</span></b></span><a class="similar_item__link" href="">Цены и наличие в других аптеках</a><a class="similar_item__cart" href="добавить в корзину" title="в корзину"></a></div>
+						</li>
+						<li class="similar_item"><a class="similar_item__img"><img src="/website/img/item_04.jpg" alt=""></a><a class="similar_item__name"> Аквадетрим таблетки раств. 500ME 90шт. </a>
+							<div class="grid"><span class="similar_item__price">Цена: <b>516.40 <span class="rub">a</span></b></span><a class="similar_item__link" href="">Цены и наличие в других аптеках</a><a class="similar_item__cart" href="добавить в корзину" title="в корзину"></a></div>
+						</li>
+						<li class="similar_item"><a class="similar_item__img"><img src="/website/img/item_03.jpg" alt=""></a><a class="similar_item__name"> 8.1.8 beauty formula гиалуроновый увлажняющий крем для чувствительной </a>
+							<div class="grid"><span class="similar_item__price">Цена: <b>516.40 <span class="rub">a</span></b></span><a class="similar_item__link" href="">Цены и наличие в других аптеках</a><a class="similar_item__cart" href="добавить в корзину" title="в корзину"></a></div>
+						</li>
+						<li class="similar_item"><a class="similar_item__img"><img src="/website/img/item_04.jpg" alt=""></a><a class="similar_item__name"> Аквадетрим таблетки раств. 500ME 90шт. </a>
+							<div class="grid"><span class="similar_item__price">Цена: <b>516.40 <span class="rub">a</span></b></span><a class="similar_item__link" href="">Цены и наличие в других аптеках</a><a class="similar_item__cart" href="добавить в корзину" title="в корзину"></a></div>
+						</li>
+					</ul>
+					<ul class="pagination">
+						<li class="pagination__arrow pagination__arrow--prev"><a title="Предыдущая страница"></a>
+							<li class="pagination__number active"><a>1</a></li>
+							<li class="pagination__number"><a>2</a></li>
+							<li class="pagination__number"><a>3</a></li>
+							<li class="pagination__number"><a>4</a></li>
+							<li class="pagination__number"><a>5</a></li>
+						</li>
+						<li class="pagination__arrow pagination__arrow--next"><a title="Следующая страница"></a></li>
+					</ul>
+				</section>
 			</main>
 			<footer> 
 				<div class="container footer row"><a class="logo" href="/"><img src="/website/img/f_logo.png" alt=""></a>

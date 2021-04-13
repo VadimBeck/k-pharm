@@ -74,6 +74,24 @@
   }
 }
 
+.slider__item-right {
+  text-align: right;
+  padding: 20px 0;
+  @include desktop {
+    text-align: left;
+  } 
+}
+
+.slider__item-row {
+  display: flex;
+  & div {
+    margin-right: 12px;
+  }
+  @include desktop {
+    flex-wrap: wrap;
+  } 
+}
+
 .slider__item-text {
   position: relative;
 

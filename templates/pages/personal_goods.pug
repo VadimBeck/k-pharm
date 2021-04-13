@@ -48,15 +48,18 @@ block main
                     use(xlink:href="/website/img/icons/p-sprite.svg#log-out")
                 .personal__text Выйти
       section.goods 
-        .container     
+        .container 
+          .pharmacy__notice Обратите внимание, в заказе есть товары, отпускаемые по рецепту врача. Вы должны иметь рецепт при выкупе заказа в аптеке.
+            span 
           ul.goods__contents
             li.goods__contents-name Наименование товара
             li.goods__contents-price Цена
             li.goods__contents-count Количество
             li.goods__contents-sum Сумма
           ul.goods__list 
-            li.goods-item               
+            li.goods-item 
               .goods-item__img 
+                .pharmacy__label  
                 a(href="#") 
                   img(src="/website/img/goods_item.jpg" alt="")
               .goods-item__desc 

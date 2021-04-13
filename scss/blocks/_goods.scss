@@ -82,6 +82,7 @@
 .goods-item__img {
   width: 150px;
   flex-shrink: 0;
+  position: relative;
 
   & a {
     display: block;
@@ -96,6 +97,10 @@
     width: auto;
     max-width: 90px;
     flex-shrink: 1;
+  }
+  & .pharmacy__label {
+    top: 10px;
+    right: -10px;
   }
 }
 .goods-item__desc {

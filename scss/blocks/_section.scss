@@ -44,6 +44,15 @@
   &--bold {
     font-family: "Roboto Medium", Arial, sans-serif;
   }
+  & .section__roster-sub {
+    font-family: $bold;
+    text-decoration: underline;
+    font-size: 18px;
+    padding-left: 0px;
+    &::before {
+      display: none;
+    }
+  }
 
   & li {
     position: relative;

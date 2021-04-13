@@ -95,15 +95,17 @@ header {
 
   .current {
     position: relative;
-    display: inline-block;
+    display: flex;
+    align-items: center;
     padding-left: 30px;
     color: $green;
     text-align: left;
-    background-position: -5px 4px;
+    background-position: -5px center;
     background-repeat: no-repeat;
     background-size: 30px;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:none;stroke:%23d93646;stroke-linecap:round;stroke-linejoin:round;stroke-width:30px;%7D%3C/style%3E%3C/defs%3E%3Ctitle/%3E%3Cg data-name='1' id='_1'%3E%3Cpath class='cls-1' d='M364.27,111.27h0a151.7,151.7,0,0,0-214.55,0h0a151.71,151.71,0,0,0,0,214.54L257,433.09,364.27,325.81A151.71,151.71,0,0,0,364.27,111.27Z'/%3E%3Ccircle class='cls-1' cx='257' cy='218.54' r='84.19'/%3E%3C/g%3E%3C/svg%3E");
     cursor: pointer;
+    min-height: 30px;
   }
 }
 .header__contacts {
