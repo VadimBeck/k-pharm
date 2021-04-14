@@ -1,0 +1,137 @@
+.similar {
+  padding-top: 5px;
+  padding-bottom: 55px;
+}
+@media screen and (max-width: 768px) {
+  .similar {
+    padding-bottom: 30px;
+  }
+}
+.similar h2 {
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: left;
+  font-size: 22px;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+.similar .similar_list {
+  margin: 0 -20px 0;
+}
+.similar .lslide {
+  display: flex;
+  min-height: 100%;
+  padding: 20px;
+}
+@media screen and (max-width: 600px) {
+  .similar .lslide {
+    padding: 10px;
+  }
+}
+.similar_item {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 35px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ebebeb;
+  background-color: #fff;
+  position: relative;
+
+  & .pharmacy__label {
+    top: 15px;
+    right: 15px;
+  }
+}
+
+.similar_item__img {
+  padding: 10px 0;
+  width: 100%;
+  height: 220px;
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+.similar_item:hover {
+  -webkit-box-shadow: 0px 0px 20.2px 6.8px rgba(43, 42, 40, 0.2);
+  box-shadow: 0px 0px 20.2px 6.8px rgba(43, 42, 40, 0.2);
+}
+@media screen and (max-width: 600px) {
+  .similar_item {
+    padding-bottom: 15px;
+  }
+}
+.similar_item .similar_item__name {
+  margin: 0 0 12px;
+  padding-left: 25px;
+  padding-right: 15px;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .similar_item .similar_item__name {
+    padding-left: 15px;
+    padding-right: 5px;
+  }
+}
+.similar_item .grid {
+  display: grid;
+  grid-template-columns: auto 45px;
+  width: 100%;
+  margin-top: auto;
+  padding-left: 25px;
+  padding-right: 20px;
+}
+@media screen and (max-width: 600px) {
+  .similar_item .grid {
+    padding-left: 15px;
+    padding-right: 5px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .similar_item .grid {
+    margin-top: 0;
+  }
+}
+.similar_item .similar_item__price {
+  align-self: flex-end;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-family: "Roboto Bold", Arial, sans-serif;
+}
+.similar_item .similar_item__price b {
+  color: #488b45;
+}
+.similar_item .similar_item__link {
+  max-width: 110px;
+  font-size: 13px;
+  color: #1546d1;
+  text-decoration: underline;
+}
+.similar_item .similar_item__link:hover {
+  text-decoration: none;
+}
+.similar_item .similar_item__cart {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  width: 44px;
+  height: 44px;
+  background-color: #d93646;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='10.5832mm' height='12.3472mm' version='1.1' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd'%0AviewBox='0 0 1058 1235' xmlns:xlink='http://www.w3.org/1999/xlink' enable-background='new 0 0 800 800'%3E%3Cdefs%3E%3Cstyle type='text/css'%3E%3C!%5BCDATA%5B .fil0 %7Bfill:%23fff%7D %5D%5D%3E%3C/style%3E%3C/defs%3E%3Cg id='Слой_x0020_1'%3E%3Cmetadata id='CorelCorpID_0Corel-Layer'/%3E%3Cg id='_837939312'%3E%3Cg%3E%3Cpath class='fil0' d='M888 430c-1,-10 -10,-18 -20,-18l-706 0c-11,0 -19,8 -20,18 -1,4 -1,7 -1,11l0 487c0,72 58,130 130,130l487 0c72,0 130,-58 130,-130l0 -487c0,-3 0,-7 0,-11zm-40 498c0,50 -40,90 -90,90l-487 0c-49,0 -89,-40 -89,-90l0 -476 666 0 0 476z'/%3E%3Cpath class='fil0' d='M387 388c0,0 1,0 1,0 11,0 20,-10 19,-21 -2,-46 15,-82 49,-102 35,-21 82,-21 117,0 34,20 51,56 49,102 0,11 8,21 20,21 11,1 20,-8 21,-19 3,-60 -22,-111 -69,-139 -47,-28 -111,-28 -159,0 -46,28 -71,79 -68,139 0,11 9,19 20,19z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.similar_item .similar_item__cart:hover,
+.similar_item .similar_item__cart.inCart {
+  background-color: #488b45;
+}
+.similar_warn {
+  padding: 0;
+  padding-left: 17px;
+  font-size: 14px;
+  line-height: 1.1;
+  border-left: 13px solid #73a90e;
+}

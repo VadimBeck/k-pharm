@@ -102,64 +102,65 @@
 						<li><span>Каталог товаров</span></li>
 					</ul>
 					<h1 class="section__title section__title--left">Каталог</h1>
-					<div class="catalog__controls"> 
-						<div class="catalog__price"> 
-							<div class="catalog__entries">
-								<div class="catalog__entries-sub">Цена:</div>
-								<div class="catalog__entry"><span>от</span>
+					<div class="catalog__filter filter">
+						<div class="filter__controls"> 
+							<div class="filter__entries">
+								<div class="filter__entries-sub">Цена:</div>
+								<div class="filter__entry"><span>от</span>
 									<input type="text" value="0">
 								</div>
-								<div class="catalog__entry"><span>до</span>
+								<div class="filter__entry"><span>до</span>
 									<input type="text" value="426 224">
 								</div>
 							</div>
-							<div class="catalog__buttons">
-								<button class="catalog__btn catalog__btn--accept" type="submit">Применить</button>
-								<button class="catalog__btn catalog__btn--clear" type="reset">Сбросить</button>
+							<div class="filter__buttons">
+								<button class="filter__btn filter__btn--accept" type="submit">Применить</button>
+								<button class="filter__btn filter__btn--clear" type="reset">Сбросить</button>
 							</div>
 						</div>
-						<div class="catalog__filter">
-							<div class="catalog__filter-price">
+						<div class="filter__selection">
+							<div class="filter__selection-item filter__selection-item--dropdown">
 								<label>
-									<input class="catalog__checkbox" type="radio" name="filter" value="price"><span class="catalog__filter-desc">По цене</span>
-								</label><a class="catalog__filter-button"></a>
-								<ul class="catalog__filter-dropdown">
-									<li class="catalog__drop-item catalog__drop-item--up">Сначала дешевые</li>
-									<li class="catalog__drop-item catalog__drop-item--down">Сначала дорогие</li>
+									<input class="filter__checkbox" type="radio" name="filter" value="price"><span class="filter__selection-desc">По цене</span>
+								</label><a class="filter__selection-button">   </a>
+								<ul class="filter__dropdown">
+									<li class="filter__dropdown-item filter__dropdown-item--up">Сначала дешевые</li>
+									<li class="filter__dropdown-item filter__dropdown-item--down">Сначала дорогие</li>
 								</ul>
 							</div>
-							<div class="catalog__filter-aval">
+							<div class="filter__selection-item">
 								<label>
-									<input class="catalog__checkbox" type="radio" name="filter" value="avaliable" checked><span class="catalog__filter-desc">По наличию</span>
+									<input class="filter__checkbox" type="radio" name="filter" value="avaliable" checked><span class="filter__selection-desc">По наличию</span>
 								</label>
 							</div>
 						</div>
 					</div>
 					<ul class="catalog__list"> 
 						<li class="similar_item">
-							<div class="pharmacy__label"></div><a class="similar_item__img"><img src="/website/img/item_02.jpg" alt=""></a><a class="similar_item__name">8.1.8 beauty formula гиалуроновый увлажняющий крем для чувствительной </a>
-							<div class="grid"><span class="similar_item__price">Цена: <b>516.40 <span class="rub">a</span></b></span><a class="similar_item__link" href="">Цены и наличие в других аптеках</a><a class="similar_item__cart" href="добавить в корзину" title="в корзину"></a></div>
+							<div class="pharmacy__label"></div><a class="similar_item__img" href="/catalog/item"><img src="/website/img/item_02.jpg" alt=""></a><a class="similar_item__name">8.1.8 beauty formula гиалуроновый увлажняющий крем для чувствительной </a>
+							<div class="grid"><span class="similar_item__price">Цена: <b>516.40 <span class="rub">a</span></b></span><a class="similar_item__link" href="">Цены и наличие в других аптеках</a><a class="similar_item__cart" href="добавить в корзину" title="в корзину"> </a></div>
 						</li>
-						<li class="similar_item"><a class="similar_item__img"><img src="/website/img/item_04.jpg" alt=""></a><a class="similar_item__name"> Аквадетрим таблетки раств. 500ME 90шт. </a>
-							<div class="grid"><span class="similar_item__price">Цена: <b>516.40 <span class="rub">a</span></b></span><a class="similar_item__link" href="">Цены и наличие в других аптеках</a><a class="similar_item__cart" href="добавить в корзину" title="в корзину"></a></div>
+						<li class="similar_item"><a class="similar_item__img" href="/catalog/item"><img src="/website/img/item_04.jpg" alt=""></a><a class="similar_item__name"> Аквадетрим таблетки раств. 500ME 90шт. </a>
+							<div class="grid"><span class="similar_item__price">Цена: <b>516.40 <span class="rub">a</span></b></span><a class="similar_item__link" href="">Цены и наличие в других аптеках</a><a class="similar_item__cart" href="добавить в корзину" title="в корзину">   </a></div>
 						</li>
-						<li class="similar_item"><a class="similar_item__img"><img src="/website/img/item_03.jpg" alt=""></a><a class="similar_item__name"> 8.1.8 beauty formula гиалуроновый увлажняющий крем для чувствительной </a>
-							<div class="grid"><span class="similar_item__price">Цена: <b>516.40 <span class="rub">a</span></b></span><a class="similar_item__link" href="">Цены и наличие в других аптеках</a><a class="similar_item__cart" href="добавить в корзину" title="в корзину"></a></div>
+						<li class="similar_item"><a class="similar_item__img" href="/catalog/item"><img src="/website/img/item_03.jpg" alt=""></a><a class="similar_item__name"> 8.1.8 beauty formula гиалуроновый увлажняющий крем для чувствительной </a>
+							<div class="grid"><span class="similar_item__price">Цена: <b>516.40 <span class="rub">a</span></b></span><a class="similar_item__link" href="">Цены и наличие в других аптеках</a><a class="similar_item__cart" href="добавить в корзину" title="в корзину"> </a></div>
 						</li>
-						<li class="similar_item"><a class="similar_item__img"><img src="/website/img/item_04.jpg" alt=""></a><a class="similar_item__name"> Аквадетрим таблетки раств. 500ME 90шт. </a>
-							<div class="grid"><span class="similar_item__price">Цена: <b>516.40 <span class="rub">a</span></b></span><a class="similar_item__link" href="">Цены и наличие в других аптеках</a><a class="similar_item__cart" href="добавить в корзину" title="в корзину"></a></div>
+						<li class="similar_item"><a class="similar_item__img" href="/catalog/item"><img src="/website/img/item_04.jpg" alt=""></a><a class="similar_item__name"> Аквадетрим таблетки раств. 500ME 90шт. </a>
+							<div class="grid"><span class="similar_item__price">Цена: <b>516.40 <span class="rub">a</span></b></span><a class="similar_item__link" href="">Цены и наличие в других аптеках</a><a class="similar_item__cart" href="добавить в корзину" title="в корзину"> </a></div>
 						</li>
-						<li class="similar_item"><a class="similar_item__img"><img src="/website/img/item_02.jpg" alt=""></a><a class="similar_item__name">8.1.8 beauty formula гиалуроновый увлажняющий крем для чувствительной </a>
-							<div class="grid"><span class="similar_item__price">Цена: <b>516.40 <span class="rub">a</span></b></span><a class="similar_item__link" href="">Цены и наличие в других аптеках</a><a class="similar_item__cart" href="добавить в корзину" title="в корзину"></a></div>
+						<li class="similar_item">
+							<div class="pharmacy__label"></div><a class="similar_item__img" href="/catalog/item"><img src="/website/img/item_02.jpg" alt=""></a><a class="similar_item__name">8.1.8 beauty formula гиалуроновый увлажняющий крем для чувствительной </a>
+							<div class="grid"><span class="similar_item__price">Цена: <b>516.40 <span class="rub">a</span></b></span><a class="similar_item__link" href="">Цены и наличие в других аптеках</a><a class="similar_item__cart" href="добавить в корзину" title="в корзину"> </a></div>
 						</li>
-						<li class="similar_item"><a class="similar_item__img"><img src="/website/img/item_04.jpg" alt=""></a><a class="similar_item__name"> Аквадетрим таблетки раств. 500ME 90шт. </a>
-							<div class="grid"><span class="similar_item__price">Цена: <b>516.40 <span class="rub">a</span></b></span><a class="similar_item__link" href="">Цены и наличие в других аптеках</a><a class="similar_item__cart" href="добавить в корзину" title="в корзину"></a></div>
+						<li class="similar_item"><a class="similar_item__img" href="/catalog/item"><img src="/website/img/item_04.jpg" alt=""></a><a class="similar_item__name"> Аквадетрим таблетки раств. 500ME 90шт. </a>
+							<div class="grid"><span class="similar_item__price">Цена: <b>516.40 <span class="rub">a</span></b></span><a class="similar_item__link" href="">Цены и наличие в других аптеках</a><a class="similar_item__cart" href="добавить в корзину" title="в корзину">  </a></div>
 						</li>
-						<li class="similar_item"><a class="similar_item__img"><img src="/website/img/item_03.jpg" alt=""></a><a class="similar_item__name"> 8.1.8 beauty formula гиалуроновый увлажняющий крем для чувствительной </a>
-							<div class="grid"><span class="similar_item__price">Цена: <b>516.40 <span class="rub">a</span></b></span><a class="similar_item__link" href="">Цены и наличие в других аптеках</a><a class="similar_item__cart" href="добавить в корзину" title="в корзину"></a></div>
+						<li class="similar_item"><a class="similar_item__img" href="/catalog/item"><img src="/website/img/item_03.jpg" alt=""></a><a class="similar_item__name"> 8.1.8 beauty formula гиалуроновый увлажняющий крем для чувствительной </a>
+							<div class="grid"><span class="similar_item__price">Цена: <b>516.40 <span class="rub">a</span></b></span><a class="similar_item__link" href="">Цены и наличие в других аптеках</a><a class="similar_item__cart" href="добавить в корзину" title="в корзину"> </a></div>
 						</li>
-						<li class="similar_item"><a class="similar_item__img"><img src="/website/img/item_04.jpg" alt=""></a><a class="similar_item__name"> Аквадетрим таблетки раств. 500ME 90шт. </a>
-							<div class="grid"><span class="similar_item__price">Цена: <b>516.40 <span class="rub">a</span></b></span><a class="similar_item__link" href="">Цены и наличие в других аптеках</a><a class="similar_item__cart" href="добавить в корзину" title="в корзину"></a></div>
+						<li class="similar_item"><a class="similar_item__img" href="/catalog/item"><img src="/website/img/item_04.jpg" alt=""></a><a class="similar_item__name"> Аквадетрим таблетки раств. 500ME 90шт. </a>
+							<div class="grid"><span class="similar_item__price">Цена: <b>516.40 <span class="rub">a</span></b></span><a class="similar_item__link" href="">Цены и наличие в других аптеках</a><a class="similar_item__cart" href="добавить в корзину" title="в корзину"> </a></div>
 						</li>
 					</ul>
 					<ul class="pagination">

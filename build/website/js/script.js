@@ -149,8 +149,8 @@ $(document).ready(function() {
   })
 
   // Демонстрация выпадающего меню в каталоге
-  $('.catalog__filter-button').on('click', function(e){
-    $(e.target).closest('.catalog__filter-price').toggleClass('is-active');
+  $('.filter__selection-button').on('click', function(e){
+    $(e.target).closest('.filter__selection-item').toggleClass('is-active');
   })
 });
 
